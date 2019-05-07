@@ -22,8 +22,8 @@ func init() {
 func get() {
 	ar := cfg.SectionStrings()
 	for _, ok := range ar {
-		if (ok != "DEFAULT") {
-			fmt.Println(ok);
+		if ok != "DEFAULT" {
+			fmt.Println(ok)
 		}
 	}
 }
