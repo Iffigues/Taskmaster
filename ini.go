@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 )
@@ -16,16 +15,17 @@ var (
 )
 
 func init() {
-	get()
 }
 
-func get() {
+func get() (a map[string]task) {
+	a = make(map[string]task)
 	ar := cfg.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			fmt.Println(ok)
+			a[ok] = task{}
 		}
 	}
+	return
 }
 
 func getKey(section, key string) (inu string) {
