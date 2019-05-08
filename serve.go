@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"net"
 	"os"
@@ -42,4 +43,25 @@ func handleRequest(conn net.Conn) {
 	}
 	conn.Write([]byte("Message received."))
 	conn.Close()
+}
+
+func client() {
+	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
+	if err != nil {
+		fmt.Println("not\n")
+	}
+	for {
+		reader := bufio.NewReader(os.Stdin)
+		fmt.Print("Text to send: ")
+		text, err := reader.ReadString('\n')
+		if err != nil {
+			fmt.Println("nat\n")
+		}
+		fmt.Fprintf(conn, text+"\n")
+		messages, err := bufio.NewReader(conn).ReadString('\n')
+		if err != nil {
+			fmt.Println("nit\n")
+		}
+		fmt.Print("Message from server: " + messages)
+	}
 }
