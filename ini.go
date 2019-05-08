@@ -5,10 +5,7 @@ import (
 	"log"
 )
 
-const (
-	bdd = "bdd"
-	htp = "htp"
-)
+const ()
 
 var (
 	cfg, cfgErr = ini.Load("ini.ini")
@@ -17,9 +14,13 @@ var (
 func init() {
 }
 
-func get() (a map[string]task) {
+func get(st string) (a map[string]task, err error) {
+	fd, err := ini.Load(st)
+	if err != nil {
+		return nil, err
+	}
 	a = make(map[string]task)
-	ar := cfg.SectionStrings()
+	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
 			a[ok] = task{}
