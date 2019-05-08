@@ -26,7 +26,9 @@ func get(st string) (a map[string]task, err error) {
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			a[ok] = task{}
+			a[ok] = task{
+				com: getK(fd, ok, "com"),
+			}
 		}
 	}
 	return
