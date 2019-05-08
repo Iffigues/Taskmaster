@@ -12,6 +12,8 @@ var (
 )
 
 func getK(ar *ini.File, section, key string) (a string) {
+	bb, _ := cfg.Section(section).GetKey(key)
+	a = bb.String()
 	return
 }
 
