@@ -8,10 +8,11 @@ import (
 const ()
 
 var (
-	cfg, cfgErr = ini.Load("ini.ini")
+	cfg, cfgErr = ini.Load("./conf/Taskmaster.conf")
 )
 
-func init() {
+func getK(ar *ini.File, section, key string) (a string) {
+	return
 }
 
 func get(st string) (a map[string]task, err error) {
