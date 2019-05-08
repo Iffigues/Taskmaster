@@ -8,5 +8,5 @@ func init() {
 }
 
 func main() {
-	 fanny()
+	go fanny()
 }

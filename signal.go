@@ -20,31 +20,23 @@ func fanny() {
 		for {
 			s := <-signal_chan
 			switch s {
-			// kill -SIGHUP XXXX
 			case syscall.SIGHUP:
 				fmt.Println("hungup")
-
-				// kill -SIGINT XXXX or Ctrl+c
 			case syscall.SIGINT:
 				fmt.Println("Warikomi")
-
-				// kill -SIGTERM XXXX
+				exit_chan <- 0
 			case syscall.SIGTERM:
 				fmt.Println("force stop")
 				exit_chan <- 0
-
-				// kill -SIGQUIT XXXX
 			case syscall.SIGQUIT:
 				fmt.Println("stop and core dump")
 				exit_chan <- 0
-
 			default:
 				fmt.Println("Unknown signal.")
 				exit_chan <- 1
 			}
 		}
 	}()
-
 	code := <-exit_chan
 	os.Exit(code)
 }
