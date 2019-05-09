@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	mypid = syscall.Getpid()
+	mypid  = syscall.Getpid()
 	option = map[string]func(){
 		"--client": client,
 		"--server": serve,
