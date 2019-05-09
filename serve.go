@@ -60,8 +60,20 @@ func client() {
 		fmt.Println(err)
 		os.Exit(0)
 	}
+	go func() {
+		for {
+			messages := make([]byte, 1024)
+			lens, err := conn.Read(messages)
+			if err != nil {
+				fmt.Println(err.Error())
+				os.Exit(0)
+			}
+			if lens > 0 {
+				fmt.Println("mess=" + string(messages))
+			}
+		}
+	}()
 	for {
-		messages := make([]byte, 1024)
 		reader := bufio.NewReader(os.Stdin)
 		fmt.Print("Text to send: ")
 		text, err := reader.ReadString('\n')
@@ -69,13 +81,5 @@ func client() {
 			fmt.Println(err.Error())
 		}
 		fmt.Fprintf(conn, text+"lol\n")
-		lens, err := conn.Read(messages)
-		if err != nil {
-			fmt.Println(err.Error())
-			os.Exit(0)
-		}
-		if lens > 0 {
-			fmt.Println("mess=" + string(messages))
-		}
 	}
 }
