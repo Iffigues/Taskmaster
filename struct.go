@@ -1,6 +1,11 @@
 package main
 
-type task struct{
+import (
+	"os/exec"
+)
+
+type task struct {
+	cmds	exec.Cmd
 	live    int
 	com     string
 	restart bool
