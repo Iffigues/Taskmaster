@@ -2,9 +2,11 @@ package main
 
 import (
 	"os"
+	"syscall"
 )
 
 var (
+	mypid = syscall.Getpid()
 	option = map[string]func(){
 		"--client": client,
 		"--server": serve,
