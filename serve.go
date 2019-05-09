@@ -56,6 +56,7 @@ func handleRequest(conn net.Conn) {
 
 func client() {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
+	defer conn.Close()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(0)
