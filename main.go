@@ -5,9 +5,9 @@ import (
 )
 
 var (
-	option = map[string]func() {
-		"--client" : client,
-		"--server" : serve,
+	option = map[string]func(){
+		"--client": client,
+		"--server": serve,
 	}
 )
 
@@ -19,8 +19,8 @@ func main() {
 	opt := os.Args
 	if len(opt) == 0 {
 	} else {
-		if  com, ok := option[opt[1]]; ok {
-			com();
+		if com, ok := option[opt[1]]; ok {
+			com()
 		}
 	}
 }

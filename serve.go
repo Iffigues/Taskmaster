@@ -23,52 +23,56 @@ func serve() {
 		os.Exit(1)
 	}
 	defer l.Close()
-	for  {
+	for {
 		conn, err := l.Accept()
 		if err != nil {
-			os.Exit(1);
+			fmt.Println(err.Error())
+			os.Exit(1)
 		}
 		go handleRequest(conn)
 	}
 }
 
 func lance() {
-	go serve();
+	go serve()
 }
 
 func handleRequest(conn net.Conn) {
-	i := true
-	for i {
+	defer conn.Close()
+	for {
 		buf := make([]byte, 1024)
 		_, err := conn.Read(buf)
-		fmt.Println(buf)
 		if err != nil {
-			i = false
-			fmt.Println("Error reading:", err.Error())
-
+			fmt.Println(err.Error())
+			break
 		}
-		conn.Write([]byte("Message received.\n"))
+		_, err = conn.Write([]byte("Message received."))
+		if err != nil {
+			fmt.Println(err.Error())
+			break
+		}
 	}
-	defer conn.Close()
 }
 
 func client() {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
+		os.Exit(0)
 	}
 	for {
+		messages := make([]byte, 1024)
 		reader := bufio.NewReader(os.Stdin)
 		fmt.Print("Text to send: ")
 		text, err := reader.ReadString('\n')
 		if err != nil {
-			fmt.Println("nat\n")
+			fmt.Println(err.Error())
 		}
-		fmt.Fprintf(conn, text + "lol\n")
-		messages, err := bufio.NewReader(conn).ReadString('\n')
+		fmt.Fprintf(conn, text+"lol\n")
+		_, err = conn.Read(messages)
 		if err != nil {
-			fmt.Println("uyuyuy",err)
+			fmt.Println(err.Error())
 		}
-		fmt.Println( "mess="+messages)
+		fmt.Println("mess=" + string(messages))
 	}
 }
