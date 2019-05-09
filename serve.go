@@ -46,7 +46,7 @@ func handleRequest(conn net.Conn) {
 			fmt.Println(err.Error())
 			break
 		}
-		_, err = conn.Write([]byte("serve"))
+		_, err = conn.Write([]byte("oui"))
 		if err != nil {
 			fmt.Println(err.Error())
 			break
@@ -69,11 +69,13 @@ func client() {
 			fmt.Println(err.Error())
 		}
 		fmt.Fprintf(conn, text+"lol\n")
-		_, err = conn.Read(messages)
+		lens, err := conn.Read(messages)
 		if err != nil {
 			fmt.Println(err.Error())
 			os.Exit(0)
 		}
-		fmt.Println("mess=" + string(messages))
+		if lens > 0 {
+			fmt.Println("mess=" + string(messages))
+		}
 	}
 }
