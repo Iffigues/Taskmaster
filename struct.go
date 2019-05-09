@@ -1,6 +1,7 @@
 package main
 
-type task struct {
+type task struct{
+	live    int
 	com     string
 	restart bool
 	reboot  int
