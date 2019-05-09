@@ -54,6 +54,20 @@ func handleRequest(conn net.Conn) {
 	}
 }
 
+func receive(conn net.Conn) {
+	for {
+		messages := make([]byte, 1024)
+		lens, err := conn.Read(messages)
+		if err != nil {
+			fmt.Println(err.Error())
+			os.Exit(0)
+		}
+		if lens > 0 {
+			fmt.Println("mess=" + string(messages))
+		}
+	}
+}
+
 func client() {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	defer conn.Close()
@@ -61,19 +75,7 @@ func client() {
 		fmt.Println(err)
 		os.Exit(0)
 	}
-	go func() {
-		for {
-			messages := make([]byte, 1024)
-			lens, err := conn.Read(messages)
-			if err != nil {
-				fmt.Println(err.Error())
-				os.Exit(0)
-			}
-			if lens > 0 {
-				fmt.Println("mess=" + string(messages))
-			}
-		}
-	}()
+	go receive(conn)
 	for {
 		reader := bufio.NewReader(os.Stdin)
 		fmt.Print("Text to send: ")
