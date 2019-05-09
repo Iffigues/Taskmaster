@@ -9,7 +9,6 @@ import (
 
 const (
 	CONN_HOST = "51.255.43.50"
-	CONN_TYPE = "tcp"
 )
 
 var (
@@ -17,7 +16,7 @@ var (
 )
 
 func serve() {
-	l, err := net.Listen(CONN_TYPE, CONN_HOST+":"+CONN_PORT)
+	l, err := net.Listen("tcp", ":3333")
 	if err != nil {
 		fmt.Println("Error listening:", err.Error())
 		os.Exit(1)
