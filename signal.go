@@ -13,8 +13,11 @@ func fanny() {
 		syscall.SIGHUP,
 		syscall.SIGINT,
 		syscall.SIGTERM,
-		syscall.SIGQUIT)
-
+		syscall.SIGQUIT,
+		syscall.SIGCONT,
+		syscall.SIGWINCH,
+		syscall.SIGTSTP,
+	)
 	exit_chan := make(chan int)
 	go func() {
 		for {
