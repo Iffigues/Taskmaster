@@ -70,11 +70,11 @@ func receive(conn net.Conn) {
 
 func client() {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
-	defer conn.Close()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(0)
 	}
+	defer conn.Close()
 	go receive(conn)
 	for {
 		reader := bufio.NewReader(os.Stdin)
