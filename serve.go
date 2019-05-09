@@ -17,38 +17,45 @@ var (
 )
 
 func serve() {
-	i := true
 	l, err := net.Listen(CONN_TYPE, CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println("Error listening:", err.Error())
 		os.Exit(1)
 	}
 	defer l.Close()
-	for i {
+	for  {
 		conn, err := l.Accept()
 		if err != nil {
-			i = false
-		} else {
-			go handleRequest(conn)
+			os.Exit(1);
 		}
+		go handleRequest(conn)
 	}
 }
 
+func lance() {
+	go serve();
+}
+
 func handleRequest(conn net.Conn) {
-	buf := make([]byte, 1024)
-	reqLen, err := conn.Read(buf)
-	fmt.Println(reqLen)
-	if err != nil {
-		fmt.Println("Error reading:", err.Error())
+	i := true
+	for i {
+		buf := make([]byte, 1024)
+		_, err := conn.Read(buf)
+		fmt.Println(buf)
+		if err != nil {
+			i = false
+			fmt.Println("Error reading:", err.Error())
+
+		}
+		conn.Write([]byte("Message received.\n"))
 	}
-	conn.Write([]byte("Message received."))
-	conn.Close()
+	defer conn.Close()
 }
 
 func client() {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
-		fmt.Println("not\n")
+		fmt.Println(err)
 	}
 	for {
 		reader := bufio.NewReader(os.Stdin)
@@ -57,11 +64,11 @@ func client() {
 		if err != nil {
 			fmt.Println("nat\n")
 		}
-		fmt.Fprintf(conn, text+"\n")
+		fmt.Fprintf(conn, text + "lol\n")
 		messages, err := bufio.NewReader(conn).ReadString('\n')
 		if err != nil {
-			fmt.Println("nit\n")
+			fmt.Println("uyuyuy",err)
 		}
-		fmt.Print("Message from server: " + messages)
+		fmt.Println( "mess="+messages)
 	}
 }
