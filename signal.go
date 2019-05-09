@@ -36,7 +36,6 @@ func fanny() {
 				exit_chan <- 0
 			default:
 				fmt.Println("Unknown signal.")
-				exit_chan <- 1
 			}
 		}
 	}()
