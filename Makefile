@@ -14,5 +14,5 @@ fmt:
 
 push:
 	@git add .
-	git commit -m "push"
-	git push
+	@git commit -m "push"
+	@git push
