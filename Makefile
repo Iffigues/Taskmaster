@@ -11,3 +11,8 @@ clean:
 fmt:
 	@make fmt -C Taskmasterd
 	@make fmt -C Taskmasterctl
+
+push:
+	@git add .
+	git commit -m "push"
+	git push
