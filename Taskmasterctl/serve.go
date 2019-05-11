@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
+	"bytes"
 	"net"
 	"os"
 )
@@ -30,6 +30,7 @@ func receive(conn net.Conn) {
 }
 
 func client() {
+	var st []bytes.Buffer
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
@@ -38,12 +39,8 @@ func client() {
 	defer conn.Close()
 	go receive(conn)
 	for {
-		reader := bufio.NewReader(os.Stdin)
-		fmt.Print("Text to send: ")
-		text, err := reader.ReadString('\n')
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-		fmt.Fprintf(conn, text+"lol\n")
+		next := readder(st)
+		st = append(st, next)
+		fmt.Fprintf(conn, next.String())
 	}
 }

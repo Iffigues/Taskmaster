@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	term "github.com/nsf/termbox-go"
 )
 
@@ -8,15 +9,14 @@ func reset() {
 	term.Sync()
 }
 
-func readder() {
-	var gg []byte = []byte{'\t'}
+func readder(ls []bytes.Buffer) (next bytes.Buffer){
 	err := term.Init()
 	if err != nil {
 		panic(err)
 	}
 	defer term.Close()
 	for {
-		switch ev := term.PollRawEvent(gg); ev.Type {
+		switch ev := term.PollEvent(); ev.Type {
 		case term.EventKey:
 			switch ev.Key {
 			case term.KeyArrowDown:
@@ -30,14 +30,14 @@ func readder() {
 			case term.KeyEnter:
 				return
 			case term.KeyCtrlC:
-				println("huhuhu")
+				exit(0)
 			default:
-
 				println(ev.Ch)
 			}
 		}
 	}
 	reset()
+	return ;
 }
 
 func init() {
