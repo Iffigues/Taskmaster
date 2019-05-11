@@ -7,13 +7,13 @@ import (
 	"strings"
 )
 
-func (a *task)test() {
+func (a *task) test() {
 	for {
 	}
 }
 
 func prompt() {
-	rr, err  := get("./ini/ini.ini")
+	rr, err := get("./ini/ini.ini")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -24,6 +24,6 @@ func prompt() {
 			fmt.Println(err.Error())
 		}
 		st := strings.Fields(text)
-		rr["yes"].com = st[0];
+		rr["yes"].com = st[0]
 	}
 }

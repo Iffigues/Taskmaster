@@ -5,7 +5,7 @@ import (
 )
 
 type task struct {
-	cmds	exec.Cmd
+	cmds    exec.Cmd
 	live    int
 	com     string
 	restart bool
