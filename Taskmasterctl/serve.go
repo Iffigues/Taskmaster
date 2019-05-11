@@ -38,12 +38,10 @@ func client() {
 	}
 	defer conn.Close()
 	go receive(conn)
-	for {
-		next := readder(st)
-		bb := next.String()
-		if len(bb) > 0 {
-			st = append(st, next)
-			fmt.Fprintf(conn, next.String())
-		}
+	next := readder(st)
+	bb := next.String()
+	if len(bb) > 0 {
+		st = append(st, next)
+		fmt.Fprintf(conn, next.String())
 	}
 }
