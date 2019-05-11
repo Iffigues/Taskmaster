@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bytes"
+	"fmt"
 	"net"
 	"os"
 )
@@ -40,7 +40,10 @@ func client() {
 	go receive(conn)
 	for {
 		next := readder(st)
-		st = append(st, next)
-		fmt.Fprintf(conn, next.String())
+		bb := next.String()
+		if len(bb) > 0 {
+			st = append(st, next)
+			fmt.Fprintf(conn, next.String())
+		}
 	}
 }

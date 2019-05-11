@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	mypid  = syscall.Getpid()
+	mypid = syscall.Getpid()
 )
 
 func main() {

@@ -9,12 +9,13 @@ func reset() {
 	term.Sync()
 }
 
-func readder(ls []bytes.Buffer) (next bytes.Buffer){
+func readder(ls []bytes.Buffer) (next bytes.Buffer) {
 	err := term.Init()
 	if err != nil {
 		panic(err)
 	}
 	defer term.Close()
+keyPressListenerLoop:
 	for {
 		switch ev := term.PollEvent(); ev.Type {
 		case term.EventKey:
@@ -28,16 +29,18 @@ func readder(ls []bytes.Buffer) (next bytes.Buffer){
 			case term.KeyArrowLeft:
 				println("hihihi")
 			case term.KeyEnter:
-				return
-			case term.KeyCtrlC:
-				exit(0)
+				break keyPressListenerLoop
 			default:
+				if ev.Ch == 0 {
+					reset()
+					break keyPressListenerLoop
+				}
 				println(ev.Ch)
 			}
 		}
 	}
 	reset()
-	return ;
+	return
 }
 
 func init() {

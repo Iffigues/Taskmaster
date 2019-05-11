@@ -3,14 +3,18 @@ GOINSTALL=$(GOCMD) install
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
-BINARY_SERVER=taskmasterd
-BINARY_UNIX=$(BINARY_NAME)_unix
+GOFMT=$(GOCMD) fmt
 
 all:  build
+
 build:
+	$(GOFMT)
 	$(GOGET)
 	$(GOINSTALL)
 	$(GOBUILD)
+
+fmt:
+	$(GOFMT)
 
 clean: 
 	$(GOCLEAN)
