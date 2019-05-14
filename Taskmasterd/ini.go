@@ -17,16 +17,16 @@ func getK(ar *ini.File, section, key string) (a string) {
 	return
 }
 
-func get(st string) (a map[string]*task, err error) {
+func get(st string) (a map[string]task, err error) {
 	fd, err := ini.Load(st)
 	if err != nil {
 		return nil, err
 	}
-	a = make(map[string]*task)
+	a = make(map[string]task)
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			a[ok] = &task{
+			a[ok] = task{
 				com: getK(fd, ok, "com"),
 			}
 		}

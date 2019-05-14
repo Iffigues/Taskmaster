@@ -16,7 +16,7 @@ func fanny() {
 		syscall.SIGQUIT,
 		syscall.SIGCONT,
 		syscall.SIGWINCH,
-		syscall.SIGTSTP,
+		//syscall.SIGTSTP,
 	)
 	exit_chan := make(chan int)
 	go func() {
@@ -34,8 +34,6 @@ func fanny() {
 			case syscall.SIGQUIT:
 				fmt.Println("stop and core dump")
 				exit_chan <- 0
-			default:
-				fmt.Println("Unknown signal.")
 			}
 		}
 	}()

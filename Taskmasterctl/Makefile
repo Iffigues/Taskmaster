@@ -4,6 +4,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
 FMT=$(GOCMD) fmt
+GOU= /root/work/bin/Taskmasterctl
 
 all:  build
 
@@ -18,3 +19,4 @@ fmt:
 
 clean: 
 	$(GOCLEAN)
+	rm -rf $(GOU)

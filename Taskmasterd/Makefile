@@ -4,6 +4,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
 GOFMT=$(GOCMD) fmt
+GOU= /root/work/bin/Taskmasterd
 
 all:  build
 
@@ -18,4 +19,4 @@ fmt:
 
 clean: 
 	$(GOCLEAN)
-	rm -f $(BINARY_SERVER)
+	rm -rf $(GOU)

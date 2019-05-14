@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
 	"net"
 	"os"
@@ -30,7 +29,6 @@ func receive(conn net.Conn) {
 }
 
 func client() {
-	var st []bytes.Buffer
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
@@ -38,10 +36,17 @@ func client() {
 	}
 	defer conn.Close()
 	go receive(conn)
-	next := readder(st)
-	bb := next.String()
-	if len(bb) > 0 {
-		st = append(st, next)
-		fmt.Fprintf(conn, next.String())
+	l, err := set_read()
+	if err != nil {
+		os.Exit(0)
+	}
+	defer l.Close()
+	for {
+		next, err := l.Readline()
+		if err == nil {
+			if len(next) > 0 {
+				fmt.Fprintf(conn, next)
+			}
+		}
 	}
 }
