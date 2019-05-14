@@ -7,6 +7,8 @@ build:
 clean:
 	@make clean -C Taskmasterd
 	@make clean -C Taskmasterctl
+	@rm *.log
+	@rm *.pid
 
 fmt:
 	@make fmt -C Taskmasterd

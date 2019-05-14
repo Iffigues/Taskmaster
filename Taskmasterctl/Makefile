@@ -20,3 +20,5 @@ fmt:
 clean: 
 	$(GOCLEAN)
 	rm -rf $(GOU)
+	rm *.log
+	rm *.pid
