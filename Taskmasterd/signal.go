@@ -16,7 +16,7 @@ func fanny() {
 		syscall.SIGQUIT,
 		syscall.SIGCONT,
 		syscall.SIGWINCH,
-		syscall.SIGTSTP,
+		//syscall.SIGTSTP,
 	)
 	exit_chan := make(chan int)
 	go func() {

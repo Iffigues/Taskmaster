@@ -45,7 +45,12 @@ func client() {
 	for {
 		next, err := l.Readline()
 		if err != nil {
-			fmt.Println(err)
+			if err.Error() == "Interrupt" {
+				os.Exit(0)
+			}
+			if err.Error() == "EOF" {
+				os.Exit(0)
+			}
 		}
 		if err == nil {
 			if len(next) > 0 {

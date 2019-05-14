@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/chzyer/readline"
 	"net"
 	"os"
 )
@@ -35,6 +36,16 @@ func lance() {
 	go serve()
 }
 
+func handle(rl *readline.Instance) {
+	for {
+		line, err := rl.Readline()
+		if err != nil {
+			break
+		}
+		fmt.Fprintln(rl.Stdout(), "receive:"+line)
+	}
+}
+
 func handleRequest(conn net.Conn) {
 	defer conn.Close()
 	for {
@@ -50,4 +61,13 @@ func handleRequest(conn net.Conn) {
 			break
 		}
 	}
+}
+
+func remote() {
+	cfg := set_read()
+	err := readline.ListenRemote("tcp", ":12344", cfg, handle)
+	if err != nil {
+		println(err.Error())
+	}
+
 }

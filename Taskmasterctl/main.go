@@ -1,6 +1,8 @@
 package main
 
-import ()
+import (
+	_ "github.com/chzyer/readline"
+)
 
 func main() {
 	go fanny()
