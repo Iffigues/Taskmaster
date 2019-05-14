@@ -10,7 +10,8 @@ var completer = reader.NewPrefixCompleter(
 
 func filterInput(r rune) (rune, bool) {
 	switch r {
-	// block CtrlZ feature
+	case reader.CharCtrlZ:
+		return r, true
 	}
 	return r, true
 }
@@ -20,8 +21,8 @@ func set_read() (ar *reader.Instance, err error) {
 		Prompt:              "\033[31m»\033[0m ",
 		HistoryFile:         "/tmp/readline.tmp",
 		AutoComplete:        completer,
-		InterruptPrompt:     "^C",
-		EOFPrompt:           "exit",
+		InterruptPrompt:     "",
+		EOFPrompt:           "",
 		HistorySearchFold:   true,
 		FuncFilterInputRune: filterInput,
 	})

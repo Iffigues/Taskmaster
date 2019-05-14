@@ -44,7 +44,7 @@ func handleRequest(conn net.Conn) {
 			fmt.Println(err.Error())
 			break
 		}
-		_, err = conn.Write([]byte("oui"))
+		_, err = conn.Write([]byte(buf))
 		if err != nil {
 			fmt.Println(err.Error())
 			break

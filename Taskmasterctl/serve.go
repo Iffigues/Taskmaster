@@ -38,11 +38,15 @@ func client() {
 	go receive(conn)
 	l, err := set_read()
 	if err != nil {
+		fmt.Println(err)
 		os.Exit(0)
 	}
 	defer l.Close()
 	for {
 		next, err := l.Readline()
+		if err != nil {
+			fmt.Println(err)
+		}
 		if err == nil {
 			if len(next) > 0 {
 				fmt.Fprintf(conn, next)
