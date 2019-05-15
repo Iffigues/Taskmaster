@@ -15,6 +15,7 @@ fmt:
 	@make fmt -C Taskmasterctl
 
 push:
+	$(clean)
 	@git add .
 	@git commit -m "push"
 	@git push
