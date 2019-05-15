@@ -23,6 +23,18 @@ func getK(ar *ini.File, section, key string) (a string) {
 	return
 }
 
+func look_path(ar *ini.File, section string) (f string) {
+	f = getK(ar, section, "com")
+	if f == "" {
+		return
+	}
+	f, err := exec.LookPath(f)
+	if err != nil {
+		return ""
+	}
+	return
+}
+
 func getA(ar *ini.File, section, key string) (a []string) {
 	bb, err := ar.Section(section).GetKey(key)
 	if err != nil {
@@ -77,6 +89,7 @@ func get(st string) (a map[string]*task, err error) {
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
 			a[ok] = &task{
+				lp:    look_path(fd, ok),
 				cmds:  make_cmd(fd, ok),
 				umask: getumask(fd, ok),
 			}
