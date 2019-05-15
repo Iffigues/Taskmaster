@@ -7,7 +7,7 @@ import (
 	"syscall"
 )
 
-func fanny() {
+func fanny(t map[string]*task) {
 	signal_chan := make(chan os.Signal, 1)
 	signal.Notify(signal_chan,
 		syscall.SIGHUP,
@@ -24,7 +24,7 @@ func fanny() {
 			s := <-signal_chan
 			switch s {
 			case syscall.SIGHUP:
-				fmt.Println("hungup")
+				println("errerere")
 			case syscall.SIGINT:
 				fmt.Println("Warikomi")
 				exit_chan <- 0

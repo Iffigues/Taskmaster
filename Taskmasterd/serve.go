@@ -48,6 +48,8 @@ func handle(rl *readline.Instance) {
 
 func handleRequest(conn net.Conn) {
 	defer conn.Close()
+	jobs, _ := get("../ini/ini.ini")
+	go fanny(jobs)
 	for {
 		buf := make([]byte, 1024)
 		_, err := conn.Read(buf)
@@ -61,6 +63,7 @@ func handleRequest(conn net.Conn) {
 			break
 		}
 	}
+
 }
 
 func remote() {
