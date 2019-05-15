@@ -5,17 +5,16 @@ build:
 	@make -C Taskmasterctl
 
 clean:
-	@make clean -C Taskmasterd
-	@make clean -C Taskmasterctl
-	@rm *.log
-	@rm *.pid
+	make clean -C Taskmasterd
+	make clean -C Taskmasterctl
 
 fmt:
 	@make fmt -C Taskmasterd
 	@make fmt -C Taskmasterctl
 
 push:
-	$(clean)
+	make clean -C Taskmasterd
+	make clean -C Taskmasterctl
 	git add .
 	git commit -m "push"
 	git push

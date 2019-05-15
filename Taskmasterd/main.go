@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/sevlyar/go-daemon"
 	"log"
-	"os"
 	"syscall"
 )
 
@@ -12,12 +11,10 @@ var (
 )
 
 func main() {
-	get("../ini/ini.ini")
-	os.Exit(0)
 	cntxt := &daemon.Context{
-		PidFileName: "taskmaster.pid",
+		PidFileName: "../log/taskmaster.pid",
 		PidFilePerm: 0644,
-		LogFileName: "sample.log",
+		LogFileName: "../log/sample.log",
 		LogFilePerm: 0640,
 		WorkDir:     "/",
 		Umask:       027,
