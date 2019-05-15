@@ -1,8 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"github.com/go-ini/ini"
 	"log"
+	"strings"
+	"os/exec"
 )
 
 const ()
@@ -12,13 +15,34 @@ var (
 )
 
 func getK(ar *ini.File, section, key string) (a string) {
-	bb, _ := ar.Section(section).GetKey(key)
+	bb, err := ar.Section(section).GetKey(key)
+	if err != nil {
+		return
+	}
 	a = bb.String()
+	return
+}
+
+func getA(ar *ini.File, section, key string) (a []string) {
+	bb, err := ar.Section(section).GetKey(key)
+	if err != nil {
+		return
+	}
+	a = strings.Fields(bb.String())
+	return
+}
+
+func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
+	ar.Path = getK(fd, ok, "com")
+	ar.Args = getA(fd, ok, "args")
+	ar.Env = getA(fd, ok, "env")
+	ar.Dir = getK(fd, ok, "dir")
 	return
 }
 
 func get(st string) (a map[string]*task, err error) {
 	fd, err := ini.Load(st)
+	fmt.Println(err)
 	if err != nil {
 		return nil, err
 	}
@@ -27,7 +51,7 @@ func get(st string) (a map[string]*task, err error) {
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
 			a[ok] = &task{
-				com: getK(fd, ok, "com"),
+				cmds: make_cmd(fd, ok),
 			}
 		}
 	}
