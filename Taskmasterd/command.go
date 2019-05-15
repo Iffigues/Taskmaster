@@ -1,10 +1,6 @@
 package main
 
-import (
-	"os/exec"
-)
+import ()
 
 func (Task *task) cmd() {
-	var cmds exec.Cmd
-	cmds.Path = Task.com
 }

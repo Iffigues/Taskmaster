@@ -63,14 +63,4 @@ func handleRequest(conn net.Conn) {
 			break
 		}
 	}
-
-}
-
-func remote() {
-	cfg := set_read()
-	err := readline.ListenRemote("tcp", ":12344", cfg, handle)
-	if err != nil {
-		println(err.Error())
-	}
-
 }

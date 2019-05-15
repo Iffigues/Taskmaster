@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/go-ini/ini"
 	"log"
-	"strings"
 	"os/exec"
+	"strings"
 )
 
 const ()
@@ -32,11 +32,26 @@ func getA(ar *ini.File, section, key string) (a []string) {
 	return
 }
 
+func getStd(ar *ini.File, section, key string) (a string) {
+	bb, err := ar.Section(section).GetKey(key)
+	if err != nil {
+		return
+	}
+	a = bb.String()
+	return
+}
+
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
 	ar.Path = getK(fd, ok, "com")
 	ar.Args = getA(fd, ok, "args")
 	ar.Env = getA(fd, ok, "env")
 	ar.Dir = getK(fd, ok, "dir")
+	a := getStd(fd, ok, "stdout")
+	if a != "" {
+	}
+	a = getStd(fd, ok, "stderr")
+	if a != "" {
+	}
 	return
 }
 
