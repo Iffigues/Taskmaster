@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
@@ -43,12 +42,15 @@ func getStd(ar *ini.File, section, key string) (a string) {
 }
 
 func getumask(ar *ini.File, section string) (a int) {
+	oc, _ := strconv.ParseInt("0666", 8, 64)
 	bb, err := ar.Section(section).GetKey("umsak")
 	if err != nil {
-		return 022
+		oc, _ = strconv.ParseInt("022", 8, 64)
+		return int(oc)
 	}
-	a, _ = strconv.Atoi(bb.String())
-	return
+	v, _ := strconv.Atoi(bb.String())
+	aa := oc &^ int64(v)
+	return int(aa)
 }
 
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
@@ -67,7 +69,6 @@ func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
 
 func get(st string) (a map[string]*task, err error) {
 	fd, err := ini.Load(st)
-	fmt.Println(err)
 	if err != nil {
 		return nil, err
 	}
