@@ -5,6 +5,7 @@ import (
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
+	"strconv"
 	"strings"
 )
 
@@ -41,6 +42,15 @@ func getStd(ar *ini.File, section, key string) (a string) {
 	return
 }
 
+func getumask(ar *ini.File, section string) (a int) {
+	bb, err := ar.Section(section).GetKey("umsak")
+	if err != nil {
+		return 022
+	}
+	a, _ = strconv.Atoi(bb.String())
+	return
+}
+
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
 	ar.Path = getK(fd, ok, "com")
 	ar.Args = getA(fd, ok, "args")
@@ -66,7 +76,8 @@ func get(st string) (a map[string]*task, err error) {
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
 			a[ok] = &task{
-				cmds: make_cmd(fd, ok),
+				cmds:  make_cmd(fd, ok),
+				umask: getumask(fd, ok),
 			}
 		}
 	}
