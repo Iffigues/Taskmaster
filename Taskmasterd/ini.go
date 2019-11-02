@@ -14,7 +14,7 @@ var (
 	cfg, cfgErr = ini.Load("./conf/Taskmaster.conf")
 )
 
-func getK(ar *ini.File, section, key string) (a string) {
+func getK(ar *ini.File, section, key string) (a string, err error) {
 	bb, err := ar.Section(section).GetKey(key)
 	if err != nil {
 		return
@@ -23,19 +23,16 @@ func getK(ar *ini.File, section, key string) (a string) {
 	return
 }
 
-func look_path(ar *ini.File, section string) (f string) {
-	f = getK(ar, section, "com")
-	if f == "" {
+func look_path(ar *ini.File, section string) (f string, err error) {
+	f, err = getK(ar, section, "commande")
+	if f == "" || err != nil {
 		return
 	}
-	f, err := exec.LookPath(f)
-	if err != nil {
-		return ""
-	}
+	f, err = exec.LookPath(f)
 	return
 }
 
-func getA(ar *ini.File, section, key string) (a []string) {
+func getA(ar *ini.File, section, key string) (a []string, err error) {
 	bb, err := ar.Section(section).GetKey(key)
 	if err != nil {
 		return
@@ -44,7 +41,7 @@ func getA(ar *ini.File, section, key string) (a []string) {
 	return
 }
 
-func getStd(ar *ini.File, section, key string) (a string) {
+func getStd(ar *ini.File, section, key string) (a string, err error) {
 	bb, err := ar.Section(section).GetKey(key)
 	if err != nil {
 		return
@@ -55,7 +52,7 @@ func getStd(ar *ini.File, section, key string) (a string) {
 
 func getumask(ar *ini.File, section string) (a int) {
 	oc, _ := strconv.ParseInt("0666", 8, 64)
-	bb, err := ar.Section(section).GetKey("umsak")
+	bb, err := ar.Section(section).GetKey("umask")
 	if err != nil {
 		oc, _ = strconv.ParseInt("022", 8, 64)
 		return int(oc)
@@ -65,15 +62,15 @@ func getumask(ar *ini.File, section string) (a int) {
 	return int(aa)
 }
 
-func make_cmd(fd *ini.File, ok string) (ar exec.Cmd) {
-	ar.Path = getK(fd, ok, "com")
-	ar.Args = getA(fd, ok, "args")
-	ar.Env = getA(fd, ok, "env")
-	ar.Dir = getK(fd, ok, "dir")
-	a := getStd(fd, ok, "stdout")
+func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
+	ar.Path, err = getK(fd, ok, "com")
+	ar.Args, err = getA(fd, ok, "args")
+	ar.Env, err = getA(fd, ok, "env")
+	ar.Dir, err = getK(fd, ok, "dir")
+	a, err := getStd(fd, ok, "stdout")
 	if a != "" {
 	}
-	a = getStd(fd, ok, "stderr")
+	a, err = getStd(fd, ok, "stderr")
 	if a != "" {
 	}
 	return
@@ -88,10 +85,15 @@ func get(st string) (a map[string]*task, err error) {
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
+			PATH, err := look_path(fd, ok)
+			CMD, err := make_cmd(fd, ok)
+			UMASK := getumask(fd, ok)
+			if err != nil {
+			}
 			a[ok] = &task{
-				lp:    look_path(fd, ok),
-				cmds:  make_cmd(fd, ok),
-				umask: getumask(fd, ok),
+				lp:    PATH,
+				cmds:  CMD,
+				umask: UMASK,
 			}
 		}
 	}
