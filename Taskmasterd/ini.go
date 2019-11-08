@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/go-ini/ini"
 	"log"
+	"fmt"
 	"os/exec"
 	"strconv"
 	"strings"
@@ -37,7 +38,15 @@ func getA(ar *ini.File, section, key string) (a []string, err error) {
 	if err != nil {
 		return
 	}
-	a = strings.Fields(bb.String())
+	jj := strings.Split(bb.String(), " ")
+	fmt.Println(jj)
+	for _, ok := range jj {
+		hh, err := getK(ar, section, ok)
+		if err != nil {
+			fmt.Println(err)
+		}
+		a = append(a, hh)
+	}
 	return
 }
 
@@ -65,6 +74,7 @@ func getumask(ar *ini.File, section string) (a int) {
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
 	ar.Path, err = getK(fd, ok, "com")
 	ar.Args, err = getA(fd, ok, "args")
+	fmt.Println(err)
 	ar.Env, err = getA(fd, ok, "env")
 	ar.Dir, err = getK(fd, ok, "dir")
 	a, err := getStd(fd, ok, "stdout")
@@ -87,6 +97,7 @@ func get(st string) (a map[string]*task, err error) {
 		if ok != "DEFAULT" {
 			PATH, err := look_path(fd, ok)
 			CMD, err := make_cmd(fd, ok)
+			fmt.Println(CMD)
 			UMASK := getumask(fd, ok)
 			if err != nil {
 			}

@@ -7,7 +7,7 @@ import (
 	"syscall"
 )
 
-func fanny(t map[string]*task) {
+func fanny() {
 	signal_chan := make(chan os.Signal, 1)
 	signal.Notify(signal_chan,
 		syscall.SIGHUP,

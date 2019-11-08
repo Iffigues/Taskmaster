@@ -32,10 +32,6 @@ func serve() {
 	}
 }
 
-func lance() {
-	go serve()
-}
-
 func handle(rl *readline.Instance) {
 	for {
 		line, err := rl.Readline()
@@ -48,8 +44,7 @@ func handle(rl *readline.Instance) {
 
 func handleRequest(conn net.Conn) {
 	defer conn.Close()
-	jobs, _ := get("../ini/ini.ini")
-	go fanny(jobs)
+	go fanny()
 	for {
 		buf := make([]byte, 1024)
 		_, err := conn.Read(buf)
