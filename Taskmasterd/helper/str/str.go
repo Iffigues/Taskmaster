@@ -22,7 +22,7 @@ func StrToIntArray(a string) (tab []int, err error) {
 	return
 }
 
-func StrToStrArry(a string)(b []string) {
+func StrToStrArray(a string)(b []string) {
 	s := strings.TrimSpace(a)
 	space := regexp.MustCompile(`\s+`)
         w := space.ReplaceAllString(s, " ")

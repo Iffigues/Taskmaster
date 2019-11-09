@@ -6,7 +6,7 @@ import (
 	"log"
 	"os/exec"
 	"strconv"
-	"strings"
+	"supervisord/helper/str"
 )
 
 const ()
@@ -38,7 +38,7 @@ func getA(ar *ini.File, section, key string) (a []string, err error) {
 	if err != nil {
 		return
 	}
-	jj := strings.Split(bb.String(), " ")
+	jj := str.StrToStrArray(bb.String())
 	for _, ok := range jj {
 		hh, err := getK(ar, section, ok)
 		if err != nil {
@@ -71,10 +71,11 @@ func getumask(ar *ini.File, section string) (a int) {
 }
 
 func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
-	str, err := getK(ar, section, key)
+	strs, err := getK(ar, section, key)
 	if err != nil {
 		return nil, err
 	}
+	d, err = str.StrToIntArray(strs)
 	return
 }
 
