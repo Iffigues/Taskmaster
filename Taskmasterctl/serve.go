@@ -1,13 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"net"
 	"os"
 )
 
 const (
-	CONN_HOST = "51.255.43.50"
+	CONN_HOST = "10.11.255.255"
 )
 
 var (
@@ -48,17 +49,10 @@ func client() {
 	}
 	defer conn.Close()
 	go receive(conn)
-	l, err := set_read()
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(0)
-	}
-	defer l.Close()
+	reader := bufio.NewReader(os.Stdin)
 	for {
-		next, err := l.Readline()
-		readerr(err)
-		if len(next) > 0 {
-			fmt.Fprintf(conn, next)
-		}
+		text, err := reader.ReadString('\n')
+		fmt.Println(text)
+		fmt.Println(err)
 	}
 }

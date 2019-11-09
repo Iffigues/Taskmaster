@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	CONN_HOST = "51.255.43.50"
+	CONN_HOST = "10.11.255.255"
 )
 
 var (

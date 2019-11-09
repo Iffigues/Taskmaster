@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/sevlyar/go-daemon"
-	"fmt"
 	"log"
+	"fmt"
 	"syscall"
 )
 
@@ -17,24 +17,25 @@ func main() {
 			PidFilePerm: 0644,
 			LogFileName: "../log/sample.log",
 			LogFilePerm: 0640,
-			WorkDir:     "/",
+			WorkDir:     "./",
 			Umask:       027,
-			Args:        []string{"--server"},
+			Args:        []string{"l"},
 		}
 		d, err := cntxt.Reborn()
 		if err != nil {
 			log.Fatal("Unable to run: ", err)
 		}
 		if d != nil {
+			fmt.Println(d)
 			return
 		}
 		defer cntxt.Release()
 		log.Print("- - - - - - - - - - - - - - -")
 		log.Print("daemon started")
-	jobs, err := get("../ini/ini.ini")
+	_, err = get("../ini/ini.ini")
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(jobs["yes"].cmds)
+	fmt.Println("yttyyt")
 	serve()
 }
