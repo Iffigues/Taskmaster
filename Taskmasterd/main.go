@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/sevlyar/go-daemon"
-	"log"
+//	"github.com/sevlyar/go-daemon"
+//	"log"
 	"fmt"
 	"syscall"
 )
@@ -12,7 +12,7 @@ var (
 )
 
 func main() {
-		cntxt := &daemon.Context{
+/*		cntxt := &daemon.Context{
 			PidFileName: "../log/taskmaster.pid",
 			PidFilePerm: 0644,
 			LogFileName: "../log/sample.log",
@@ -35,7 +35,7 @@ func main() {
 	_, err = get("../ini/ini.ini")
 	if err != nil {
 		log.Fatal(err)
-	}
+	}*/
 	fmt.Println("yttyyt")
 	serve()
 }

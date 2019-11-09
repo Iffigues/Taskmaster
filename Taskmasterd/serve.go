@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	CONN_HOST = "10.11.255.255"
+	CONN_HOST = "192.168.1.255"
 )
 
 var (
@@ -16,7 +16,8 @@ var (
 )
 
 func serve() {
-	l, err := net.Listen("tcp", ":3333")
+	fmt.Println("eeeee")
+	l, err := net.Listen("tcp", "localhost:3333")
 	if err != nil {
 		fmt.Println("Error listening:", err.Error())
 		os.Exit(1)

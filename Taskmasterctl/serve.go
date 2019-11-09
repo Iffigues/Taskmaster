@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	CONN_HOST = "10.11.255.255"
+	CONN_HOST = "localhost"
 )
 
 var (
@@ -51,8 +51,7 @@ func client() {
 	go receive(conn)
 	reader := bufio.NewReader(os.Stdin)
 	for {
-		text, err := reader.ReadString('\n')
-		fmt.Println(text)
-		fmt.Println(err)
+		text, _ := reader.ReadString('\n')
+		conn.Write([]byte(text + "\n"))
 	}
 }
