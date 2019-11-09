@@ -13,6 +13,6 @@ type task struct {
 	time    int
 	count   int
 	signal  int
-	stop    int
+	stop    []int
 	umask   int
 }
