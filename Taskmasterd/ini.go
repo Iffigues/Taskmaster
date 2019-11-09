@@ -105,12 +105,15 @@ func get(st string) (a map[string]*task, err error) {
 			PATH, err := look_path(fd, ok)
 			CMD, err := make_cmd(fd, ok)
 			UMASK := getumask(fd, ok)
+			stop, err := get_int_array(fd, ok, "stop")
+			fmt.Println(stop)
 			if err != nil {
 			}
 			a[ok] = &task{
 				lp:    PATH,
 				cmds:  CMD,
 				umask: UMASK,
+				stop: stop,
 			}
 		}
 	}
