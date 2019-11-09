@@ -1,13 +1,14 @@
 package str
 
 import (
+	"bytes"
 	"regexp"
 	"strings"
 	"strconv"
 )
 
-func StrToIntArray(ar string) (tab []int, err error) {
-	s := strings.TrimSpace(ar)
+func StrToIntArray(a string) (tab []int, err error) {
+	s := strings.TrimSpace(a)
 	space := regexp.MustCompile(`\s+`)
 	w := space.ReplaceAllString(s, " ")
 	b := strings.Split(w, " ")
@@ -19,4 +20,23 @@ func StrToIntArray(ar string) (tab []int, err error) {
 		tab = append(tab, i);
 	}
 	return
+}
+
+func StrToStrArry(a string)(b []string) {
+	s := strings.TrimSpace(a)
+	space := regexp.MustCompile(`\s+`)
+        w := space.ReplaceAllString(s, " ")
+        bb := strings.Split(w, " ")
+	for _, v := range bb {
+		b = append(b, v)
+	}
+	return
+}
+
+func StrConcat(a ...string) (b string) {
+	var buff bytes.Buffer
+	for _,ok := range a {
+		buff.WriteString(ok)
+	}
+	return buff.String()
 }

@@ -71,7 +71,7 @@ func getumask(ar *ini.File, section string) (a int) {
 }
 
 func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
-	str , err := getK(ar, section, key)
+	str, err := getK(ar, section, key)
 	if err != nil {
 		return nil, err
 	}
