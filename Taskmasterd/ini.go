@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
@@ -42,7 +41,6 @@ func getA(ar *ini.File, section, key string) (a []string, err error) {
 	for _, ok := range jj {
 		hh, err := getK(ar, section, ok)
 		if err != nil {
-			fmt.Println(err)
 		}
 		a = append(a, hh)
 	}
@@ -106,7 +104,6 @@ func get(st string) (a map[string]*task, err error) {
 			CMD, err := make_cmd(fd, ok)
 			UMASK := getumask(fd, ok)
 			stop, err := get_int_array(fd, ok, "stop")
-			fmt.Println(stop)
 			if err != nil {
 			}
 			a[ok] = &task{

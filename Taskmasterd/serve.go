@@ -16,7 +16,6 @@ var (
 )
 
 func serve() {
-	fmt.Println("eeeee")
 	l, err := net.Listen("tcp", "localhost:3333")
 	if err != nil {
 		fmt.Println("Error listening:", err.Error())
