@@ -113,7 +113,7 @@ func get(st string) (a map[string]*task, err error) {
 				lp:    PATH,
 				cmds:  CMD,
 				umask: UMASK,
-				stop: stop,
+				stop:  stop,
 			}
 		}
 	}

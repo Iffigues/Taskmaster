@@ -10,7 +10,7 @@ func main() {
 	if len(arg) == 1 {
 		go fanny()
 		client(false)
-	} else  {
-		
+	} else {
+
 	}
 }
