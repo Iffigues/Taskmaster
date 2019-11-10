@@ -2,9 +2,15 @@ package main
 
 import (
 	_ "github.com/chzyer/readline"
+	"os"
 )
 
 func main() {
-	go fanny()
-	client()
+	arg := os.Args
+	if len(arg) == 1 {
+		go fanny()
+		client(false)
+	} else  {
+		
+	}
 }

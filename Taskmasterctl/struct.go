@@ -21,3 +21,8 @@ type task struct {
 	work    string
 	umask   int
 }
+
+type Message struct {
+	Types int
+	Mess  string
+}

@@ -27,31 +27,37 @@ func readerr(err error) {
 	}
 }
 
-func receive(conn net.Conn) {
+func receive(conn net.Conn, c chan Message) {
 	for {
 		messages := make([]byte, 1024)
 		lens, err := conn.Read(messages)
 		if err != nil {
-			fmt.Println(err.Error())
-			os.Exit(0)
+			c <- Message{1, err.Error()}
 		}
 		if lens > 0 {
+			c <- Message{0, string(messages)}
 			fmt.Println("mess=" + string(messages))
 		}
 	}
 }
 
-func client() {
+func client(mod bool,str ...string ) {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(0)
 	}
+	c := make(chan Message)
 	defer conn.Close()
-	go receive(conn)
+	go receive(conn, c)
 	reader := bufio.NewReader(os.Stdin)
+	if mod {
+	     	
+		return
+	}
 	for {
 		text, _ := reader.ReadString('\n')
 		conn.Write([]byte(text + "\n"))
+		fmt.Println(<-c)
 	}
 }
