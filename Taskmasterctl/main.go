@@ -2,8 +2,8 @@ package main
 
 import (
 	_ "github.com/chzyer/readline"
-	"supervisorctl/helper/str"
 	"os"
+	"supervisorctl/helper/str"
 )
 
 func main() {

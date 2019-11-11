@@ -14,6 +14,10 @@ var (
 	cfg, cfgErr = ini.Load("./conf/Taskmaster.conf")
 )
 
+func NotFond(err error) (vrai bool) {
+	return ini.IsErrDelimiterNotFound(err)
+}
+
 func getK(ar *ini.File, section, key string) (a string, err error) {
 	bb, err := ar.Section(section).GetKey(key)
 	if err != nil {
@@ -23,7 +27,7 @@ func getK(ar *ini.File, section, key string) (a string, err error) {
 	return
 }
 
-func look_path(ar *ini.File, section string, m map[string]int) (f string, err error) {
+func look_path(ar *ini.File, section string) (f string, err error) {
 	f, err = getK(ar, section, "commande")
 	if f == "" || err != nil {
 		return
@@ -56,7 +60,7 @@ func getStd(ar *ini.File, section, key string) (a string, err error) {
 	return
 }
 
-func getumask(ar *ini.File, section string, m map[string]int) (a int) {
+func getumask(ar *ini.File, section string) (a int) {
 	oc, _ := strconv.ParseInt("0666", 8, 64)
 	bb, err := ar.Section(section).GetKey("umask")
 	if err != nil {
@@ -77,7 +81,7 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	return
 }
 
-func make_cmd(fd *ini.File, ok string, m map[string]int) (ar exec.Cmd, err error) {
+func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
 	ar.Path, err = getK(fd, ok, "com")
 	ar.Args, err = getA(fd, ok, "args")
 	ar.Env, err = getA(fd, ok, "env")
@@ -91,23 +95,22 @@ func make_cmd(fd *ini.File, ok string, m map[string]int) (ar exec.Cmd, err error
 	return
 }
 
-func get(st string) (a map[string]*task, err error) {
+func get(st string) (a map[string]task, err error) {
 	fd, err := ini.Load(st)
 	if err != nil {
 		return nil, err
 	}
-	a = make(map[string]*task)
+	a = make(map[string]task)
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			bb := str.ArrayToMap(fd.Section(ok).KeyStrings())
-			PATH, err := look_path(fd, ok, bb)
-			CMD, err := make_cmd(fd, ok, bb)
-			UMASK := getumask(fd, ok, bb)
+			PATH, err := look_path(fd, ok)
+			CMD, err := make_cmd(fd, ok)
+			UMASK := getumask(fd, ok)
 			stop, err := get_int_array(fd, ok, "stop")
 			if err != nil {
 			}
-			a[ok] = &task{
+			a[ok] = task{
 				lp:    PATH,
 				cmds:  CMD,
 				umask: UMASK,

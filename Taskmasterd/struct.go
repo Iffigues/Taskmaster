@@ -8,7 +8,7 @@ type task struct {
 	lp      string
 	cmds    exec.Cmd
 	live    int
-	start  	int
+	start   int
 	restart bool
 	reboot  int
 	time    int

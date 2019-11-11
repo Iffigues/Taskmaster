@@ -22,7 +22,7 @@ func serve() {
 		os.Exit(1)
 	}
 	defer l.Close()
-	ff:
+ff:
 	for {
 		conn, err := l.Accept()
 		if err != nil {
@@ -44,7 +44,7 @@ func handleRequest(conn net.Conn) {
 		}
 		_, err = conn.Write([]byte(buf))
 		if err != nil {
-			fmt.Println("err=",err.Error())
+			fmt.Println("err=", err.Error())
 			break
 		}
 		fmt.Println(str.StrToStrArray(string(buf)))
