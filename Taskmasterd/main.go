@@ -17,16 +17,18 @@ var (
 
 
 func init(){
+	if errorJobs != nil {
+		os.Exit(0)
+	}
 	b := os.Args
-	if len(b) > 1 {
-
+	if len(b) == 3 {
+		if b[1] == "mod" && b[2] == "daemon" {
+			mode = true
+		}
 	}
 }
 
 func main() {
-		if errorJobs != nil {
-			return
-		}
 		if mode {
 			cntxt := &daemon.Context{
 				PidFileName: "../log/taskmaster.pid",
