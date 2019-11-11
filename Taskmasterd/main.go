@@ -1,7 +1,7 @@
 package main
 
 import (
-	//	"github.com/sevlyar/go-daemon"
+	"github.com/sevlyar/go-daemon"
 	"fmt"
 	"log"
 	"syscall"
@@ -9,10 +9,11 @@ import (
 
 var (
 	mypid = syscall.Getpid()
+	jobs, err = get("../ini/ini.ini")
 )
 
 func main() {
-	/*		cntxt := &daemon.Context{
+			cntxt := &daemon.Context{
 				PidFileName: "../log/taskmaster.pid",
 				PidFilePerm: 0644,
 				LogFileName: "../log/sample.log",
@@ -31,8 +32,7 @@ func main() {
 			}
 			defer cntxt.Release()
 			log.Print("- - - - - - - - - - - - - - -")
-			log.Print("daemon started")*/
-	jobs, err := get("../ini/ini.ini")
+			log.Print("daemon started")
 	fmt.Println(jobs)
 	if err != nil {
 		log.Fatal(err)

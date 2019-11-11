@@ -40,7 +40,7 @@ func receive(conn net.Conn, c chan Message) {
 	}
 }
 
-func client(mod bool, str ...string) {
+func client(mod bool, str string) {
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
@@ -51,7 +51,8 @@ func client(mod bool, str ...string) {
 	go receive(conn, c)
 	reader := bufio.NewReader(os.Stdin)
 	if mod {
-
+		conn.Write([]byte(str + "\n"))
+		fmt.Println(<-c)
 		return
 	}
 	for {
