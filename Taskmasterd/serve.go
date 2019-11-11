@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"supervisord/helper/str"
 )
 
 const (
@@ -34,7 +35,6 @@ func serve() {
 
 func handleRequest(conn net.Conn) {
 	defer conn.Close()
-	go fanny()
 	for {
 		buf := make([]byte, 1024)
 		_, err := conn.Read(buf)
@@ -44,8 +44,9 @@ func handleRequest(conn net.Conn) {
 		}
 		_, err = conn.Write([]byte(buf))
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Println("err=",err.Error())
 			break
 		}
+		fmt.Println(str.StrToStrArray(string(buf)))
 	}
 }

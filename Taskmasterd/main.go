@@ -8,11 +8,18 @@ import (
 )
 
 var (
+	mode  = false
 	mypid = syscall.Getpid()
-	jobs, err = get("../ini/ini.ini")
+	jobs, errorJobs = get("../ini/ini.ini")
 )
 
+
+
 func main() {
+		if errorJobs != nil {
+			return
+		}
+		if mode {
 			cntxt := &daemon.Context{
 				PidFileName: "../log/taskmaster.pid",
 				PidFilePerm: 0644,
@@ -33,9 +40,6 @@ func main() {
 			defer cntxt.Release()
 			log.Print("- - - - - - - - - - - - - - -")
 			log.Print("daemon started")
-	fmt.Println(jobs)
-	if err != nil {
-		log.Fatal(err)
 	}
 	serve()
 }
