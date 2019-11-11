@@ -100,6 +100,7 @@ func get(st string) (a map[string]*task, err error) {
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
+			str.ArrayToMap(fd.Section(ok).KeyStrings())
 			PATH, err := look_path(fd, ok)
 			CMD, err := make_cmd(fd, ok)
 			UMASK := getumask(fd, ok)

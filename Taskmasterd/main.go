@@ -18,6 +18,7 @@ var (
 
 func init(){
 	if errorJobs != nil {
+		fmt.Println(errorJobs)
 		os.Exit(0)
 	}
 	b := os.Args

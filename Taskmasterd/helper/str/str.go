@@ -35,8 +35,26 @@ func StrToStrArray(a string)(b []string) {
 
 func StrConcat(a ...string) (b string) {
 	var buff bytes.Buffer
-	for _,ok := range a {
+	for _, ok := range a {
 		buff.WriteString(ok)
 	}
 	return buff.String()
+}
+
+func ArrayToStr(a []string) (b string) {
+	var buff bytes.Buffer
+	for _, ok := range a {
+                buff.WriteString(ok)
+		buff.WriteString(" ")
+        }
+	b = strings.TrimSpace(buff.String())
+	return
+}
+
+func ArrayToMap(b []string)(m map [string]int) {
+	m = make(map[string]int)
+	for key, val := range b {
+		m[val] = key
+	}
+	return
 }
