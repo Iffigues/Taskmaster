@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/chzyer/readline"
 	"net"
 	"os"
 )
@@ -22,23 +21,14 @@ func serve() {
 		os.Exit(1)
 	}
 	defer l.Close()
+	ff:
 	for {
 		conn, err := l.Accept()
 		if err != nil {
 			fmt.Println(err.Error())
-			os.Exit(1)
+			goto ff
 		}
 		go handleRequest(conn)
-	}
-}
-
-func handle(rl *readline.Instance) {
-	for {
-		line, err := rl.Readline()
-		if err != nil {
-			break
-		}
-		fmt.Fprintln(rl.Stdout(), "receive:"+line)
 	}
 }
 
