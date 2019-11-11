@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/sevlyar/go-daemon"
 	"fmt"
+	"os"
 	"log"
 	"syscall"
 )
@@ -14,6 +15,13 @@ var (
 )
 
 
+
+func init(){
+	b := os.Args
+	if len(b) > 1 {
+
+	}
+}
 
 func main() {
 		if errorJobs != nil {
