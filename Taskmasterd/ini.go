@@ -82,15 +82,27 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 }
 
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
-	ar.Path, err = getK(fd, ok, "com")
-	ar.Args, err = getA(fd, ok, "args")
-	ar.Env, err = getA(fd, ok, "env")
-	ar.Dir, err = getK(fd, ok, "dir")
+	l, err := getK(fd, ok, "com")
+	if err != nil {
+		ar.Path = l
+	}
+	ll, err := getA(fd, ok, "args")
+	if err != nil {
+		ar.Args = ll
+	}
+	lll, err := getA(fd, ok, "env")
+	if err != nil {
+		ar.Env = lll
+	}
+	llll, err := getK(fd, ok, "dir")
+	if err != nil {
+		ar.Dir = llll
+	}
 	a, err := getStd(fd, ok, "stdout")
-	if a != "" {
+	if a != "" && err != nil {
 	}
 	a, err = getStd(fd, ok, "stderr")
-	if a != "" {
+	if a != "" && err != nil {
 	}
 	return
 }
