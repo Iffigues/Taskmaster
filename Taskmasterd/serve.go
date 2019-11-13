@@ -26,7 +26,7 @@ ff:
 	for {
 		conn, err := l.Accept()
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Println(err.Error(), "eeee")
 			goto ff
 		}
 		go handleRequest(conn)
@@ -39,7 +39,9 @@ func handleRequest(conn net.Conn) {
 		buf := make([]byte, 1024)
 		_, err := conn.Read(buf)
 		if err != nil {
-			fmt.Println(err.Error())
+			if err.Error() != "EOF" {
+				fmt.Println("errores:", err.Error())
+			}
 			break
 		}
 		_, err = conn.Write([]byte(buf))
@@ -47,6 +49,6 @@ func handleRequest(conn net.Conn) {
 			fmt.Println("err=", err.Error())
 			break
 		}
-		fmt.Println(str.StrToStrArray(string(buf)))
+		consoles(str.StrToStrArray(string(buf))...)
 	}
 }
