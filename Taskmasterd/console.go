@@ -15,6 +15,11 @@ var (
 	}
 )
 
+func reload(conn net.Conn, a ...string) (c ret, err error) {
+	get("../ini/ini.ini")
+	return
+}
+
 func exit(conn net.Conn, a ...string) (c ret, err error) {
 	c.end = true
 	return
