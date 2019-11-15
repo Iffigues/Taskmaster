@@ -16,9 +16,9 @@ var (
 )
 
 func NotFound(err error) (vrai bool) {
-	if err.Error() == "error when getting key of section 'yes': key 'com' not exists" {
-		vrai = true
-	}
+		if err.Error() == "error when getting key of section 'yes': key 'com' not exists" {
+			vrai = true
+		}
 	return
 }
 
@@ -81,8 +81,8 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	if err != nil && NotFound(err) {
 		return nil, err
 	}
-	if NotFound(err) {
-
+	if err != nil && NotFound(err) {
+		
 	}
 	d, err = str.StrToIntArray(strs)
 	return
