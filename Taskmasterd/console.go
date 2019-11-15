@@ -11,12 +11,19 @@ type ret struct {
 
 var (
 	console = map[string]func(net.Conn, ...string) (ret, error){
-		"exit": exit,
+		"exit":   exit,
+		"reload": reload,
 	}
 )
 
 func reload(conn net.Conn, a ...string) (c ret, err error) {
-	get("../ini/ini.ini")
+	tmp, err := get("../ini/ini.ini")
+	if err == nil {
+		jobs = tmp
+		conn.Write([]byte("new configuration load"))
+	} else {
+		conn.Write([]byte("bad init file"))
+	}
 	return
 }
 

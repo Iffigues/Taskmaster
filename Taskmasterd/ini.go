@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
@@ -14,8 +15,11 @@ var (
 	cfg, cfgErr = ini.Load("./conf/Taskmaster.conf")
 )
 
-func NotFond(err error) (vrai bool) {
-	return ini.IsErrDelimiterNotFound(err)
+func NotFound(err error) (vrai bool) {
+	if err.Error() == "error when getting key of section 'yes': key 'com' not exists" {
+		vrai = true
+	}
+	return
 }
 
 func getK(ar *ini.File, section, key string) (a string, err error) {
@@ -74,35 +78,42 @@ func getumask(ar *ini.File, section string) (a int) {
 
 func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	strs, err := getK(ar, section, key)
-	if err != nil {
+	if err != nil && NotFound(err) {
 		return nil, err
+	}
+	if NotFound(err) {
+
 	}
 	d, err = str.StrToIntArray(strs)
 	return
 }
 
 func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
-	l, err := getK(fd, ok, "com")
+	l, err := getK(fd, ok, "commande")
 	if err != nil {
-		ar.Path = l
+		return
 	}
+	ar.Path = l
 	ll, err := getA(fd, ok, "args")
-	if err != nil {
-		ar.Args = ll
+	if err != nil && !NotFound(err) {
+		return
 	}
+	ar.Args = ll
 	lll, err := getA(fd, ok, "env")
-	if err != nil {
-		ar.Env = lll
+	if err != nil && NotFound(err) {
+		return
 	}
+	ar.Env = lll
 	llll, err := getK(fd, ok, "dir")
-	if err != nil {
-		ar.Dir = llll
+	if err != nil && !NotFound(err) {
+		return
 	}
-	a, err := getStd(fd, ok, "stdout")
-	if a != "" && err != nil {
+	ar.Dir = llll
+	_, err = getStd(fd, ok, "stdout")
+	if err != nil && NotFound(err) {
 	}
-	a, err = getStd(fd, ok, "stderr")
-	if a != "" && err != nil {
+	_, err = getStd(fd, ok, "stderr")
+	if err != nil && NotFound(err) {
 	}
 	return
 }
@@ -118,6 +129,7 @@ func get(st string) (a map[string]task, err error) {
 		if ok != "DEFAULT" {
 			PATH, err := look_path(fd, ok)
 			CMD, err := make_cmd(fd, ok)
+			fmt.Println(err)
 			UMASK := getumask(fd, ok)
 			stop, err := get_int_array(fd, ok, "stop")
 			if err != nil {
