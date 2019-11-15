@@ -52,12 +52,18 @@ func client(mod bool, str string) {
 	reader := bufio.NewReader(os.Stdin)
 	if mod {
 		conn.Write([]byte(str + "\n"))
-		fmt.Println(<-c)
+		fmt.Println("fggfgffg", <-c)
 		return
 	}
 	for {
 		text, _ := reader.ReadString('\n')
-		conn.Write([]byte(text + "\n"))
-		fmt.Println(<-c)
+		if text != "\n" {
+			conn.Write([]byte(text + "\n"))
+			ddd := <-c
+			fmt.Println(ddd)
+			if text == "exit\n" {
+				break
+			}
+		}
 	}
 }
