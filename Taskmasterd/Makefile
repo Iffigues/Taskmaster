@@ -5,7 +5,7 @@ GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
 GOFMT=$(GOCMD) fmt
 GOINIT=$(GOCMD) mod init taskmasterd
-GOU= /root/work/bin/Taskmasterd
+GOU= ./taskmasterd
 
 all:  build
 
