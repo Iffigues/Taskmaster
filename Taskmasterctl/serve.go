@@ -33,6 +33,7 @@ func receive(conn net.Conn, c chan Message) {
 		lens, err := conn.Read(messages)
 		if err != nil {
 			c <- Message{1, err.Error()}
+			return
 		}
 		if lens > 0 {
 			c <- Message{0, string(messages)}
@@ -41,6 +42,7 @@ func receive(conn net.Conn, c chan Message) {
 }
 
 func client(mod bool, str string) {
+lab:
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
 		fmt.Println(err)
@@ -61,9 +63,13 @@ func client(mod bool, str string) {
 			conn.Write([]byte(text + "\n"))
 			ddd := <-c
 			fmt.Println(ddd)
-			if text == "exit\n" {
+			if ddd.Types == 1 {
 				break
+			}
+			if text == "exit\n" {
+				return
 			}
 		}
 	}
+	goto lab
 }

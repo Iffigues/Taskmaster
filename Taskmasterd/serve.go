@@ -49,6 +49,7 @@ func handleRequest(conn net.Conn) {
 			fmt.Println(err.Error())
 			break
 		}
+		println(string(buf))
 		b, err := consoles(conn, str.StrToStrArray(string(buf))...)
 		if b.end {
 			_, err = conn.Write([]byte("EOF"))

@@ -28,6 +28,11 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func restart(conn net.Conn, a ...string) (c ret, err error) {
+	fmt.Println(len(a), a)
+	if len(a) == 0 {
+		conn.Write([]byte("please precise process name or all"))
+	}
+	conn.Write([]byte("restart ready"))
 	return
 }
 
@@ -51,7 +56,7 @@ func consoles(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 && a[0] != "" {
 		if e, d := console[a[0]]; d {
 			if len(a) > 1 {
-				return e(conn, a[1:]...)
+				return e(conn, a[1:len(a)-1]...)
 			} else {
 				return e(conn)
 			}
