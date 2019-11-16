@@ -3,7 +3,7 @@ package main
 import (
 	_ "github.com/chzyer/readline"
 	"os"
-	"supervisorctl/helper/str"
+	"taskmasterctl/helper/str"
 )
 
 func main() {

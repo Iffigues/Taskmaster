@@ -11,10 +11,25 @@ type ret struct {
 
 var (
 	console = map[string]func(net.Conn, ...string) (ret, error){
-		"exit":   exit,
-		"reload": reload,
+		"exit":    exit,
+		"reload":  reload,
+		"start":   start,
+		"stop":    stop,
+		"restart": restart,
 	}
 )
+
+func start(conn net.Conn, a ...string) (c ret, err error) {
+	return
+}
+
+func stop(conn net.Conn, a ...string) (c ret, err error) {
+	return
+}
+
+func restart(conn net.Conn, a ...string) (c ret, err error) {
+	return
+}
 
 func reload(conn net.Conn, a ...string) (c ret, err error) {
 	tmp, err := get("../ini/ini.ini")
