@@ -1,5 +1,9 @@
 all: build
 
+init:
+	make init -C Taskmasterd
+	make init -C Taskmasterctl
+
 build:
 	@make -C Taskmasterd
 	@make -C Taskmasterctl
