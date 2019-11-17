@@ -104,12 +104,14 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 		return
 	}
 	ar.Dir = llll
-	_, err = getStd(fd, ok, "stdout")
+	dd, err := getStd(fd, ok, "stdout")
 	if err != nil && NotFound(err) {
 	}
-	_, err = getStd(fd, ok, "stderr")
+	ar.Stdout = dd
+	ddd, err := getStd(fd, ok, "stderr")
 	if err != nil && NotFound(err) {
 	}
+	ar.Stderr = ddd
 	return
 }
 

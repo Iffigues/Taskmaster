@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net"
+	"os/exec"
 )
 
 var (
@@ -13,9 +14,19 @@ var (
 		"stop":    stop,
 		"restart": restart,
 	}
+	queued enqued
 )
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
+	if key, ok := jobs[a[0]]; ok {
+		cmd := exec.Command(key.cmds.Path, key.cmds.Args...)
+		if len(key.cmds.Dir) > 0 {
+			cmd.Dir = key.cmds.Dir
+		}
+		if len(key.cmds.Env) > 0 {
+			cmd.Env = key.cmds.Env
+		}
+	}
 	return
 }
 

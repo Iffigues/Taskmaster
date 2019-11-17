@@ -31,6 +31,6 @@ type ret struct {
 	end bool
 }
 
-type enqueued struct {
+type enqued struct {
 	enqueud map[string]*exec.Cmd
 }
