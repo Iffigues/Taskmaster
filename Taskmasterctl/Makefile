@@ -20,3 +20,7 @@ fmt:
 clean: 
 	$(GOCLEAN)
 	rm -rf $(GOU)
+
+fclean:
+	$(GOCLEAN)
+	rm -rf $(GOU) go.sum go.mod

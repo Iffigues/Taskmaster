@@ -8,6 +8,10 @@ clean:
 	make clean -C Taskmasterd
 	make clean -C Taskmasterctl
 
+fclean:
+	make fclean -C Taskmasterd
+	make fclean -C Taskmasterctl
+
 fmt:
 	@make fmt -C Taskmasterd
 	@make fmt -C Taskmasterctl
