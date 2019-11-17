@@ -26,3 +26,10 @@ push:
 	git add .
 	git commit -m "push"
 	git push
+
+fpush:
+	make fclean -C Taskmasterd
+	make fclean -C Taskmasterctl
+	git add .
+	git commit -m "push"
+	git push
