@@ -87,12 +87,8 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	return
 }
 
-func make_cmd(fd *ini.File, ok string) (ar exec.Cmd, err error) {
-	l, err := getK(fd, ok, "commande")
-	if err != nil {
-		return
-	}
-	ar.Path = l
+func make_cmd(fd *ini.File, ok, path string) (ar exec.Cmd, err error) {
+	ar.Path = path
 	ll, err := getA(fd, ok, "args")
 	if err != nil && !NotFound(err) {
 		return
@@ -127,14 +123,17 @@ func get(st string) (a map[string]task, err error) {
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
 			PATH, err := look_path(fd, ok)
-			CMD, err := make_cmd(fd, ok)
+			if err != nil {
+				return nil, err
+			}
+			CMD, err := make_cmd(fd, ok, PATH)
 			UMASK := getumask(fd, ok)
 			stop, err := get_int_array(fd, ok, "stop")
 			if err != nil {
 			}
 			a[ok] = task{
 				lp:    PATH,
-				cmds:  CMD,
+				cmds:  &CMD,
 				umask: UMASK,
 				stop:  stop,
 			}

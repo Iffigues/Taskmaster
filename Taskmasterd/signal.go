@@ -7,6 +7,10 @@ import (
 	"syscall"
 )
 
+func init() {
+	go fanny()
+}
+
 func fanny() {
 	signal_chan := make(chan os.Signal, 1)
 	signal.Notify(signal_chan,

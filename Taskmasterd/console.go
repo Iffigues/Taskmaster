@@ -20,17 +20,29 @@ var (
 )
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
+	err = jobs["yes"].cmds.Run()
+	fmt.Println(err)
+	conn.Write([]byte("please precise process name or all"))
 	return
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
+
 	return
 }
 
 func restart(conn net.Conn, a ...string) (c ret, err error) {
-	fmt.Println(len(a), a)
 	if len(a) == 0 {
 		conn.Write([]byte("please precise process name or all"))
+		return
+	}
+	if a[0] == "all" {
+		for _, ok := range jobs {
+			fmt.Println(ok.cmds.Process)
+			if err := ok.cmds.Process.Kill(); err != nil {
+				fmt.Println("failed to kill process: ", err)
+			}
+		}
 	}
 	conn.Write([]byte("restart ready"))
 	return
