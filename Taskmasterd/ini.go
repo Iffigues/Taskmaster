@@ -87,7 +87,7 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	return
 }
 
-func make_cmd(fd *ini.File, ok, path string) (ar exec.Cmd, err error) {
+func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 	ar.Path = path
 	ll, err := getA(fd, ok, "args")
 	if err != nil && !NotFound(err) {
@@ -133,7 +133,7 @@ func get(st string) (a map[string]task, err error) {
 			}
 			a[ok] = task{
 				lp:    PATH,
-				cmds:  &CMD,
+				cmds:  CMD,
 				umask: UMASK,
 				stop:  stop,
 			}

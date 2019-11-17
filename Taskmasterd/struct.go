@@ -1,12 +1,21 @@
 package main
 
 import (
-	"os/exec"
 )
+
+
+type Cmd struct {
+	Path string
+	Args []string
+	Env  []string
+	Dir  string
+	Stdout interface{}
+	Stderr interface{}
+}
 
 type task struct {
 	lp      string
-	cmds    *exec.Cmd
+	cmds    Cmd
 	live    int
 	start   int
 	restart bool
