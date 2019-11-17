@@ -1,12 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
 	"strconv"
-	"supervisord/helper/str"
+	"taskmasterd/helper/str"
 )
 
 const ()
@@ -129,7 +128,6 @@ func get(st string) (a map[string]task, err error) {
 		if ok != "DEFAULT" {
 			PATH, err := look_path(fd, ok)
 			CMD, err := make_cmd(fd, ok)
-			fmt.Println(err)
 			UMASK := getumask(fd, ok)
 			stop, err := get_int_array(fd, ok, "stop")
 			if err != nil {

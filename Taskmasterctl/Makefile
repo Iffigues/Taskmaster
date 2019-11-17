@@ -4,9 +4,14 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
 FMT=$(GOCMD) fmt
-GOU= /root/work/bin/Taskmasterctl
+GOINIT=$(GOCMD) mod init taskmasterctl
+GOU= ./taskmasterctl
 
 all:  build
+
+init:
+	$(GOFMT)
+	$(GOINIT)
 
 build:
 	$(FMT)

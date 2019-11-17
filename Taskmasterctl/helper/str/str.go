@@ -3,8 +3,8 @@ package str
 import (
 	"bytes"
 	"regexp"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func StrToIntArray(a string) (tab []int, err error) {
@@ -17,16 +17,16 @@ func StrToIntArray(a string) (tab []int, err error) {
 		if err != nil {
 			return nil, err
 		}
-		tab = append(tab, i);
+		tab = append(tab, i)
 	}
 	return
 }
 
-func StrToStrArray(a string)(b []string) {
+func StrToStrArray(a string) (b []string) {
 	s := strings.TrimSpace(a)
 	space := regexp.MustCompile(`\s+`)
-        w := space.ReplaceAllString(s, " ")
-        bb := strings.Split(w, " ")
+	w := space.ReplaceAllString(s, " ")
+	bb := strings.Split(w, " ")
 	for _, v := range bb {
 		b = append(b, v)
 	}
@@ -44,9 +44,9 @@ func StrConcat(a ...string) (b string) {
 func ArrayToStr(a []string) (b string) {
 	var buff bytes.Buffer
 	for _, ok := range a {
-                buff.WriteString(ok)
+		buff.WriteString(ok)
 		buff.WriteString(" ")
-        }
+	}
 	b = strings.TrimSpace(buff.String())
 	return
 }
