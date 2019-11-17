@@ -3,17 +3,9 @@ package main
 import (
 	"fmt"
 	"net"
-	"bytes"
-	"os/exec"
 )
 
-type ret struct {
-	end bool
-	Com *exec.Cmd
-}
-
 var (
-	cmd *exec.Cmd
 	console = map[string]func(net.Conn, ...string) (ret, error){
 		"exit":    exit,
 		"reload":  reload,
@@ -24,34 +16,14 @@ var (
 )
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
-	cmd =  *jobs["yes"].cmds
-	var stderr bytes.Buffer
-	cmd.Stderr = &stderr
-	err = cmd.Start()
-	fmt.Println(fmt.Sprint(err) + ": " + stderr.String())
-	conn.Write([]byte("please precise process name or all"))
 	return
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
-
 	return
 }
 
 func restart(conn net.Conn, a ...string) (c ret, err error) {
-	if len(a) == 0 {
-		conn.Write([]byte("please precise process name or all"))
-		return
-	}
-	if a[0] == "all" {
-		for _, ok := range jobs {
-			fmt.Println(ok.cmds.Process)
-			if err := cmd.Process.Kill(); err != nil {
-				fmt.Println("failed to kill process: ", err)
-			}
-		}
-	}
-	conn.Write([]byte("restart ready"))
 	return
 }
 

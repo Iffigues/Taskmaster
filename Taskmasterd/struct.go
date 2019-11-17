@@ -1,14 +1,14 @@
 package main
 
 import (
+	"os/exec"
 )
 
-
 type Cmd struct {
-	Path string
-	Args []string
-	Env  []string
-	Dir  string
+	Path   string
+	Args   []string
+	Env    []string
+	Dir    string
 	Stdout interface{}
 	Stderr interface{}
 }
@@ -25,4 +25,12 @@ type task struct {
 	signal  int
 	stop    []int
 	umask   int
+}
+
+type ret struct {
+	end bool
+}
+
+type enqueued struct {
+	enqueud map[string]*exec.Cmd
 }
