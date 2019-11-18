@@ -25,6 +25,7 @@ type task struct {
 	signal  int
 	stop    []int
 	umask   int
+	cmdl     *exec.Cmd
 }
 
 type ret struct {
@@ -32,5 +33,5 @@ type ret struct {
 }
 
 type enqued struct {
-	enqueud map[string]*exec.Cmd
+	enqueud map[string]task
 }

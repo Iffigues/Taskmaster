@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
 	"strconv"
+	"syscall"
 	"taskmasterd/helper/str"
 )
 
@@ -15,7 +17,9 @@ var (
 )
 
 func NotFound(err error) (vrai bool) {
-	if err.Error() == "error when getting key of section 'yes': key 'com' not exists" {
+	i := err.Error()
+	v := "error when getting key of section"
+	if i[:len(v)] == v {
 		vrai = true
 	}
 	return
@@ -63,16 +67,25 @@ func getStd(ar *ini.File, section, key string) (a string, err error) {
 	return
 }
 
-func getumask(ar *ini.File, section string) (a int) {
-	oc, _ := strconv.ParseInt("0666", 8, 64)
+func getumask(ar *ini.File, section string) (a int, err error) {
+	oc, err := strconv.ParseInt("0666", 8, 64)
+	fmt.Println("hihihi", syscall.Umask(int(oc)))
 	bb, err := ar.Section(section).GetKey("umask")
-	if err != nil {
-		oc, _ = strconv.ParseInt("022", 8, 64)
-		return int(oc)
+	if err != nil && !NotFound(err) {
+		return
 	}
-	v, _ := strconv.Atoi(bb.String())
+	if err != nil && NotFound(err) {
+		err = nil
+		oc, err = strconv.ParseInt("022", 8, 64)
+		return int(oc), err
+	}
+	v, err := strconv.Atoi(bb.String())
+	if err != nil {
+		return
+	}
+	fmt.Println("hihihi", syscall.Umask(int(v)))
 	aa := oc &^ int64(v)
-	return int(aa)
+	return int(aa), nil
 }
 
 func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
@@ -129,9 +142,14 @@ func get(st string) (a map[string]task, err error) {
 				return nil, err
 			}
 			CMD, err := make_cmd(fd, ok, PATH)
-			UMASK := getumask(fd, ok)
+			UMASK, err := getumask(fd, ok)
+			fmt.Println(UMASK)
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
 			stop, err := get_int_array(fd, ok, "stop")
-			if err != nil {
+			if err != nil && !NotFound(err) {
+				return nil, err
 			}
 			a[ok] = task{
 				lp:    PATH,
@@ -141,6 +159,7 @@ func get(st string) (a map[string]task, err error) {
 			}
 		}
 	}
+	err = nil
 	return
 }
 
