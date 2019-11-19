@@ -6,7 +6,6 @@ import (
 	"log"
 	"os/exec"
 	"strconv"
-	"syscall"
 	"taskmasterd/helper/str"
 )
 
@@ -69,7 +68,6 @@ func getStd(ar *ini.File, section, key string) (a string, err error) {
 
 func getumask(ar *ini.File, section string) (a int, err error) {
 	oc, err := strconv.ParseInt("0666", 8, 64)
-	fmt.Println("hihihi", syscall.Umask(int(oc)))
 	bb, err := ar.Section(section).GetKey("umask")
 	if err != nil && !NotFound(err) {
 		return
@@ -83,7 +81,6 @@ func getumask(ar *ini.File, section string) (a int, err error) {
 	if err != nil {
 		return
 	}
-	fmt.Println("hihihi", syscall.Umask(int(v)))
 	aa := oc &^ int64(v)
 	return int(aa), nil
 }
@@ -100,16 +97,16 @@ func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	return
 }
 
-func nprocess(ar *ini.File, section, key string) (d int, err error) {
+func nprocess(ar *ini.File, section, key string) (d, yy int, err error) {
 	strs, err := getK(ar, section, key)
 	if err != nil && NotFound(err) {
-		return 1, nil
+		return 1, 0, nil
 	}
 	if err != nil {
 		return
 	}
 	d, err = strconv.Atoi(strs)
-	return
+	return d, 1, err
 }
 
 func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
@@ -142,6 +139,7 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 
 func get(st string) (a map[string]task, err error) {
 	fd, err := ini.Load(st)
+	fmt.Println(fd)
 	if err != nil {
 		return nil, err
 	}
@@ -155,7 +153,6 @@ func get(st string) (a map[string]task, err error) {
 			}
 			CMD, err := make_cmd(fd, ok, PATH)
 			UMASK, err := getumask(fd, ok)
-			fmt.Println(UMASK)
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
@@ -163,16 +160,19 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
-			numprocs, err := nprocess(fd, ok, "numprocs")
+			numprocs, vvv, err := nprocess(fd, ok, "numprocs")
 			if err != nil {
 				return nil, err
 			}
-			a[ok] = task{
-				lp:       PATH,
-				cmds:     CMD,
-				umask:    UMASK,
-				stop:     stop,
-				numprocs: numprocs,
+			for y := 0; y < numprocs; y++ {
+				name := namer(ok, vvv, y)
+				a[name] = task{
+					lp:       PATH,
+					cmds:     CMD,
+					umask:    UMASK,
+					stop:     stop,
+					numprocs: numprocs,
+				}
 			}
 		}
 	}
