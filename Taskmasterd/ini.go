@@ -90,13 +90,25 @@ func getumask(ar *ini.File, section string) (a int, err error) {
 
 func get_int_array(ar *ini.File, section, key string) (d []int, err error) {
 	strs, err := getK(ar, section, key)
-	if err != nil && NotFound(err) {
+	if err != nil && !NotFound(err) {
 		return nil, err
 	}
 	if err != nil && NotFound(err) {
 		return nil, nil
 	}
 	d, err = str.StrToIntArray(strs)
+	return
+}
+
+func nprocess(ar *ini.File, section, key string) (d int, err error) {
+	strs, err := getK(ar, section, key)
+	if err != nil && NotFound(err) {
+		return 1, nil
+	}
+	if err != nil {
+		return
+	}
+	d, err = strconv.Atoi(strs)
 	return
 }
 
@@ -151,11 +163,16 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
+			numprocs, err := nprocess(fd, ok, "numprocs")
+			if err != nil {
+				return nil, err
+			}
 			a[ok] = task{
-				lp:    PATH,
-				cmds:  CMD,
-				umask: UMASK,
-				stop:  stop,
+				lp:       PATH,
+				cmds:     CMD,
+				umask:    UMASK,
+				stop:     stop,
+				numprocs: numprocs,
 			}
 		}
 	}

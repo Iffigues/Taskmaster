@@ -14,18 +14,19 @@ type Cmd struct {
 }
 
 type task struct {
-	lp      string
-	cmds    Cmd
-	live    int
-	start   int
-	restart bool
-	reboot  int
-	time    int
-	count   int
-	signal  int
-	stop    []int
-	umask   int
-	cmdl    *exec.Cmd
+	lp       string
+	cmds     Cmd
+	live     int
+	start    int
+	restart  bool
+	reboot   int
+	time     int
+	count    int
+	signal   int
+	numprocs int
+	stop     []int
+	umask    int
+	cmdl     *exec.Cmd
 }
 
 type ret struct {
