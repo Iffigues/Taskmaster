@@ -3,6 +3,7 @@ package main
 import (
 	"net"
 	"os/exec"
+	"taskmasterd/helper/str"
 )
 
 var (
@@ -59,9 +60,11 @@ func exit(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func status(conn net.Conn, a ...string) (c ret, err error) {
+	var t string
 	for u, _ := range jobs {
-		conn.Write([]byte(u))
+		t = str.StrConcat(t, u, "\n")
 	}
+	conn.Write([]byte(t))
 	return
 }
 
