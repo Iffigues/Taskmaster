@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
@@ -139,7 +138,6 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 
 func get(st string) (a map[string]task, err error) {
 	fd, err := ini.Load(st)
-	fmt.Println(fd)
 	if err != nil {
 		return nil, err
 	}

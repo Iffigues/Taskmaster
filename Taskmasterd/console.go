@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"os/exec"
 )
@@ -12,22 +11,26 @@ var (
 		"reload":  reload,
 		"start":   start,
 		"stop":    stop,
+		"status":  status,
 		"restart": restart,
 	}
 	queued enqued
 )
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
-	if key, ok := jobs[a[0]]; ok {
-		cmd := exec.Command(key.cmds.Path, key.cmds.Args...)
-		if len(key.cmds.Dir) > 0 {
-			cmd.Dir = key.cmds.Dir
+	if len(a) > 0 {
+		if key, ok := jobs[a[0]]; ok {
+			cmd := exec.Command(key.cmds.Path, key.cmds.Args...)
+			if len(key.cmds.Dir) > 0 {
+				cmd.Dir = key.cmds.Dir
+			}
+			if len(key.cmds.Env) > 0 {
+				cmd.Env = key.cmds.Env
+			}
+			key.cmdl = cmd
 		}
-		if len(key.cmds.Env) > 0 {
-			cmd.Env = key.cmds.Env
-		}
-		key.cmdl = cmd
 	}
+	conn.Write([]byte("bad init file"))
 	return
 }
 
@@ -55,6 +58,13 @@ func exit(conn net.Conn, a ...string) (c ret, err error) {
 	return
 }
 
+func status(conn net.Conn, a ...string) (c ret, err error) {
+	for u, _ := range jobs {
+		conn.Write([]byte(u))
+	}
+	return
+}
+
 func consoles(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 && a[0] != "" {
 		if e, d := console[a[0]]; d {
@@ -64,7 +74,6 @@ func consoles(conn net.Conn, a ...string) (c ret, err error) {
 				return e(conn)
 			}
 		} else {
-			fmt.Println(len(a[0]))
 			_, err = conn.Write([]byte("bad command\n"))
 			return
 		}
