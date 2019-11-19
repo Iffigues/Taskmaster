@@ -25,7 +25,7 @@ type task struct {
 	signal  int
 	stop    []int
 	umask   int
-	cmdl     *exec.Cmd
+	cmdl    *exec.Cmd
 }
 
 type ret struct {

@@ -14,7 +14,7 @@ var (
 		"stop":    stop,
 		"restart": restart,
 	}
-	queued []enqued
+	queued enqued
 )
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
@@ -26,7 +26,7 @@ func start(conn net.Conn, a ...string) (c ret, err error) {
 		if len(key.cmds.Env) > 0 {
 			cmd.Env = key.cmds.Env
 		}
-		ok.cmdl = cmd
+		key.cmdl = cmd
 	}
 	return
 }
