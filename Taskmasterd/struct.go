@@ -17,6 +17,8 @@ type task struct {
 	lp       string
 	cmds     Cmd
 	live     int
+	lancer   bool
+	finish   bool
 	start    int
 	restart  bool
 	reboot   int
@@ -33,4 +35,4 @@ type ret struct {
 	end bool
 }
 
-type enqued map[string]task
+type enqued map[string]*task

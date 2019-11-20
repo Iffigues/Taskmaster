@@ -21,6 +21,10 @@ func start(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
 		_, ok := start_command(a[0])
 		if ok {
+			go func() {
+				queued[a[0]].cmdl.Wait()
+				queued[a[0]].finish = true
+			}()
 		}
 	}
 	conn.Write([]byte("bad init file"))

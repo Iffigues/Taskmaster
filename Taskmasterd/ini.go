@@ -166,6 +166,8 @@ func get(st string) (a map[string]task, err error) {
 				name := namer(ok, vvv, y)
 				a[name] = task{
 					lp:       PATH,
+					lancer:   false,
+					finish:   false,
 					cmds:     CMD,
 					umask:    UMASK,
 					stop:     stop,
