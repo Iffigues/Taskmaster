@@ -37,6 +37,9 @@ func start(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
+	if is_started(a[0]) {
+		queued[a[0]].cmdl.Process.Kill()
+	}
 	return
 }
 
