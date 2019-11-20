@@ -22,20 +22,19 @@ func is_started(a string) (ok bool) {
 	return
 }
 
-func start_command(a string) (key task, ok bool) {
+func start_command(a string) (ok bool) {
 	ok = false
 	var keys task
 	if keys, ok = jobs[a]; ok {
 		if !is_started(a) {
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
 			if len(keys.cmds.Dir) > 0 {
-				cmd.Dir = key.cmds.Dir
+				cmd.Dir = keys.cmds.Dir
 			}
 			if len(keys.cmds.Env) > 0 {
-				cmd.Env = key.cmds.Env
+				cmd.Env = keys.cmds.Env
 			}
 			keys.cmdl = cmd
-			key = keys
 			queued[a] = &keys
 		}
 	}

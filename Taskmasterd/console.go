@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"taskmasterd/helper/str"
 )
@@ -20,16 +19,15 @@ var (
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
-		b, ok := start_command(a[0])
+		cc := a[0]
+		ok := start_command(cc)
 		if ok {
-			fmt.Println(b)
-			b.cmdl.Start()
-			fmt.Println(b)
+			queued[cc].cmdl.Start()
+			b := queued[cc].cmdl.Process.Pid
 			go func() {
-				b.cmdl.Wait()
-				b.finish = true
-				println("jghjdghj")
-				if get_pid(b.cmdl.Process.Pid, a[0]) {
+				queued[cc].cmdl.Wait()
+				queued[cc].finish = true
+				if get_pid(b, cc) {
 				}
 			}()
 		}
