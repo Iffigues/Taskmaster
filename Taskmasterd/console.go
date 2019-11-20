@@ -2,7 +2,6 @@ package main
 
 import (
 	"net"
-	"os/exec"
 	"taskmasterd/helper/str"
 )
 
@@ -20,15 +19,8 @@ var (
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
-		if key, ok := jobs[a[0]]; ok {
-			cmd := exec.Command(key.cmds.Path, key.cmds.Args...)
-			if len(key.cmds.Dir) > 0 {
-				cmd.Dir = key.cmds.Dir
-			}
-			if len(key.cmds.Env) > 0 {
-				cmd.Env = key.cmds.Env
-			}
-			key.cmdl = cmd
+		_, ok := start_command(a[0])
+		if ok {
 		}
 	}
 	conn.Write([]byte("bad init file"))
@@ -56,6 +48,10 @@ func reload(conn net.Conn, a ...string) (c ret, err error) {
 
 func exit(conn net.Conn, a ...string) (c ret, err error) {
 	c.end = true
+	return
+}
+
+func begin() (err error) {
 	return
 }
 

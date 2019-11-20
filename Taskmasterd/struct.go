@@ -33,6 +33,4 @@ type ret struct {
 	end bool
 }
 
-type enqued struct {
-	enqueud map[string]task
-}
+type enqued map[string]task
