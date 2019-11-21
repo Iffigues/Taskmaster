@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"taskmasterd/helper/str"
 )
@@ -40,11 +39,7 @@ func start(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
-	existe, ok := is_started(a[0])
-	if existe && !ok {
-		err := queued[a[0]].cmdl.Process.Kill()
-		fmt.Println(err)
-	}
+	stop_command(a[0])
 	return
 }
 

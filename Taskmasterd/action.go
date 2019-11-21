@@ -45,6 +45,17 @@ func start_command(a string) (ok bool) {
 	return
 }
 
+func stop_command(a string) (ok bool) {
+	existe, ok := is_started(a)
+	if existe && !ok {
+		if err := queued[a].cmdl.Process.Kill(); err != nil {
+			return false
+		}
+		return true
+	}
+	return
+}
+
 func start_all_command() {
 	for key, _ := range jobs {
 		start_command(key)
