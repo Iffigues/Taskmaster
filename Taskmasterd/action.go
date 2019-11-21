@@ -13,20 +13,22 @@ func get_pid(a int, c string) (ok bool) {
 	return
 }
 
-func is_started(a string) (ok bool) {
+func is_started(a string) (existe, ok bool) {
 	var key *task
 	ok = false
 	if key, ok = queued[a]; ok {
-		ok = key.finish
+		return true, key.finish
 	}
-	return
+	return false, false
 }
 
 func start_command(a string) (ok bool) {
 	ok = false
 	var keys task
 	if keys, ok = jobs[a]; ok {
-		if !is_started(a) {
+		gg, jj := is_started(a)
+		if (gg && jj) || (!gg) {
+			println("yogger")
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
 			if len(keys.cmds.Dir) > 0 {
 				cmd.Dir = keys.cmds.Dir
@@ -36,7 +38,9 @@ func start_command(a string) (ok bool) {
 			}
 			keys.cmdl = cmd
 			queued[a] = &keys
+			return true
 		}
+		return false
 	}
 	return
 }
@@ -49,8 +53,6 @@ func start_all_command() {
 
 func stop_all_command() {
 	for key, _ := range jobs {
-		if is_started(key) {
-
-		}
+		is_started(key)
 	}
 }

@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	go fanny()
+	//go fanny()
 }
 
 func fanny() {

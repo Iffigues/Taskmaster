@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net"
 	"taskmasterd/helper/str"
 )
@@ -19,15 +20,17 @@ var (
 
 func start(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
-		cc := a[0]
-		ok := start_command(cc)
+		ok := start_command(a[0])
 		if ok {
-			queued[cc].cmdl.Start()
-			b := queued[cc].cmdl.Process.Pid
+			cc := queued[a[0]]
+			cc.cmdl.Start()
+			b := cc.cmdl.Process.Pid
 			go func() {
-				queued[cc].cmdl.Wait()
-				queued[cc].finish = true
-				if get_pid(b, cc) {
+				println("oui")
+				cc.cmdl.Wait()
+				cc.finish = true
+				println("non")
+				if get_pid(b, a[0]) {
 				}
 			}()
 		}
@@ -37,8 +40,10 @@ func start(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
-	if is_started(a[0]) {
-		queued[a[0]].cmdl.Process.Kill()
+	existe, ok := is_started(a[0])
+	if existe && !ok {
+		err := queued[a[0]].cmdl.Process.Kill()
+		fmt.Println(err)
 	}
 	return
 }
@@ -51,6 +56,9 @@ func reload(conn net.Conn, a ...string) (c ret, err error) {
 	tmp, err := get("../ini/ini.ini")
 	if err == nil {
 		jobs = tmp
+		for key, _ := range queued {
+			delete(queued, key)
+		}
 		conn.Write([]byte("new configuration load"))
 	} else {
 		conn.Write([]byte("bad init file"))
