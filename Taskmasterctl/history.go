@@ -1,11 +1,8 @@
-package go
+package main
 
-import (
-)
+import ()
 
 var (
-	pos	= 0
+	pos     = 0
 	history []string
 )
-
-

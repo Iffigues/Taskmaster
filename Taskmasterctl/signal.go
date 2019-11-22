@@ -2,21 +2,25 @@ package main
 
 import (
 	"fmt"
+	"golang.org/x/crypto/ssh/terminal"
 	"os"
 	"os/signal"
 	"syscall"
 )
 
+func init() {
+}
+
 func fanny() {
 	signal_chan := make(chan os.Signal, 1)
 	signal.Notify(signal_chan,
 		syscall.SIGHUP,
-		//syscall.SIGINT,
+		syscall.SIGINT,
 		syscall.SIGTERM,
 		syscall.SIGQUIT,
 		syscall.SIGCONT,
 		syscall.SIGWINCH,
-		//syscall.SIGTSTP,
+		syscall.SIGTSTP,
 	)
 	exit_chan := make(chan int)
 	go func() {
@@ -38,5 +42,6 @@ func fanny() {
 		}
 	}()
 	code := <-exit_chan
+	terminal.Restore(0, oldState)
 	os.Exit(code)
 }

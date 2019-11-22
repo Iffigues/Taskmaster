@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bufio"
+	//	"bufio"
 	"fmt"
 	"net"
 	"os"
@@ -51,14 +51,16 @@ lab:
 	c := make(chan Message)
 	defer conn.Close()
 	go receive(conn, c)
-	reader := bufio.NewReader(os.Stdin)
+	//	reader := bufio.NewReader(os.Stdin)
 	if mod {
 		conn.Write([]byte(str + "\n"))
 		fmt.Println(<-c)
 		return
 	}
 	for {
-		text, _ := reader.ReadString('\n')
+		text, _ := term.ReadLine()
+		fmt.Println(text)
+		//text, _ := reader.ReadString('\n')
 		if text != "\n" {
 			conn.Write([]byte(text + "\n"))
 			ddd := <-c
@@ -66,7 +68,7 @@ lab:
 			if ddd.Types == 1 {
 				break
 			}
-			if text == "exit\n" {
+			if text == "exit" {
 				return
 			}
 		}
