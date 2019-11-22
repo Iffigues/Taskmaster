@@ -26,3 +26,7 @@ func make_term() {
 	term = terminal.NewTerminal(screen, "taskmasterctl")
 	term.SetPrompt(string(term.Escape.Red) + "> " + string(term.Escape.Reset))
 }
+
+func restore_term() {
+	terminal.Restore(0, oldState)
+}
