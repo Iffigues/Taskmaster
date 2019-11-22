@@ -24,7 +24,7 @@ func is_term() (ok bool) {
 
 func make_term() {
 	term = terminal.NewTerminal(screen, "taskmasterctl")
-	term.SetPrompt(string(term.Escape.Red) + "> " + string(term.Escape.Reset))
+	term.SetPrompt(string(term.Escape.Red) + "@=>" + string(term.Escape.Reset))
 }
 
 func restore_term() {

@@ -69,6 +69,7 @@ lab:
 				break
 			}
 			if text == "exit" {
+				restore_term()
 				return
 			}
 		}
