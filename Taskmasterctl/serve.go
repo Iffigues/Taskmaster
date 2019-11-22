@@ -54,7 +54,7 @@ lab:
 	reader := bufio.NewReader(os.Stdin)
 	if mod {
 		conn.Write([]byte(str + "\n"))
-		fmt.Println("fggfgffg", <-c)
+		fmt.Println(<-c)
 		return
 	}
 	for {

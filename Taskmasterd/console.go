@@ -2,6 +2,7 @@ package main
 
 import (
 	"net"
+	"syscall"
 	"taskmasterd/helper/str"
 )
 
@@ -48,7 +49,8 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func reload(conn net.Conn, a ...string) (c ret, err error) {
-	tmp, err := get("../ini/ini.ini")
+	syscall.Kill(mypid, syscall.SIGHUP)
+	/*tmp, err := get("../ini/ini.ini")
 	if err == nil {
 		jobs = tmp
 		for key, _ := range queued {
@@ -57,7 +59,7 @@ func reload(conn net.Conn, a ...string) (c ret, err error) {
 		conn.Write([]byte("new configuration load"))
 	} else {
 		conn.Write([]byte("bad init file"))
-	}
+	}*/
 	return
 }
 

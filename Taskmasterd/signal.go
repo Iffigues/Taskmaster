@@ -8,7 +8,11 @@ import (
 )
 
 func init() {
-	//go fanny()
+	go fanny()
+}
+
+func send_me() {
+	fmt.Println("fghfhg")
 }
 
 func fanny() {
@@ -28,7 +32,7 @@ func fanny() {
 			s := <-signal_chan
 			switch s {
 			case syscall.SIGHUP:
-				println("errerere")
+				send_me()
 			case syscall.SIGINT:
 				fmt.Println("Warikomi")
 				exit_chan <- 0
