@@ -56,16 +56,6 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 
 func reload(conn net.Conn, a ...string) (c ret, err error) {
 	syscall.Kill(mypid, syscall.SIGHUP)
-	/*tmp, err := get("../ini/ini.ini")
-	if err == nil {
-		jobs = tmp
-		for key, _ := range queued {
-			delete(queued, key)
-		}
-		conn.Write([]byte("new configuration load"))
-	} else {
-		conn.Write([]byte("bad init file"))
-	}*/
 	return
 }
 
