@@ -4,6 +4,7 @@ import (
 	"net"
 	"syscall"
 	"taskmasterd/helper/str"
+	"time"
 )
 
 var (
@@ -18,22 +19,27 @@ var (
 	queued = make(enqued)
 )
 
+func lance(a ...string) {
+label:
+	ok := start_command(a[0])
+	if ok {
+		cc := queued[a[0]]
+		time.Sleep(time.Duration(cc.starttime) * time.Second)
+		cc.cmdl.Start()
+		b := cc.cmdl.Process.Pid
+		cc.cmdl.Wait()
+		cc.finish = true
+		if cc.autorestart > 0 {
+			goto label
+		}
+		if get_pid(b, a[0]) {
+		}
+	}
+}
+
 func start(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
-		ok := start_command(a[0])
-		if ok {
-			cc := queued[a[0]]
-			cc.cmdl.Start()
-			b := cc.cmdl.Process.Pid
-			go func() {
-				println("oui")
-				cc.cmdl.Wait()
-				cc.finish = true
-				println("non")
-				if get_pid(b, a[0]) {
-				}
-			}()
-		}
+		go lance(a...)
 	}
 	conn.Write([]byte("bad init file"))
 	return
