@@ -125,12 +125,14 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 		return
 	}
 	ar.Dir = llll
-	dd, err := getStd(fd, ok, "stdout")
-	if err != nil && NotFound(err) {
+	dd, err := getK(fd, ok, "stdout")
+	if err != nil && !NotFound(err) {
+		return
 	}
 	ar.Stdout = dd
-	ddd, err := getStd(fd, ok, "stderr")
-	if err != nil && NotFound(err) {
+	ddd, err := getK(fd, ok, "stderr")
+	if err != nil && !NotFound(err) {
+		return
 	}
 	ar.Stderr = ddd
 	return
@@ -165,13 +167,13 @@ func get(st string) (a map[string]task, err error) {
 			for y := 0; y < numprocs; y++ {
 				name := namer(ok, vvv, y)
 				a[name] = task{
-					lp:       PATH,
-					lancer:   false,
-					finish:   false,
-					cmds:     CMD,
-					umask:    UMASK,
-					stop:     stop,
-					numprocs: numprocs,
+					lp:        PATH,
+					lancer:    false,
+					finish:    false,
+					cmds:      CMD,
+					umask:     UMASK,
+					exitcodes: stop,
+					numprocs:  numprocs,
 				}
 			}
 		}

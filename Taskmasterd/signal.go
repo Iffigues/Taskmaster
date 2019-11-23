@@ -11,8 +11,35 @@ func init() {
 	go fanny()
 }
 
-func send_me() {
-	fmt.Println("fghfhg")
+func map_array_string() (a []string) {
+	for key, _ := range jobs {
+		a = append(a, key)
+	}
+	return
+}
+
+func send_me() (err error) {
+	yy, err := get("../ini/ini.ini")
+	if err != nil {
+		return
+	}
+	a := map_array_string()
+	for _, val := range a {
+		if _, ok := yy[val]; !ok {
+			delete(jobs, val)
+			delete(queued, val)
+		}
+	}
+	for key, val := range yy {
+		if ta, ok := jobs[key]; ok {
+			if !verify_change(ta, val) {
+				jobs[key] = val
+			}
+		} else {
+			jobs[key] = val
+		}
+	}
+	return
 }
 
 func fanny() {
@@ -24,7 +51,7 @@ func fanny() {
 		syscall.SIGQUIT,
 		syscall.SIGCONT,
 		syscall.SIGWINCH,
-		//syscall.SIGTSTP,
+		syscall.SIGTSTP,
 	)
 	exit_chan := make(chan int)
 	go func() {

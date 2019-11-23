@@ -14,7 +14,19 @@ func verif_array(a, b []string) (ok bool) {
 	return true
 }
 
-func verif_arra_inty(a, b []int) (ok bool) {
+func verif_array_int(a, b []int) (ok bool) {
+	if len(a) != len(b) {
+		return false
+	}
+	for i := 0; i < len(a); i++ {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+	return true
+}
+
+func verif_array_bool(a, b []bool) (ok bool) {
 	if len(a) != len(b) {
 		return false
 	}
@@ -34,6 +46,41 @@ func verify_cmd(a, b Cmd) (ok bool) {
 	return
 }
 
-func verify_change(a, b task) {
+func my_string_array(a task) (t []string, gg []int, hh []bool) {
+	t = []string{
+		a.lp,
+		a.stopsignal,
+	}
+	gg = []int{
+		a.autorestart,
+		a.stoptime,
+		a.starttime,
+		a.startretries,
+		a.stoptime,
+		a.numprocs,
+		a.umask,
+	}
+	hh = []bool{
+		a.autostart,
+	}
+	return
+}
 
+func verify_change(a, b task) (ok bool) {
+	ok = true
+	if !verify_cmd(a.cmds, b.cmds) {
+		return false
+	}
+	al, ag, ab := my_string_array(a)
+	bl, bg, bb := my_string_array(b)
+	if !verif_array(al, bl) {
+		return false
+	}
+	if !verif_array_int(ag, bg) {
+		return false
+	}
+	if !verif_array_bool(ab, bb) {
+		return false
+	}
+	return
 }

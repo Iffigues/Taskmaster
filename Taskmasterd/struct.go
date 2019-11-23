@@ -9,26 +9,26 @@ type Cmd struct {
 	Args   []string
 	Env    []string
 	Dir    string
-	Stdout interface{}
-	Stderr interface{}
+	Stdout string
+	Stderr string
 }
 
 type task struct {
-	lp       string
-	cmds     Cmd
-	live     int
-	lancer   bool
-	finish   bool
-	start    int
-	restart  bool
-	reboot   int
-	time     int
-	count    int
-	signal   int
-	numprocs int
-	stop     []int
-	umask    int
-	cmdl     *exec.Cmd
+	lp           string
+	cmds         Cmd
+	live         int
+	lancer       bool
+	finish       bool
+	autostart    bool
+	autorestart  int
+	startretries int
+	starttime    int
+	stoptime     int
+	stopsignal   string
+	numprocs     int
+	exitcodes    []int
+	umask        int
+	cmdl         *exec.Cmd
 }
 
 type ret struct {
