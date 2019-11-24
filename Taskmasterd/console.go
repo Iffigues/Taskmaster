@@ -26,13 +26,20 @@ label:
 		cc := queued[a[0]]
 		time.Sleep(time.Duration(cc.starttime) * time.Second)
 		cc.cmdl.Start()
-		b := cc.cmdl.Process.Pid
 		cc.cmdl.Wait()
+		if cc.stoptime > 0 {
+			select {
+			case <-time.After(time.Duration(cc.stoptime) * time.Second):
+				if cc.cmdl.ProcessState != nil {
+					cc.cmdl.Process.Kill()
+				}
+			}
+		}
 		cc.finish = true
 		if cc.autorestart > 0 {
-			goto label
-		}
-		if get_pid(b, a[0]) {
+			if cc.startretries == -1 || cc.startretries > 0 {
+				goto label
+			}
 		}
 	}
 }
