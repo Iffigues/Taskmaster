@@ -2,6 +2,7 @@ package main
 
 import (
 	"os/exec"
+	"syscall"
 )
 
 type Cmd struct {
@@ -24,7 +25,7 @@ type task struct {
 	startretries int
 	starttime    int
 	stoptime     int
-	stopsignal   string
+	stopsignal   syscall.Signal
 	numprocs     int
 	exitcodes    []int
 	umask        int

@@ -26,6 +26,7 @@ label:
 		cc := queued[a[0]]
 		time.Sleep(time.Duration(cc.starttime) * time.Second)
 		cc.cmdl.Start()
+		cc.lancer = true
 		cc.cmdl.Wait()
 		if cc.stoptime > 0 {
 			select {

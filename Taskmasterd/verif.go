@@ -49,7 +49,6 @@ func verify_cmd(a, b Cmd) (ok bool) {
 func my_string_array(a task) (t []string, gg []int, hh []bool) {
 	t = []string{
 		a.lp,
-		a.stopsignal,
 	}
 	gg = []int{
 		a.autorestart,
@@ -80,6 +79,9 @@ func verify_change(a, b task) (ok bool) {
 		return false
 	}
 	if !verif_array_bool(ab, bb) {
+		return false
+	}
+	if a.stopsignal != b.stopsignal {
 		return false
 	}
 	return

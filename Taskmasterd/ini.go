@@ -5,6 +5,7 @@ import (
 	"log"
 	"os/exec"
 	"strconv"
+	"syscall"
 	"taskmasterd/helper/str"
 )
 
@@ -164,16 +165,18 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil {
 				return nil, err
 			}
+			sig := syscall.SIGKILL
 			for y := 0; y < numprocs; y++ {
 				name := namer(ok, vvv, y)
 				a[name] = task{
-					lp:        PATH,
-					lancer:    false,
-					finish:    false,
-					cmds:      CMD,
-					umask:     UMASK,
-					exitcodes: stop,
-					numprocs:  numprocs,
+					lp:         PATH,
+					lancer:     false,
+					finish:     false,
+					cmds:       CMD,
+					umask:      UMASK,
+					exitcodes:  stop,
+					numprocs:   numprocs,
+					stopsignal: sig,
 				}
 			}
 		}
