@@ -21,6 +21,7 @@ type task struct {
 	lancer       bool
 	finish       bool
 	autostart    bool
+	stop         bool
 	autorestart  int
 	startretries int
 	starttime    int

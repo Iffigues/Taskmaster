@@ -71,6 +71,7 @@ func start_command(a string) (ok bool) {
 			if keys.cmds.Stderr != "" && keys.cmds.Stderr != "@" {
 			}
 			keys.cmdl = cmd
+			keys.stop = false
 			queued[a] = &keys
 			return true
 		}
@@ -85,6 +86,7 @@ func stop_command(a string) (ok bool) {
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
 			return false
 		}
+		queued[a].stop = true
 		return true
 	}
 	return

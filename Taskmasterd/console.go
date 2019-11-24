@@ -32,12 +32,12 @@ label:
 			select {
 			case <-time.After(time.Duration(cc.stoptime) * time.Second):
 				if cc.cmdl.ProcessState != nil {
-					cc.cmdl.Process.Kill()
+					cc.cmdl.Process.Signal(cc.stopsignal)
 				}
 			}
 		}
 		cc.finish = true
-		if cc.autorestart > 0 {
+		if cc.autorestart > 0 && cc.stop {
 			if cc.startretries == -1 || cc.startretries > 0 {
 				goto label
 			}
