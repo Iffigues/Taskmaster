@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/crypto/ssh/terminal"
 	"os"
 	"os/signal"
 	"syscall"
@@ -42,6 +41,5 @@ func fanny() {
 		}
 	}()
 	code := <-exit_chan
-	terminal.Restore(0, oldState)
 	os.Exit(code)
 }

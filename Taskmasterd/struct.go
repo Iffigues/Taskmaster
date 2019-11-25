@@ -1,9 +1,16 @@
 package main
 
 import (
+	"io"
 	"os/exec"
 	"syscall"
 )
+
+type Triade struct {
+	StdErrPipe io.ReadCloser
+	StdOutPipe io.ReadCloser
+	StdInPipe  io.WriteCloser
+}
 
 type Cmd struct {
 	Path   string
@@ -31,6 +38,7 @@ type task struct {
 	exitcodes    []int
 	umask        int
 	cmdl         *exec.Cmd
+	triade       Triade
 }
 
 type ret struct {

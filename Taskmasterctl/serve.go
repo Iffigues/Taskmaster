@@ -3,6 +3,7 @@ package main
 import (
 	//	"bufio"
 	"fmt"
+	"github.com/chzyer/readline"
 	"net"
 	"os"
 )
@@ -12,6 +13,7 @@ const (
 )
 
 var (
+	attach    = false
 	CONN_PORT = "3333"
 )
 
@@ -41,6 +43,17 @@ func receive(conn net.Conn, c chan Message) {
 	}
 }
 
+func sendy(con net.Conn, y string, c chan Message) (b Message) {
+	if len(y) > 1 || attach {
+		if len(y) >= 2 && y[:2] == "fg" {
+			attach = true
+		}
+		con.Write([]byte(y + "\n"))
+		//	fmt.Println(<-c)
+	}
+	return
+}
+
 func client(mod bool, str string) {
 lab:
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
@@ -52,19 +65,24 @@ lab:
 	defer conn.Close()
 	go receive(conn, c)
 	if mod {
-		conn.Write([]byte(str + "\n"))
-		fmt.Println(<-c)
+		sendy(conn, str, c)
 		return
 	}
 	for {
-		text, _ := term.ReadLine()
-		conn.Write([]byte(text + "\n"))
-		ddd := <-c
+		text, err := term()
+		if err == readline.ErrInterrupt {
+			if attach {
+				attach = false
+			} else {
+				text = "exit"
+			}
+		}
+		ddd := sendy(conn, text, c)
+		fmt.Println(ddd)
 		if ddd.Types == 1 {
 			break
 		}
 		if text == "exit" {
-			restore_term()
 			return
 		}
 	}

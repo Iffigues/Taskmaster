@@ -9,11 +9,7 @@ import (
 func main() {
 	arg := os.Args
 	if len(arg) == 1 {
-		if is_term() {
-			make_term()
-			go fanny()
-			client(false, "")
-		}
+		client(false, "")
 	} else {
 		client(true, str.ArrayToStr(arg[1:]))
 	}

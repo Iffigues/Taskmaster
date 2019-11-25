@@ -1,32 +1,90 @@
 package main
 
 import (
-	"golang.org/x/crypto/ssh/terminal"
+	"github.com/chzyer/readline"
 	"io"
-	"os"
+	"io/ioutil"
 )
 
-var (
-	oldState, errTerm = terminal.MakeRaw(0)
-	screen            = struct {
-		io.Reader
-		io.Writer
-	}{os.Stdin, os.Stdout}
-	term *terminal.Terminal
-)
-
-func is_term() (ok bool) {
-	if !terminal.IsTerminal(0) || !terminal.IsTerminal(1) || errTerm != nil {
-		return false
+func listFiles(path string) func(string) []string {
+	return func(line string) []string {
+		names := make([]string, 0)
+		files, _ := ioutil.ReadDir(path)
+		for _, f := range files {
+			names = append(names, f.Name())
+		}
+		return names
 	}
-	return true
 }
 
-func make_term() {
-	term = terminal.NewTerminal(screen, "taskmasterctl")
-	term.SetPrompt(string(term.Escape.Red) + "@=>" + string(term.Escape.Reset))
+var completer = readline.NewPrefixCompleter(
+	readline.PcItem("mode",
+		readline.PcItem("vi"),
+		readline.PcItem("emacs"),
+	),
+	readline.PcItem("login"),
+	readline.PcItem("say",
+		readline.PcItemDynamic(listFiles("./"),
+			readline.PcItem("with",
+				readline.PcItem("following"),
+				readline.PcItem("items"),
+			),
+		),
+		readline.PcItem("hello"),
+		readline.PcItem("bye"),
+	),
+	readline.PcItem("setprompt"),
+	readline.PcItem("setpassword"),
+	readline.PcItem("bye"),
+	readline.PcItem("help"),
+	readline.PcItem("go",
+		readline.PcItem("build", readline.PcItem("-o"), readline.PcItem("-v")),
+		readline.PcItem("install",
+			readline.PcItem("-v"),
+			readline.PcItem("-vv"),
+			readline.PcItem("-vvv"),
+		),
+		readline.PcItem("test"),
+	),
+	readline.PcItem("sleep"),
+)
+
+func filterInput(r rune) (rune, bool) {
+	switch r {
+	// block CtrlZ feature
+	case readline.CharCtrlZ:
+		return r, false
+	}
+	return r, true
 }
 
-func restore_term() {
-	terminal.Restore(0, oldState)
+func term() (line string, err error) {
+	l, err := readline.NewEx(&readline.Config{
+		Prompt:          "\033[31m»\033[0m ",
+		HistoryFile:     "/tmp/readline.tmp",
+		AutoComplete:    completer,
+		InterruptPrompt: "^C",
+		EOFPrompt:       "exit",
+
+		HistorySearchFold:   true,
+		FuncFilterInputRune: filterInput,
+	})
+	if err != nil {
+		panic(err)
+	}
+	defer l.Close()
+	for {
+		line, err = l.Readline()
+		if err == readline.ErrInterrupt {
+			if len(line) == 0 {
+				return
+			} else {
+				continue
+			}
+		} else if err == io.EOF {
+			return
+		} else {
+			return
+		}
+	}
 }

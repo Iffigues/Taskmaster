@@ -72,6 +72,9 @@ func start_command(a string) (ok bool) {
 			}
 			keys.cmdl = cmd
 			keys.stop = false
+			keys.triade.StdErrPipe, _ = cmd.StderrPipe()
+			keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
+			keys.triade.StdInPipe, _ = cmd.StdinPipe()
 			queued[a] = &keys
 			return true
 		}
