@@ -44,12 +44,10 @@ func handleRequest(conn net.Conn) {
 			}
 			break
 		}
-		//_, err = conn.Write([]byte(buf))
 		if err != nil {
 			fmt.Println(err.Error())
 			break
 		}
-		println(string(buf))
 		b, err := consoles(conn, str.StrToStrArray(string(buf))...)
 		if b.end {
 			_, err = conn.Write([]byte("EOF"))

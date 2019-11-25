@@ -51,7 +51,6 @@ lab:
 	c := make(chan Message)
 	defer conn.Close()
 	go receive(conn, c)
-	//	reader := bufio.NewReader(os.Stdin)
 	if mod {
 		conn.Write([]byte(str + "\n"))
 		fmt.Println(<-c)
@@ -59,19 +58,14 @@ lab:
 	}
 	for {
 		text, _ := term.ReadLine()
-		fmt.Println(text)
-		//text, _ := reader.ReadString('\n')
-		if text != "\n" {
-			conn.Write([]byte(text + "\n"))
-			ddd := <-c
-			fmt.Println(ddd)
-			if ddd.Types == 1 {
-				break
-			}
-			if text == "exit" {
-				restore_term()
-				return
-			}
+		conn.Write([]byte(text + "\n"))
+		ddd := <-c
+		if ddd.Types == 1 {
+			break
+		}
+		if text == "exit" {
+			restore_term()
+			return
 		}
 	}
 	goto lab
