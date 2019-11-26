@@ -20,28 +20,41 @@ var (
 	queued = make(enqued)
 )
 
+func isgood(a int, b []int) (ok bool) {
+	return
+}
+
 func lance(a ...string) {
 label:
+	var err error
 	ok := start_command(a[0])
 	if ok {
 		cc := queued[a[0]]
 		time.Sleep(time.Duration(cc.starttime) * time.Second)
 		cc.cmdl.Start()
 		cc.lancer = true
-		cc.cmdl.Wait()
+		done := make(chan error, 1)
+		go func() {
+			done <- cc.cmdl.Wait()
+		}()
 		if cc.stoptime > 0 {
 			select {
 			case <-time.After(time.Duration(cc.stoptime) * time.Second):
 				if cc.cmdl.ProcessState != nil {
 					cc.cmdl.Process.Signal(cc.stopsignal)
 				}
+			case errs := <-done:
+				err = errs
 			}
+		} else {
+			err = <-done
+		}
+		if err != nil {
+
 		}
 		cc.finish = true
-		if cc.autorestart > 0 && cc.stop {
-			if cc.startretries == -1 || cc.startretries > 0 {
-				goto label
-			}
+		if isgood(cc.autorestart, cc.exitcodes) && !cc.stop && cc.startretries > 0 {
+			goto label
 		}
 	}
 }
