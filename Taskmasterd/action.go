@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -44,36 +43,32 @@ func start_command(a string) (ok bool) {
 			if keys.cmds.Stderr == "" {
 				cmd.Stderr = os.Stderr
 			}
-			if keys.cmds.Stdout != "" && keys.cmds.Stdout != "@" {
+			if keys.cmds.Stdout != "" {
 				if err := ioutil.WriteFile(keys.cmds.Stdout, nil, os.FileMode(keys.umask)); err != nil {
-					fmt.Println(err)
 					return false
 				}
 				f, err := os.OpenFile(keys.cmds.Stdout, os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
 				if err != nil {
-					fmt.Println(err)
 					return false
 				}
 				cmd.Stdout = f
+			} else {
+				keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
 			}
-			if keys.cmds.Stderr != "" && keys.cmds.Stderr != "@" {
+			if keys.cmds.Stderr != "" {
 				if err := ioutil.WriteFile(keys.cmds.Stderr, nil, os.FileMode(keys.umask)); err != nil {
-					fmt.Println(err)
 					return false
 				}
 				ff, err := os.OpenFile(keys.cmds.Stderr, os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
 				if err != nil {
-					fmt.Println(err)
 					return false
 				}
 				cmd.Stderr = ff
-			}
-			if keys.cmds.Stderr != "" && keys.cmds.Stderr != "@" {
+			} else {
+				keys.triade.StdErrPipe, _ = cmd.StderrPipe()
 			}
 			keys.cmdl = cmd
 			keys.stop = false
-			keys.triade.StdErrPipe, _ = cmd.StderrPipe()
-			keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
 			keys.triade.StdInPipe, _ = cmd.StdinPipe()
 			queued[a] = &keys
 			return true

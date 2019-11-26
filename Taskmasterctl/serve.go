@@ -13,7 +13,6 @@ const (
 )
 
 var (
-	attach    = false
 	CONN_PORT = "3333"
 )
 
@@ -44,12 +43,8 @@ func receive(conn net.Conn, c chan Message) {
 }
 
 func sendy(con net.Conn, y string, c chan Message) (b Message) {
-	if len(y) > 1 || attach {
-		if len(y) >= 2 && y[:2] == "fg" {
-			attach = true
-		}
+	if len(y) > 1 {
 		con.Write([]byte(y + "\n"))
-		//	fmt.Println(<-c)
 	}
 	return
 }
@@ -71,14 +66,9 @@ lab:
 	for {
 		text, err := term()
 		if err == readline.ErrInterrupt {
-			if attach {
-				attach = false
-			} else {
-				text = "exit"
-			}
+			text = "exit"
 		}
 		ddd := sendy(conn, text, c)
-		fmt.Println(ddd)
 		if ddd.Types == 1 {
 			break
 		}

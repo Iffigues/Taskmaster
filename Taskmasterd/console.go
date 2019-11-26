@@ -15,7 +15,6 @@ var (
 		"stop":    stop,
 		"status":  status,
 		"restart": restart,
-		"fg":      fg,
 	}
 	queued = make(enqued)
 )
