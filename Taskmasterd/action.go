@@ -56,7 +56,6 @@ func start_command(a string) (ok bool) {
 			} else {
 				f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
 				cmd.Stdout = f
-				//keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
 			}
 			if keys.cmds.Stderr != "" {
 				if err := ioutil.WriteFile(keys.cmds.Stderr, nil, os.FileMode(keys.umask)); err != nil {
@@ -70,7 +69,6 @@ func start_command(a string) (ok bool) {
 			} else {
 				f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
 				cmd.Stderr = f
-				//keys.triade.StdErrPipe, _ = cmd.StderrPipe()
 			}
 			keys.cmdl = cmd
 			keys.stop = false

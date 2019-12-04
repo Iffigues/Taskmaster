@@ -119,7 +119,7 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 		return
 	}
 	ar.Env = lll
-	llll, err := getK(fd, ok, "dir")
+	llll, err := getK(fd, ok, "workingdir")
 	if err != nil && !NotFound(err) {
 		return
 	}
@@ -184,10 +184,12 @@ func getauto(fd *ini.File, ok, path string) (i int, err error) {
 		return 0, err
 	}
 	if ff == "unexpected" {
-		return -1, nil
+		return 2, nil
 	}
-	i, err = strconv.Atoi(ff)
-	return
+	if ff == "ever" {
+		return 1, nil
+	}
+	return 0, nil
 }
 
 func get(st string) (a map[string]task, err error) {

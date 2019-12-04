@@ -36,11 +36,8 @@ func isgood(a error, b []int, i bool) (ok bool) {
 			t, _ = strconv.Atoi(vv[2])
 		}
 	}
-	fmt.Println(b)
 	for _, ff := range b {
-		fmt.Println(ff)
 		if ff == t {
-			println("oui")
 			return true
 		}
 	}
@@ -83,6 +80,10 @@ label:
 				registre(a[0], "programme stop at:"+cc.end.String())
 			} else {
 				if !cc.succed {
+					if cc.autorestart == 3 {
+						registre(a[0], "programme  relaunch an unexpected process at:"+cc.end.String())
+						goto label
+					}
 					if cc.startretries > 0 {
 						registre(a[0], "programme retrie process at: "+cc.end.String())
 						goto label
@@ -93,7 +94,7 @@ label:
 					}
 				} else {
 					cc.startretries = cc.memretries
-					if cc.autorestart > 0 {
+					if cc.autorestart == 1 {
 						registre(a[0], "programme restart at:"+time.Now().String())
 						goto label
 					}
@@ -143,15 +144,21 @@ func send_signal(conn net.Conn, a ...string) (ce ret, err error) {
 
 func kill(conn net.Conn, a ...string) (ce ret, err error) {
 	if a[0] == "all" {
-		for key, val := range queued {
-			fmt.Println(key)
-			val.cmdl.Process.Kill()
+		for _, val := range queued {
+			if val.lancer {
+				val.cmdl.Process.Kill()
+			}
 		}
 		return
 	}
 	for _, val := range a {
-		queued[val].cmdl.Process.Kill()
+		if kk, ok := queued[val]; ok {
+			if kk.lancer {
+				queued[val].cmdl.Process.Kill()
+			}
+		}
 	}
+	conn.Write([]byte("commande lancer"))
 	return
 }
 
@@ -164,7 +171,6 @@ func meme(c chan bool, a, b string, conn net.Conn) {
 }
 
 func mami(c bool, a, b string, conn net.Conn) {
-	println(c)
 	if c {
 		conn.Write([]byte(a))
 	} else {
