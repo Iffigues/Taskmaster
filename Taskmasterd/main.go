@@ -8,6 +8,10 @@ import (
 	"syscall"
 )
 
+func init() {
+	fmt.Println(os.Geteuid())
+}
+
 var (
 	mode            = false
 	mypid           = syscall.Getpid()

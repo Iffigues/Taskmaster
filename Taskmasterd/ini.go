@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"github.com/go-ini/ini"
 	"log"
 	"os/exec"
@@ -69,10 +70,7 @@ func getStd(ar *ini.File, section, key string) (a string, err error) {
 func getumask(ar *ini.File, section string) (a int, err error) {
 	oc, err := strconv.ParseInt("0666", 8, 64)
 	bb, err := ar.Section(section).GetKey("umask")
-	if err != nil && !NotFound(err) {
-		return
-	}
-	if err != nil && NotFound(err) {
+	if err != nil {
 		err = nil
 		oc, err = strconv.ParseInt("022", 8, 64)
 		return int(oc), err
@@ -139,6 +137,59 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 	return
 }
 
+func getsignal(fd *ini.File, ok, path string) (ff syscall.Signal, err error) {
+	oo := map[string]syscall.Signal{
+		"TERM": syscall.SIGTERM,
+		"HUP":  syscall.SIGHUP,
+		"INT":  syscall.SIGINT,
+		"KILL": syscall.SIGKILL,
+		"USR1": syscall.SIGUSR1,
+		"USR2": syscall.SIGUSR2,
+	}
+	ll, err := getK(fd, ok, path)
+	if err != nil {
+		return syscall.SIGKILL, err
+	}
+	if val, ik := oo[ll]; ik {
+		return val, nil
+	}
+	return syscall.SIGKILL, errors.New("can't work with 42")
+}
+
+func getint(fd *ini.File, ok, path string) (b int, err error) {
+	b = 0
+	ll, err := getK(fd, ok, path)
+	if err != nil {
+		return 0, err
+	}
+	b, err = strconv.Atoi(ll)
+	return
+}
+
+func getbool(fd *ini.File, ik, path string) (ok bool, err error) {
+	ok = false
+	fg, err := getK(fd, ik, path)
+	if err != nil {
+		return ok, err
+	}
+	if fg == "true" {
+		ok = true
+	}
+	return
+}
+
+func getauto(fd *ini.File, ok, path string) (i int, err error) {
+	ff, err := getK(fd, ok, path)
+	if err != nil {
+		return 0, err
+	}
+	if ff == "unexpected" {
+		return -1, nil
+	}
+	i, err = strconv.Atoi(ff)
+	return
+}
+
 func get(st string) (a map[string]task, err error) {
 	fd, err := ini.Load(st)
 	if err != nil {
@@ -157,7 +208,7 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
-			stop, err := get_int_array(fd, ok, "stop")
+			stop, err := get_int_array(fd, ok, "exitcodes")
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
@@ -165,18 +216,47 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil {
 				return nil, err
 			}
-			sig := syscall.SIGKILL
+			sig, err := getsignal(fd, ok, "stopsignal")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			stime, err := getint(fd, ok, "stoptime")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			btime, err := getint(fd, ok, "starttime")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			as, err := getbool(fd, ok, "autostart")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			st, err := getint(fd, ok, "startretries")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			aar, err := getauto(fd, ok, "autorestart")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
 			for y := 0; y < numprocs; y++ {
 				name := namer(ok, vvv, y)
 				a[name] = task{
-					lp:         PATH,
-					lancer:     false,
-					finish:     false,
-					cmds:       CMD,
-					umask:      UMASK,
-					exitcodes:  stop,
-					numprocs:   numprocs,
-					stopsignal: sig,
+					lp:           PATH,
+					lancer:       false,
+					finish:       false,
+					cmds:         CMD,
+					umask:        UMASK,
+					exitcodes:    stop,
+					numprocs:     numprocs,
+					stopsignal:   sig,
+					stoptime:     stime,
+					autostart:    as,
+					autorestart:  aar,
+					starttime:    btime,
+					startretries: st,
+					memretries:   st,
 				}
 			}
 		}

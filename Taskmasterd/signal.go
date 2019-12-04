@@ -34,9 +34,11 @@ func send_me() (err error) {
 		if ta, ok := jobs[key]; ok {
 			if !verify_change(ta, val) {
 				jobs[key] = val
+				veve(key)
 			}
 		} else {
 			jobs[key] = val
+			veve(key)
 		}
 	}
 	return

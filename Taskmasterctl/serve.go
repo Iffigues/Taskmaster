@@ -45,6 +45,8 @@ func receive(conn net.Conn, c chan Message) {
 func sendy(con net.Conn, y string, c chan Message) (b Message) {
 	if len(y) > 1 {
 		con.Write([]byte(y + "\n"))
+		bb := <-c
+		fmt.Println(bb.Mess)
 	}
 	return
 }

@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"time"
 )
 
 func get_pid(a int, c string) (ok bool) {
@@ -53,7 +54,9 @@ func start_command(a string) (ok bool) {
 				}
 				cmd.Stdout = f
 			} else {
-				keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
+				f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
+				cmd.Stdout = f
+				//keys.triade.StdOutPipe, _ = cmd.StdoutPipe()
 			}
 			if keys.cmds.Stderr != "" {
 				if err := ioutil.WriteFile(keys.cmds.Stderr, nil, os.FileMode(keys.umask)); err != nil {
@@ -65,10 +68,13 @@ func start_command(a string) (ok bool) {
 				}
 				cmd.Stderr = ff
 			} else {
-				keys.triade.StdErrPipe, _ = cmd.StderrPipe()
+				f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(keys.umask))
+				cmd.Stderr = f
+				//keys.triade.StdErrPipe, _ = cmd.StderrPipe()
 			}
 			keys.cmdl = cmd
 			keys.stop = false
+			keys.verif = make(chan bool)
 			keys.triade.StdInPipe, _ = cmd.StdinPipe()
 			queued[a] = &keys
 			return true
@@ -82,8 +88,14 @@ func stop_command(a string) (ok bool) {
 	existe, ok := is_started(a)
 	if existe && !ok {
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
-			return false
 		}
+		select {
+		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
+			queued[a].cmdl.Process.Kill()
+		case <-queued[a].verif:
+			goto ha
+		}
+	ha:
 		queued[a].stop = true
 		return true
 	}

@@ -4,6 +4,7 @@ import (
 	"io"
 	"os/exec"
 	"syscall"
+	"time"
 )
 
 type Triade struct {
@@ -31,6 +32,7 @@ type task struct {
 	stop         bool
 	autorestart  int
 	startretries int
+	memretries   int
 	starttime    int
 	stoptime     int
 	stopsignal   syscall.Signal
@@ -39,6 +41,12 @@ type task struct {
 	umask        int
 	cmdl         *exec.Cmd
 	triade       Triade
+	verif        chan bool
+	exectime     float64
+	nbexec       int
+	start        time.Time
+	end          time.Time
+	succed       bool
 }
 
 type ret struct {
