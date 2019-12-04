@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func init() {
+func initee() {
 	cmd := exec.Command("id", "-u")
 	output, err := cmd.Output()
 	if err != nil {

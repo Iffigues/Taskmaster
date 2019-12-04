@@ -9,7 +9,10 @@ import (
 )
 
 func init() {
-	fmt.Println(os.Geteuid())
+	if os.Geteuid() != 0 {
+		fmt.Println("pls, run program in root mode")
+		os.Exit(1)
+	}
 }
 
 var (
