@@ -25,9 +25,11 @@ var (
 	queued = make(enqued)
 )
 
-func isgood(a error, b []int, i bool) (ok bool) {
+func isgood(a error, b []int, i bool) (ok, status bool) {
+	ok = true
+	status = false
 	if !i {
-		return false
+		ok = false
 	}
 	t := 0
 	if a != nil {
@@ -38,10 +40,10 @@ func isgood(a error, b []int, i bool) (ok bool) {
 	}
 	for _, ff := range b {
 		if ff == t {
-			return true
+			status = true
 		}
 	}
-	return false
+	return
 }
 
 func lance(c chan bool, a ...string) {
@@ -75,19 +77,16 @@ label:
 			ii = fifi.Seconds() >= float64(time.Second*time.Duration(cc.starttime))
 			err = errs
 			cc.finish = true
-			cc.succed = isgood(err, cc.exitcodes, ii)
+			cccc, rrr := isgood(err, cc.exitcodes, ii)
+			cc.succed = cccc
 			if cc.stop {
 				registre(a[0], "programme stop at:"+cc.end.String())
 			} else {
-				if !cc.succed {
-					if cc.autorestart == 3 {
-						registre(a[0], "programme  relaunch an unexpected process at:"+cc.end.String())
-						goto label
-					}
-					if cc.startretries > 0 {
+				if !cccc || !rrr {
+					if cc.startretries > 0 && !cccc {
 						registre(a[0], "programme retrie process at: "+cc.end.String())
 						goto label
-					} else if cc.autorestart > 0 {
+					} else if cc.autorestart == 2 && !rrr {
 						goto label
 					} else {
 						registre(a[0], "programme fail at: "+cc.end.String())
@@ -244,6 +243,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 func reload(conn net.Conn, a ...string) (c ret, err error) {
 	syscall.Kill(mypid, syscall.SIGHUP)
 	registre("reload", "taskmaster reload at:"+time.Now().String())
+	conn.Write([]byte("reload"))
 	return
 }
 

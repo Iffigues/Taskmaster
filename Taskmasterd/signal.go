@@ -26,6 +26,10 @@ func send_me() (err error) {
 	a := map_array_string()
 	for _, val := range a {
 		if _, ok := yy[val]; !ok {
+			nn, nnn := is_started(val)
+			if nn && nnn {
+				queued[val].cmdl.Process.Kill()
+			}
 			delete(jobs, val)
 			delete(queued, val)
 		}
@@ -33,6 +37,13 @@ func send_me() (err error) {
 	for key, val := range yy {
 		if ta, ok := jobs[key]; ok {
 			if !verify_change(ta, val) {
+				if _, oi := queued[key]; oi {
+					nn, nnn := is_started(key)
+					if nn && nnn {
+						queued[key].cmdl.Process.Kill()
+					}
+					delete(queued, key)
+				}
 				jobs[key] = val
 				veve(key)
 			}

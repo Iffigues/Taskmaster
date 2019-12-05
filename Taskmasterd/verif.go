@@ -52,9 +52,8 @@ func my_string_array(a task) (t []string, gg []int, hh []bool) {
 	}
 	gg = []int{
 		a.autorestart,
-		a.stoptime,
-		a.starttime,
 		a.startretries,
+		a.starttime,
 		a.stoptime,
 		a.numprocs,
 		a.umask,
@@ -75,7 +74,7 @@ func verify_change(a, b task) (ok bool) {
 	if !verif_array(al, bl) {
 		return false
 	}
-	if !verif_array_int(ag, bg) {
+	if !verif_array_int(ag, bg) || !verif_array_int(a.exitcodes, b.exitcodes) {
 		return false
 	}
 	if !verif_array_bool(ab, bb) {
