@@ -16,7 +16,7 @@ clean:
 
 fclean:
 	make fclean -C Taskmasterd
-	make fclean -C Taskmasterctl
+	make fclean -C Taskmasterct
 
 fmt:
 	@make fmt -C Taskmasterd

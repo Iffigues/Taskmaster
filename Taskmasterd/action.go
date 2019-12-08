@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os/exec"
 	"time"
 )
@@ -38,7 +39,7 @@ func start_command(a string) (ok bool) {
 			}
 			f, err := stdout(keys, a)
 			if err != nil {
-
+				fmt.Println(err)
 			}
 			cmd.Stdout = f
 			ff, err := stderr(keys, a)

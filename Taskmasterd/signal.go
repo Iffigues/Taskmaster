@@ -88,5 +88,8 @@ func fanny() {
 		}
 	}()
 	code := <-exit_chan
+	for key, _ := range jobs {
+		mami(stop_command(key), "jobs stoped\n", "jobs don't stop\n")
+	}
 	os.Exit(code)
 }
