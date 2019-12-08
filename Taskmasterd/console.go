@@ -153,18 +153,18 @@ func send_signal(conn net.Conn, a ...string) (ce ret, err error) {
 }
 
 func kill(conn net.Conn, a ...string) (ce ret, err error) {
-	if a[0] == "all" {
+	if len(a) > 0 && a[0] == "all" {
 		for _, val := range queued {
 			if val.lancer {
 				val.cmdl.Process.Kill()
 			}
 		}
-		return
-	}
-	for _, val := range a {
-		if kk, ok := queued[val]; ok {
-			if kk.lancer {
-				queued[val].cmdl.Process.Kill()
+	} else {
+		for _, val := range a {
+			if kk, ok := queued[val]; ok {
+				if kk.lancer {
+					queued[val].cmdl.Process.Kill()
+				}
 			}
 		}
 	}
@@ -172,19 +172,20 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 	return
 }
 
-func meme(c chan bool, a, b string, conn net.Conn) {
-	if <-c {
-		conn.Write([]byte(a))
+func meme(c chan bool, a, b string) (strs string) {
+	e := <-c
+	if e {
+		return a
 	} else {
-		conn.Write([]byte(b))
+		return b
 	}
 }
 
-func mami(c bool, a, b string, conn net.Conn) {
+func mami(c bool, a, b string) (strs string) {
 	if c {
-		conn.Write([]byte(a))
+		return a
 	} else {
-		conn.Write([]byte(b))
+		return b
 	}
 }
 
@@ -196,42 +197,50 @@ func veve(a string) {
 }
 
 func start(conn net.Conn, a ...string) (ce ret, err error) {
+	strs := " \n"
 	if len(a) > 0 {
 		c := make(chan bool)
 		if a[0] == "all" {
 			for key, _ := range jobs {
 				go lance(c, key)
-				meme(c, "jobs started", "jobs not found", conn)
+				e := meme(c, "jobs started\n", "jobs not found\n")
+				strs = str.StrConcat(strs, e)
 			}
-			return
 		} else {
 			for _, key := range a {
 				go lance(c, key)
-				meme(c, "jobs started", "jobs not found", conn)
+				e := meme(c, "jobs started\n", "jobs not found\n")
+				strs = str.StrConcat(strs, e)
 			}
 		}
 	} else {
 		conn.Write([]byte("bad init file"))
 	}
+	conn.Write([]byte(strs))
 	return
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
+	strs := " \n"
 	if len(a) > 0 {
 		if a[0] == "all" {
 			for key, _ := range jobs {
-				mami(stop_command(key), "jobs stoped", "jobs don't stop", conn)
+				e := mami(stop_command(key), "jobs stoped\n", "jobs don't stop\n")
+				strs = str.StrConcat(strs, e)
 			}
 		} else {
 			for _, key := range a {
-				mami(stop_command(key), "jobs stoped", "jobs don't stop", conn)
+				e := mami(stop_command(key), "jobs stoped\n", "jobs don't stop\n")
+				strs = str.StrConcat(strs, e)
 			}
 		}
 	}
+	conn.Write([]byte(strs))
 	return
 }
 
 func restart(conn net.Conn, a ...string) (c ret, err error) {
+	strs := " \n"
 	if len(a) > 0 {
 		c := make(chan bool)
 		if a[0] == "all" {
@@ -239,17 +248,20 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 				stop_command(key)
 				time.Sleep(1 * time.Second)
 				go lance(c, key)
-				meme(c, "started command", "jobs not found", conn)
+				e := meme(c, "started command\n", "jobs not found\n")
+				strs = str.StrConcat(strs, e)
 			}
 		} else {
 			for _, key := range a {
 				stop_command(key)
 				time.Sleep(1 * time.Second)
 				go lance(c, key)
-				meme(c, "started command", "jobs not found", conn)
+				e := meme(c, "started command\n", "jobs not found\n")
+				strs = str.StrConcat(strs, e)
 			}
 		}
 	}
+	conn.Write([]byte(strs))
 	return
 }
 

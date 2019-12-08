@@ -1,7 +1,6 @@
 package main
 
 import (
-	//	"bufio"
 	"fmt"
 	"github.com/chzyer/readline"
 	"net"
@@ -45,21 +44,14 @@ func receive(conn net.Conn, c chan Message) {
 func sendy(con net.Conn, y string, c chan Message) (b Message) {
 	if len(y) > 1 {
 		con.Write([]byte(y + "\n"))
-
+		b = <-c
+		fmt.Println(b.Mess)
 	}
 	return
 }
 
-func read(c chan Message) {
-	for {
-		b := <-c
-		fmt.Println(b.Mess)
-	}
-}
-
 func client(mod bool, str string) {
 	c := make(chan Message)
-	go read(c)
 lab:
 	conn, err := net.Dial("tcp", CONN_HOST+":"+CONN_PORT)
 	if err != nil {
@@ -81,7 +73,7 @@ lab:
 		if ddd.Types == 1 {
 			break
 		}
-		if text == "exit" {
+		if len(text) >= 4 && text[0:4] == "exit" {
 			return
 		}
 	}
