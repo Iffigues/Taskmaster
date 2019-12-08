@@ -197,7 +197,7 @@ func veve(a string) {
 }
 
 func start(conn net.Conn, a ...string) (ce ret, err error) {
-	strs := " \n"
+	strs := ""
 	if len(a) > 0 {
 		c := make(chan bool)
 		if a[0] == "all" {
@@ -216,12 +216,15 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 	} else {
 		conn.Write([]byte("bad init file"))
 	}
+	if strs == "" {
+		conn.Write([]byte(" "))
+	}
 	conn.Write([]byte(strs))
 	return
 }
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
-	strs := " \n"
+	strs := ""
 	if len(a) > 0 {
 		if a[0] == "all" {
 			for key, _ := range jobs {
@@ -235,12 +238,15 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 			}
 		}
 	}
+	if strs == "" {
+		conn.Write([]byte(" "))
+	}
 	conn.Write([]byte(strs))
 	return
 }
 
 func restart(conn net.Conn, a ...string) (c ret, err error) {
-	strs := " \n"
+	strs := ""
 	if len(a) > 0 {
 		c := make(chan bool)
 		if a[0] == "all" {
@@ -260,6 +266,10 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 				strs = str.StrConcat(strs, e)
 			}
 		}
+	}
+	if strs == "" {
+		conn.Write([]byte(" "))
+		return
 	}
 	conn.Write([]byte(strs))
 	return
@@ -311,6 +321,10 @@ func status(conn net.Conn, a ...string) (c ret, err error) {
 		y = str.StrConcat(y, "not started")
 	lab:
 		t = str.StrConcat(t, y, "\n")
+	}
+	if t == "" {
+		conn.Write([]byte(" "))
+		return
 	}
 	conn.Write([]byte(t))
 	return
