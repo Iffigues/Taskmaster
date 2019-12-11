@@ -132,7 +132,7 @@ func nprocess(ar *ini.File, section, key string) (d, yy int, err error) {
 	return d, 1, err
 }
 
-func make_cmd(fd *ini.File, ok string) (ar Cmd, PATH string, err error) {
+func make_cmd(fd *ini.File, ok string, umask int64) (ar Cmd, PATH string, err error) {
 	ll, err := get_args(fd, ok, "args")
 	if err != nil && !NotFound(err) {
 		return
@@ -157,12 +157,20 @@ func make_cmd(fd *ini.File, ok string) (ar Cmd, PATH string, err error) {
 	if err != nil && !NotFound(err) {
 		return
 	}
-	ar.Stdout = dd
+	sout, err := stdout(dd, ok, umask)
+	if err != nil {
+		return
+	}
+	ar.Stdout = sout
 	ddd, err := getK(fd, ok, "stderr")
 	if err != nil && !NotFound(err) {
 		return
 	}
-	ar.Stderr = ddd
+	serr, err := stderr(ddd, ok, umask)
+	if err != nil {
+		return
+	}
+	ar.Stderr = serr
 	return
 }
 
@@ -230,11 +238,11 @@ func get(st string) (a map[string]task, err error) {
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			CMD, PATH, err := make_cmd(fd, ok)
+			UMASK, err := getumask(fd, ok)
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
-			UMASK, err := getumask(fd, ok)
+			CMD, PATH, err := make_cmd(fd, ok, UMASK)
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}

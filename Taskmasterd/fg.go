@@ -1,5 +1,6 @@
 package main
 
+/*
 import (
 	"bufio"
 	"fmt"
@@ -35,4 +36,4 @@ func fg(conn net.Conn, a ...string) (c ret, err error) {
 	}
 	_, err = conn.Write([]byte(""))
 	return
-}
+}*/

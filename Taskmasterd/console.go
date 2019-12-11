@@ -27,7 +27,7 @@ var (
 
 func isgood(a error, b []int, i bool) (ok, status bool) {
 	ok = true
-	status = true
+	status = false
 	if !i {
 		ok = false
 	}
@@ -43,6 +43,7 @@ func isgood(a error, b []int, i bool) (ok, status bool) {
 	for _, ff := range b {
 		if ff == t {
 			status = true
+			break
 		}
 	}
 	return
@@ -53,6 +54,12 @@ func rerun(a string) (retrie, abort int) {
 		return val.startretries, 50
 	}
 	return 0, 50
+}
+
+func delque(a string) {
+	if _, ok := queued[a]; ok {
+		delete(queued, a)
+	}
 }
 
 func lance(c chan bool, a ...string) {
@@ -68,8 +75,11 @@ label:
 		ii := false
 		cc := queued[a[0]]
 		if abort == 0 {
+			cc.finish = true
+			println("iss aborting")
 			registre(a[0], "programme abort at: "+time.Now().String())
 			cc.abort = true
+			return
 		}
 		cc.finish = false
 		eee := cc.cmdl.Start()
@@ -95,6 +105,7 @@ label:
 				registre(a[0], "programme stop at:"+cc.end.String())
 			} else {
 				if !cccc || !rrr {
+					println("kjkjjk")
 					if retrie > 0 && !cccc {
 						registre(a[0], "programme retrie process at: "+cc.end.String())
 						goto label
@@ -104,6 +115,7 @@ label:
 						registre(a[0], "programme fail at: "+cc.end.String())
 					}
 				} else {
+					println("jhhjjh")
 					retrie = cc.startretries
 					if cc.autorestart == 1 {
 						registre(a[0], "programme restart at:"+time.Now().String())
@@ -309,8 +321,12 @@ func status(conn net.Conn, a ...string) (c ret, err error) {
 	for u, _ := range jobs {
 		y := str.StrConcat(u, ":  ")
 		if i, ok := queued[u]; ok {
+			if u == "abort" {
+				fmt.Println(i.abort)
+			}
 			if i.abort {
 				y = str.StrConcat(y, "abort")
+				goto lab
 			}
 			if i.stop {
 				y = str.StrConcat(y, " stop")

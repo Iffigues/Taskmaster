@@ -34,20 +34,13 @@ func start_command(a string) (ok bool) {
 			fmt.Println(keys.cmds.Args)
 			if len(keys.cmds.Dir) > 0 {
 				cmd.Dir = keys.cmds.Dir
-				fmt.Println("hihihi", cmd.Dir)
 			}
 			if len(keys.cmds.Env) > 0 {
 				cmd.Env = keys.cmds.Env
 			}
-			f, err := stdout(keys, a)
-			if err != nil {
-				fmt.Println(err)
-			}
-			cmd.Stdout = f
-			ff, err := stderr(keys, a)
-			if err != nil {
-			}
-			cmd.Stderr = ff
+			fmt.Println(keys.cmds.Stdout)
+			cmd.Stdout = keys.cmds.Stdout
+			cmd.Stderr = keys.cmds.Stderr
 			keys.cmdl = cmd
 			keys.stop = false
 			keys.verif = make(chan bool)

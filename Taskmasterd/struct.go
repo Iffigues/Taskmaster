@@ -1,25 +1,19 @@
 package main
 
 import (
-	"io"
+	"os"
 	"os/exec"
 	"syscall"
 	"time"
 )
-
-type Triade struct {
-	StdErrPipe io.ReadCloser
-	StdOutPipe io.ReadCloser
-	StdInPipe  io.WriteCloser
-}
 
 type Cmd struct {
 	Path   string
 	Args   []string
 	Env    []string
 	Dir    string
-	Stdout string
-	Stderr string
+	Stdout *os.File
+	Stderr *os.File
 }
 
 type task struct {
@@ -40,7 +34,6 @@ type task struct {
 	exitcodes    []int
 	umask        int64
 	cmdl         *exec.Cmd
-	triade       Triade
 	verif        chan bool
 	exectime     float64
 	nbexec       int
