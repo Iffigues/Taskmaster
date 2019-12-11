@@ -18,8 +18,8 @@ func fanny(b []string, ii int, f ...os.Signal) {
 				t := true
 				fmt.Println(s, b)
 				for _, val := range f {
+					println("eee")
 					if val == s {
-						fmt.Println("hjjhhj")
 						t = false
 					}
 				}

@@ -49,6 +49,11 @@ func tab(a string) (ff []os.Signal, c []string) {
 }
 
 func main() {
+	for _, pair := range os.Environ() {
+    fmt.Println(pair)
+  }
+	dir, err := os.Getwd()
+	fmt.Println(dir, err)
 	i := os.Args
 	bbb := false
 	exit := 0
@@ -69,6 +74,7 @@ func main() {
 		if len(b) > 1 {
 			g, haha = tab(b[1])
 			b = b[1:]
+			fmt.Println(g, haha)
 			t = true
 			if len(b) > 1 {
 				b = b[1:]

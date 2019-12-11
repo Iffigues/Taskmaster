@@ -2,9 +2,12 @@ package main
 
 import (
 	"errors"
+	"fmt"
 	"github.com/go-ini/ini"
 	"log"
+	"os"
 	"os/exec"
+	"path/filepath"
 	"strconv"
 	"syscall"
 	"taskmasterd/helper/str"
@@ -43,13 +46,31 @@ func get_args(ar *ini.File, section, key string) (a []string, err error) {
 	return
 }
 
-func look_path(ar *ini.File, section string) (f string, err error) {
+func look_path(ar *ini.File, section, dir string) (f string, err error) {
 	f, err = getK(ar, section, "commande")
-	if f == "" || err != nil {
-		return
+	if f == "" {
+		return "", errors.New("command can't be empty")
 	}
-	f, err = exec.LookPath(f)
-	return
+	ff, err := exec.LookPath(f)
+	if err != nil && dir != "" {
+		info, err := os.Stat(dir + "/" + f)
+		if os.IsNotExist(err) {
+			fmt.Println(err)
+			return "", err
+		}
+		if info.IsDir() {
+			return "", err
+		}
+		f = dir + "/" + f
+		f, err = filepath.Abs(f)
+		if err != nil {
+			return "", err
+		}
+		ff, err := exec.LookPath(f)
+		return ff, err
+	}
+	ff, err = filepath.Abs(ff)
+	return ff, err
 }
 
 func getA(ar *ini.File, section, key string) (a []string, err error) {
@@ -111,8 +132,7 @@ func nprocess(ar *ini.File, section, key string) (d, yy int, err error) {
 	return d, 1, err
 }
 
-func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
-	ar.Path = path
+func make_cmd(fd *ini.File, ok string) (ar Cmd, PATH string, err error) {
 	ll, err := get_args(fd, ok, "args")
 	if err != nil && !NotFound(err) {
 		return
@@ -128,6 +148,11 @@ func make_cmd(fd *ini.File, ok, path string) (ar Cmd, err error) {
 		return
 	}
 	ar.Dir = llll
+	PATH, err = look_path(fd, ok, llll)
+	if err != nil {
+		return
+	}
+	ar.Path = PATH
 	dd, err := getK(fd, ok, "stdout")
 	if err != nil && !NotFound(err) {
 		return
@@ -205,11 +230,10 @@ func get(st string) (a map[string]task, err error) {
 	ar := fd.SectionStrings()
 	for _, ok := range ar {
 		if ok != "DEFAULT" {
-			PATH, err := look_path(fd, ok)
-			if err != nil {
+			CMD, PATH, err := make_cmd(fd, ok)
+			if err != nil && !NotFound(err) {
 				return nil, err
 			}
-			CMD, err := make_cmd(fd, ok, PATH)
 			UMASK, err := getumask(fd, ok)
 			if err != nil && !NotFound(err) {
 				return nil, err

@@ -25,6 +25,7 @@ func init() {
 		fmt.Println(errorJobs)
 		os.Exit(0)
 	}
+	begin()
 	b := os.Args
 	if len(b) == 3 {
 		if b[1] == "mod" && b[2] == "daemon" {

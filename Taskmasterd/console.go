@@ -72,7 +72,8 @@ label:
 			cc.abort = true
 		}
 		cc.finish = false
-		cc.cmdl.Start()
+		eee := cc.cmdl.Start()
+		fmt.Println(eee)
 		cc.start = time.Now()
 		registre(a[0], "progam start at: "+cc.start.String())
 		cc.lancer = true
@@ -228,12 +229,16 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) > 0 {
 		if a[0] == "all" {
 			for key, _ := range jobs {
-				e := mami(stop_command(key), "jobs stoped\n", "jobs don't stop\n")
+				ok, g := stop_command(key)
+				oui, d := is_stopped(ok, g)
+				e := mami(oui, d, "jobs don't stop\n")
 				strs = str.StrConcat(strs, e)
 			}
 		} else {
 			for _, key := range a {
-				e := mami(stop_command(key), "jobs stoped\n", "jobs don't stop\n")
+				ok, g := stop_command(key)
+				oui, d := is_stopped(ok, g)
+				e := mami(oui, d, "jobs don't stop\n")
 				strs = str.StrConcat(strs, e)
 			}
 		}
@@ -288,8 +293,10 @@ func exit(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func begin() (err error) {
+	fmt.Println(jobs["autostart"].autostart)
 	for key, val := range jobs {
 		if val.autostart {
+			println("eee")
 			c := make(chan bool)
 			go lance(c, key)
 		}

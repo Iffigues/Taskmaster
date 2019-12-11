@@ -31,8 +31,10 @@ func start_command(a string) (ok bool) {
 		gg, jj := is_started(a)
 		if (gg && jj) || (!gg) {
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
+			fmt.Println(keys.cmds.Args)
 			if len(keys.cmds.Dir) > 0 {
 				cmd.Dir = keys.cmds.Dir
+				fmt.Println("hihihi", cmd.Dir)
 			}
 			if len(keys.cmds.Env) > 0 {
 				cmd.Env = keys.cmds.Env
@@ -57,21 +59,26 @@ func start_command(a string) (ok bool) {
 	return
 }
 
-func stop_command(a string) (ok bool) {
+func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
 	if existe && !ok {
+		fmt.Println(queued[a].stopsignal)
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
+			fmt.Println(err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
+			println("eerreer")
 			queued[a].cmdl.Process.Kill()
 		case <-queued[a].verif:
+			println("dezezezze")
+			g = true
 			break
 		}
 		queued[a].stop = true
-		return true
+		return !ok, g
 	}
-	return
+	return !ok, g
 }
 
 func start_all_command() {

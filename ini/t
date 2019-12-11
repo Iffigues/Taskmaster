@@ -5,7 +5,7 @@ numprocs = 2
 
 [autostart]
 commande = ../test/test
-autostart= true
+autostart= yes
 args="loop"
 
 [autorestart_ever]
@@ -47,7 +47,7 @@ astartime="50"
 [stopsignal_true]
 commande = ../test/test
 args="signal TERM"
-stopsignal="TERM"
+stopsignal="TREM"
 
 [stopsignal_false]
 commande = ../test/test
@@ -57,14 +57,14 @@ stopsignal="HUP"
 [stoptime_true]
 commande = ../test/test
 args="signal TERM"
-stopsignal=HUP
-stoptime=2
+stopsignal="TERM"
+stoptime=10
 
 [stoptime_false]
 commande = ../test/test
 args="signal TERM"
-stopsignal="TERM"
-stoptime=2
+stopsignal="HUP""
+stoptime=10
 
 [stderr_stdout_redirect]
 commande = ../test/test
@@ -82,14 +82,7 @@ stdout=none
 commande = ../test/test
 args="stdout stderr"
 
-[dir]
-commande = "ls"
-workingdir="/Users/iffigues/hahaha/"
-stdout="/Users/iffigues/hahaha/dir_example"
-stderr="/Users/iffigues/hahaha/ert"
-;;directory=".."
 
-[env]
-commande= "/Users/iffigues/hahaha/test/test"
-env=zz
-zz="lp=des"
+[stderr_stdout_true]
+commande = ../test/test
+dir="../"
