@@ -29,6 +29,9 @@ func start_command(a string) (ok bool) {
 	var keys task
 	if keys, ok = jobs[a]; ok {
 		gg, jj := is_started(a)
+		if _, err := exec.LookPath(keys.cmds.Path); err != nil {
+			return false
+		}
 		if (gg && jj) || (!gg) {
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
 			fmt.Println(keys.cmds.Args)
