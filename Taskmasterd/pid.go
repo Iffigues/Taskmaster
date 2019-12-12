@@ -1,9 +1,19 @@
 package main
 
 import (
+	"github.com/go-ini/ini"
 	"net"
 	"strconv"
 )
+
+func getStd(ar *ini.File, section, key string) (a string, err error) {
+	bb, err := ar.Section(section).GetKey(key)
+	if err != nil {
+		return
+	}
+	a = bb.String()
+	return
+}
 
 func pid(conn net.Conn, a ...string) (c ret, err error) {
 	if len(a) == 0 {
