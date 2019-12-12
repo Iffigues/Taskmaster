@@ -71,15 +71,17 @@ func aborting(cc *task, abort int, a string) (ok bool) {
 	return false
 }
 
+func add_bool(c chan bool, ok bool) {
+	c <- ok
+}
+
 func lance(c chan bool, a ...string) {
 	cons := rerun(a[0])
 	for {
 		cons.abort = cons.abort - 1
 		ok := start_command(a[0])
 		if ok {
-			go func() {
-				c <- true
-			}()
+			go add_bool(c, true)
 			ii, cc := false, queued[a[0]]
 			if ok := aborting(cc, cons.abort, a[0]); ok {
 				return
@@ -100,10 +102,9 @@ func lance(c chan bool, a ...string) {
 				if !cons.f {
 					return
 				}
-				registre(a[0], "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
 			}
 		} else {
-			c <- false
+			go add_bool(c, false)
 			return
 		}
 	}
@@ -141,6 +142,7 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 			registre(a, "programme restart at:"+time.Now().String())
 			return true, retrie
 		}
+		registre(a, "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
 		return false, retrie
 	}
 }
