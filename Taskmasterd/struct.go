@@ -48,4 +48,10 @@ type ret struct {
 	end bool
 }
 
+type consolle struct {
+	retrie int
+	abort  int
+	f      bool
+}
+
 type enqued map[string]*task

@@ -49,11 +49,11 @@ func isgood(a error, b []int, i bool) (ok, status bool) {
 	return
 }
 
-func rerun(a string) (retrie, abort int) {
+func rerun(a string) (tt consolle) {
 	if val, ok := jobs[a]; ok {
-		return val.startretries, 50
+		return consolle{val.startretries, 50, false}
 	}
-	return 0, 50
+	return consolle{0, 50, false}
 }
 
 func delque(a string) {
@@ -72,21 +72,24 @@ func aborting(cc *task, abort int, a string) (ok bool) {
 }
 
 func lance(c chan bool, a ...string) {
-	retrie, abort := rerun(a[0])
-	var f bool
+	cons := rerun(a[0])
 label:
-	abort = abort - 1
+	cons.abort = cons.abort - 1
 	ok := start_command(a[0])
 	if ok {
 		go func() {
 			c <- true
 		}()
 		ii, cc := false, queued[a[0]]
-		if ok := aborting(cc, abort, a[0]); ok {
+		if ok := aborting(cc, cons.abort, a[0]); ok {
 			return
 		}
 		cc.finish, cc.start, cc.lancer = false, time.Now(), true
-		_, done := cc.cmdl.Start(), make(chan error, 1)
+		err, done := cc.cmdl.Start(), make(chan error, 1)
+		if err != nil {
+			cc.finish = true
+			return
+		}
 		registre(a[0], "progam start at: "+cc.start.String())
 		go func() {
 			done <- cc.cmdl.Wait()
@@ -99,8 +102,8 @@ label:
 			err, fifi := errs, time.Since(cc.start)
 			cc.lancer, cc.finish, cc.end, cc.exectime, ii, cc.nbexec = finish(fifi.Seconds(), cc.starttime, cc.nbexec)
 			cc.succed, cc.status = isgood(err, cc.exitcodes, ii)
-			f, retrie = is_false(cc, retrie, a[0], cc.status)
-			if f {
+			cons.f, cons.retrie = is_false(cc, cons.retrie, a[0], cc.status)
+			if cons.f {
 				goto label
 			}
 			registre(a[0], "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
