@@ -73,44 +73,51 @@ func aborting(cc *task, abort int, a string) (ok bool) {
 
 func lance(c chan bool, a ...string) {
 	cons := rerun(a[0])
-label:
-	cons.abort = cons.abort - 1
-	ok := start_command(a[0])
-	if ok {
-		go func() {
-			c <- true
-		}()
-		ii, cc := false, queued[a[0]]
-		if ok := aborting(cc, cons.abort, a[0]); ok {
-			return
-		}
-		cc.finish, cc.start, cc.lancer = false, time.Now(), true
-		err, done := cc.cmdl.Start(), make(chan error, 1)
-		if err != nil {
-			cc.finish = true
-			return
-		}
-		registre(a[0], "progam start at: "+cc.start.String())
-		go func() {
-			done <- cc.cmdl.Wait()
-		}()
-		select {
-		case errs := <-done:
+	for {
+		cons.abort = cons.abort - 1
+		ok := start_command(a[0])
+		if ok {
 			go func() {
-				cc.verif <- true
+				c <- true
 			}()
-			err, fifi := errs, time.Since(cc.start)
-			cc.lancer, cc.finish, cc.end, cc.exectime, ii, cc.nbexec = finish(fifi.Seconds(), cc.starttime, cc.nbexec)
-			cc.succed, cc.status = isgood(err, cc.exitcodes, ii)
-			cons.f, cons.retrie = is_false(cc, cons.retrie, a[0], cc.status)
-			if cons.f {
-				goto label
+			ii, cc := false, queued[a[0]]
+			if ok := aborting(cc, cons.abort, a[0]); ok {
+				return
 			}
-			registre(a[0], "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
+			cc.finish, cc.start, cc.lancer = false, time.Now(), true
+			err, done := cc.cmdl.Start(), make(chan error, 1)
+			if err != nil {
+				cc.finish = true
+				return
+			}
+			registre(a[0], "progam start at: "+cc.start.String())
+			go func() {
+				done <- cc.cmdl.Wait()
+			}()
+			select {
+			case errs := <-done:
+				cons.f, cons.retrie = wait_finish(cc, errs, ii, cons.retrie, a[0])
+				if !cons.f {
+					return
+				}
+				registre(a[0], "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
+			}
+		} else {
+			c <- false
+			return
 		}
-	} else {
-		c <- false
 	}
+}
+
+func wait_finish(cc *task, errs error, ii bool, retrie int, a string) (vrai bool, i int) {
+	go func() {
+		cc.verif <- true
+	}()
+	err, fifi := errs, time.Since(cc.start)
+	cc.lancer, cc.finish, cc.end, cc.exectime, ii, cc.nbexec = finish(fifi.Seconds(), cc.starttime, cc.nbexec)
+	cc.succed, cc.status = isgood(err, cc.exitcodes, ii)
+	return is_false(cc, retrie, a, cc.status)
+
 }
 
 func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
