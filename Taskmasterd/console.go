@@ -62,32 +62,32 @@ func delque(a string) {
 	}
 }
 
+func aborting(cc *task, abort int, a string) (ok bool) {
+	if abort <= 0 {
+		cc.finish, cc.abort = true, true
+		registre(a, "programme abort at: "+time.Now().String())
+		return true
+	}
+	return false
+}
+
 func lance(c chan bool, a ...string) {
 	retrie, abort := rerun(a[0])
+	var f bool
 label:
 	abort = abort - 1
-	var err error
 	ok := start_command(a[0])
 	if ok {
 		go func() {
 			c <- true
 		}()
-		ii := false
-		cc := queued[a[0]]
-		if abort == 0 {
-			cc.finish = true
-			println("iss aborting")
-			registre(a[0], "programme abort at: "+time.Now().String())
-			cc.abort = true
+		ii, cc := false, queued[a[0]]
+		if ok := aborting(cc, abort, a[0]); ok {
 			return
 		}
-		cc.finish = false
-		eee := cc.cmdl.Start()
-		fmt.Println(eee)
-		cc.start = time.Now()
+		cc.finish, cc.start, cc.lancer = false, time.Now(), true
+		_, done := cc.cmdl.Start(), make(chan error, 1)
 		registre(a[0], "progam start at: "+cc.start.String())
-		cc.lancer = true
-		done := make(chan error, 1)
 		go func() {
 			done <- cc.cmdl.Wait()
 		}()
@@ -96,37 +96,42 @@ label:
 			go func() {
 				cc.verif <- true
 			}()
-			fifi := time.Since(cc.start)
+			err, fifi := errs, time.Since(cc.start)
 			cc.lancer, cc.finish, cc.end, cc.exectime, ii, cc.nbexec = finish(fifi.Seconds(), cc.starttime, cc.nbexec)
-			err = errs
-			cccc, rrr := isgood(err, cc.exitcodes, ii)
-			cc.succed = cccc
-			if cc.stop {
-				registre(a[0], "programme stop at:"+cc.end.String())
-			} else {
-				if !cccc || !rrr {
-					println("kjkjjk")
-					if retrie > 0 && !cccc {
-						registre(a[0], "programme retrie process at: "+cc.end.String())
-						goto label
-					} else if cc.autorestart == 2 && !rrr {
-						goto label
-					} else {
-						registre(a[0], "programme fail at: "+cc.end.String())
-					}
-				} else {
-					println("jhhjjh")
-					retrie = cc.startretries
-					if cc.autorestart == 1 {
-						registre(a[0], "programme restart at:"+time.Now().String())
-						goto label
-					}
-				}
+			cc.succed, cc.status = isgood(err, cc.exitcodes, ii)
+			f, retrie = is_false(cc, retrie, a[0], cc.status)
+			if f {
+				goto label
 			}
 			registre(a[0], "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
 		}
 	} else {
 		c <- false
+	}
+}
+
+func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
+	if cc.stop {
+		registre(a, "programme stop at:"+cc.end.String())
+		return false, retrie
+	}
+	if !cc.succed || !cc.status {
+		if retrie > 0 && !cc.succed {
+			registre(a, "programme retrie process at: "+cc.end.String())
+			return true, retrie - 1
+		} else if cc.autorestart == 2 && !rrr {
+			return true, retrie
+		} else {
+			registre(a, "programme fail at: "+cc.end.String())
+			return false, retrie
+		}
+	} else {
+		retrie = cc.startretries
+		if cc.autorestart == 1 {
+			registre(a, "programme restart at:"+time.Now().String())
+			return true, retrie
+		}
+		return false, retrie
 	}
 }
 

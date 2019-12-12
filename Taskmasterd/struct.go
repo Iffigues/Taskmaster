@@ -17,6 +17,7 @@ type Cmd struct {
 }
 
 type task struct {
+	status       bool
 	lp           string
 	cmds         Cmd
 	live         int
