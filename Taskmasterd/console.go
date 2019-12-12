@@ -27,12 +27,13 @@ var (
 
 func isgood(a error, b []int, i bool) (ok, status bool) {
 	ok = true
-	status = false
+	status = true
 	if !i {
 		ok = false
 	}
 	t := 0
 	if a != nil {
+		fmt.Println(a)
 		vv := strings.Split(a.Error(), " ")
 		if len(vv) == 3 {
 			t, _ = strconv.Atoi(vv[2])
@@ -44,6 +45,8 @@ func isgood(a error, b []int, i bool) (ok, status bool) {
 		if ff == t {
 			status = true
 			break
+		} else {
+			status = false
 		}
 	}
 	return
@@ -54,12 +57,6 @@ func rerun(a string) (tt consolle) {
 		return consolle{val.startretries, 50, false}
 	}
 	return consolle{0, 50, false}
-}
-
-func delque(a string) {
-	if _, ok := queued[a]; ok {
-		delete(queued, a)
-	}
 }
 
 func aborting(cc *task, abort int, a string) (ok bool) {
@@ -127,6 +124,7 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 		return false, retrie
 	}
 	if !cc.succed || !cc.status {
+		fmt.Println(cc.succed, cc.status)
 		if retrie > 0 && !cc.succed {
 			registre(a, "programme retrie process at: "+cc.end.String())
 			return true, retrie - 1
@@ -137,8 +135,10 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 			return false, retrie
 		}
 	} else {
+		println("oui")
 		retrie = cc.startretries
 		if cc.autorestart == 1 {
+			println("ezezez")
 			registre(a, "programme restart at:"+time.Now().String())
 			return true, retrie
 		}
