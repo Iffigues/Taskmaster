@@ -4,8 +4,6 @@ init:
 	make init -C Taskmasterd
 	make init -C Taskmasterctl
 	make init -C test
-	mkdir ./log/stderr
-	mkdir ./log/stdout
 
 build:
 	@make -C Taskmasterd

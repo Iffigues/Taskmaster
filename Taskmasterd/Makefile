@@ -10,6 +10,8 @@ all:  build
 init:
 	$(GOFMT)
 	$(GOINIT)
+	mkdir ./log/stdout
+	mkdir ./log/stderr
 build:
 	$(GOFMT)
 	$(GOGET)
@@ -23,3 +25,6 @@ clean:
 fclean:
 	$(GOCLEAN)
 	rm -rf $(GOU) go.sum go.mod
+	rm -rf ./log/stdout
+	rm -rf ./log/stderr
+	rm ./log/registre.log

@@ -50,8 +50,8 @@ func tab(a string) (ff []os.Signal, c []string) {
 
 func main() {
 	for _, pair := range os.Environ() {
-    fmt.Println(pair)
-  }
+		fmt.Println(pair)
+	}
 	dir, err := os.Getwd()
 	fmt.Println(dir, err)
 	i := os.Args
