@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"syscall"
 	"taskmasterd/helper/str"
@@ -21,10 +20,8 @@ func exit(conn net.Conn, a ...string) (c ret, err error) {
 }
 
 func begin() (err error) {
-	fmt.Println(jobs["autostart"].autostart)
 	for key, val := range jobs {
 		if val.autostart {
-			println("eee")
 			c := make(chan bool)
 			go lance(c, key)
 		}
@@ -37,9 +34,6 @@ func status(conn net.Conn, a ...string) (c ret, err error) {
 	for u, _ := range jobs {
 		y := str.StrConcat(u, ":  ")
 		if i, ok := queued[u]; ok {
-			if u == "abort" {
-				fmt.Println(i.abort)
-			}
 			if i.abort {
 				y = str.StrConcat(y, "abort")
 				goto lab

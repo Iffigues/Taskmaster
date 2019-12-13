@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+import ()
 
 func is_stopped(ok, g bool) (yes bool, str string) {
-	fmt.Println(ok, g)
 	if !ok {
 		return false, "jobs don't stop\n"
 	}

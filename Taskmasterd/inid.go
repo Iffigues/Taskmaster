@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/go-ini/ini"
-	"log"
 	"strconv"
 )
 
@@ -114,12 +113,4 @@ func get(st string) (a map[string]task, err error) {
 	}
 	err = nil
 	return
-}
-
-func getKey(section, key string) (inu string) {
-	ar, err := cfg.Section(section).GetKey(key)
-	if err != nil {
-		log.Panic(err)
-	}
-	return ar.String()
 }

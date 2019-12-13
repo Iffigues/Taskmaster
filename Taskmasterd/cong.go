@@ -24,7 +24,6 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 		return false, retrie
 	}
 	if !cc.succed || !cc.status {
-		fmt.Println(cc.succed, cc.status)
 		if retrie > 0 && !cc.succed {
 			registre(a, "programme retrie process at: "+cc.end.String())
 			return true, retrie - 1
@@ -83,22 +82,33 @@ func send_signal(conn net.Conn, a ...string) (ce ret, err error) {
 }
 
 func kill(conn net.Conn, a ...string) (ce ret, err error) {
+	strs := ""
 	if len(a) > 0 && a[0] == "all" {
-		for _, val := range queued {
+		for key, val := range queued {
 			if val.lancer {
-				val.cmdl.Process.Kill()
+				err := val.cmdl.Process.Kill()
+				if err != nil {
+					strs = strs + key + ": " + err.Error() + "\n"
+				} else {
+					strs = strs + key + ": " + "process kill\n"
+				}
 			}
 		}
 	} else {
 		for _, val := range a {
 			if kk, ok := queued[val]; ok {
 				if kk.lancer {
-					queued[val].cmdl.Process.Kill()
+					err := queued[val].cmdl.Process.Kill()
+					if err != nil {
+						strs = strs + val + ": " + err.Error() + "\n"
+					} else {
+						strs = strs + val + ": " + "process kill\n"
+					}
 				}
 			}
 		}
 	}
-	conn.Write([]byte("commande lancer"))
+	conn.Write([]byte(strs))
 	return
 }
 

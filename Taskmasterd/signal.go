@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -19,7 +18,7 @@ func map_array_string() (a []string) {
 }
 
 func send_me() (err error) {
-	yy, err := get("../ini/ini.ini")
+	yy, err := get("./ini/ini.ini")
 	if err != nil {
 		return
 	}
@@ -74,16 +73,12 @@ func fanny() {
 			case syscall.SIGHUP:
 				send_me()
 			case syscall.SIGINT:
-				fmt.Println("Warikomi")
 				exit_chan <- 0
 			case syscall.SIGTERM:
-				fmt.Println("force stop")
 				exit_chan <- 0
 			case syscall.SIGQUIT:
-				fmt.Println("stop and core dump")
 				exit_chan <- 0
 			default:
-				fmt.Println("Unknown signal.")
 			}
 		}
 	}()

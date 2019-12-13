@@ -2,18 +2,11 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"github.com/go-ini/ini"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"taskmasterd/helper/str"
-)
-
-const ()
-
-var (
-	cfg, cfgErr = ini.Load("./conf/Taskmaster.conf")
 )
 
 func NotFound(err error) (vrai bool) {
@@ -52,7 +45,6 @@ func look_path(ar *ini.File, section, dir string) (f string, err error) {
 	if err != nil && dir != "" {
 		info, err := os.Stat(dir + "/" + f)
 		if os.IsNotExist(err) {
-			fmt.Println(err)
 			return "", err
 		}
 		if info.IsDir() {

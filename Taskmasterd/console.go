@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"strconv"
 	"strings"
@@ -31,7 +30,6 @@ func isgood(a error, b []int, i bool) (ok, status bool) {
 	}
 	t := 0
 	if a != nil {
-		fmt.Println(a)
 		vv := strings.Split(a.Error(), " ")
 		if len(vv) == 3 {
 			t, _ = strconv.Atoi(vv[2])

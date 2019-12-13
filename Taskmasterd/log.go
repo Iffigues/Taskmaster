@@ -60,7 +60,7 @@ func mm(a string) {
 }
 
 func registre(a, mess string, bbb ...int) {
-	f, err := os.OpenFile("../log/registre.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	f, err := os.OpenFile("./log/registre.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 	}
 	defer f.Close()

@@ -20,10 +20,10 @@ func stdout(keys, a string, umask int64) (r *os.File, err error) {
 		f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
 		return f, err
 	}
-	if err := ioutil.WriteFile("../log/stdout/"+a, nil, os.FileMode(umask)); err != nil {
+	if err := ioutil.WriteFile("./log/stdout/"+a, nil, os.FileMode(umask)); err != nil {
 		return nil, err
 	}
-	ff, err := os.OpenFile("../log/stdout/"+a, os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
+	ff, err := os.OpenFile("./log/stdout/"+a, os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
 	if err != nil {
 		return nil, err
 	}
@@ -45,10 +45,10 @@ func stderr(keys, a string, umask int64) (r *os.File, err error) {
 		f, _ := os.OpenFile("/dev/null", os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
 		return f, err
 	}
-	if err := ioutil.WriteFile("../log/stderr/"+a, nil, os.FileMode(umask)); err != nil {
+	if err := ioutil.WriteFile("./log/stderr/"+a, nil, os.FileMode(umask)); err != nil {
 		return nil, err
 	}
-	ff, err := os.OpenFile("../log/stderr/"+a, os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
+	ff, err := os.OpenFile("./log/stderr/"+a, os.O_WRONLY|os.O_APPEND, os.FileMode(umask))
 	if err != nil {
 		return nil, err
 	}

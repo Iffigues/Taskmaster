@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"time"
 )
@@ -34,14 +33,12 @@ func start_command(a string) (ok bool) {
 		}
 		if (gg && jj) || (!gg) {
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
-			fmt.Println(keys.cmds.Args)
 			if len(keys.cmds.Dir) > 0 {
 				cmd.Dir = keys.cmds.Dir
 			}
 			if len(keys.cmds.Env) > 0 {
 				cmd.Env = keys.cmds.Env
 			}
-			fmt.Println(keys.cmds.Stdout)
 			cmd.Stdout = keys.cmds.Stdout
 			cmd.Stderr = keys.cmds.Stderr
 			keys.cmdl = cmd
@@ -58,16 +55,12 @@ func start_command(a string) (ok bool) {
 func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
 	if existe && !ok {
-		fmt.Println(queued[a].stopsignal)
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
-			fmt.Println(err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
-			println("eerreer")
 			queued[a].cmdl.Process.Kill()
 		case <-queued[a].verif:
-			println("dezezezze")
 			g = true
 			break
 		}

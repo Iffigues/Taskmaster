@@ -8,16 +8,10 @@ import (
 	"syscall"
 )
 
-func init() {
-	if os.Geteuid() != 0 {
-		fmt.Println("pls, run program in root mode if you want more featurs")
-	}
-}
-
 var (
 	mode            = false
 	mypid           = syscall.Getpid()
-	jobs, errorJobs = get("../ini/ini.ini")
+	jobs, errorJobs = get("./ini/ini.ini")
 )
 
 func init() {
@@ -38,9 +32,9 @@ func main() {
 	if mode {
 		cntxt := &daemon.Context{
 			PidFileName: "../log/taskmaster.pid",
-			PidFilePerm: 0644,
+			PidFilePerm: 0777,
 			LogFileName: "../log/sample.log",
-			LogFilePerm: 0640,
+			LogFilePerm: 0777,
 			WorkDir:     "./",
 			Umask:       027,
 			Args:        []string{"l"},
