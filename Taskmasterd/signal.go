@@ -27,7 +27,7 @@ func send_me() (err error) {
 		if _, ok := yy[val]; !ok {
 			nn, nnn := is_started(val)
 			if nn && nnn {
-				queued[val].cmdl.Process.Kill()
+				go queued[val].cmdl.Process.Kill()
 			}
 			delete(jobs, val)
 			delete(queued, val)
@@ -39,7 +39,7 @@ func send_me() (err error) {
 				if _, oi := queued[key]; oi {
 					nn, nnn := is_started(key)
 					if nn && nnn {
-						queued[key].cmdl.Process.Kill()
+						go queued[key].cmdl.Process.Kill()
 					}
 					delete(queued, key)
 				}
