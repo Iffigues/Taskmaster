@@ -29,6 +29,8 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 			return true, retrie - 1
 		} else if cc.autorestart == 2 && !rrr {
 			return true, retrie
+		} else if cc.autorestart == 1 {
+			return true, retrie
 		} else {
 			registre(a, "programme fail at: "+cc.end.String())
 			return false, retrie
