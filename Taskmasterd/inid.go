@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/go-ini/ini"
 	"strconv"
 )
@@ -73,7 +72,6 @@ func get(st string) (a map[string]task, err error) {
 			}
 			stime, err := getint(fd, ok, "stoptime")
 			if err != nil && !NotFound(err) {
-				fmt.Println(err)
 				return nil, err
 			}
 			btime, err := getint(fd, ok, "starttime")
