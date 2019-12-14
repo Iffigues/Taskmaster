@@ -34,10 +34,8 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 			return false, retrie
 		}
 	} else {
-		println("oui")
 		retrie = cc.startretries
 		if cc.autorestart == 1 {
-			println("ezezez")
 			registre(a, "programme restart at:"+time.Now().String())
 			return true, retrie
 		}
