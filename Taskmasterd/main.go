@@ -30,13 +30,13 @@ func init() {
 func main() {
 	if mode {
 		cntxt := &daemon.Context{
-			//PidFileName: "./log/taskmaster.pid",
-			//PidFilePerm: 0777,
-			//LogFileName: "./log/sample.log",
-			//LogFilePerm: 0777,
-			WorkDir: "./",
-			//Umask:       022,
-			Args: []string{"l"},
+			PidFileName: "./log/taskmaster.pid",
+			PidFilePerm: 0777,
+			LogFileName: "./log/sample.log",
+			LogFilePerm: 0777,
+			WorkDir:     "./",
+			Umask:       022,
+			Args:        []string{"l"},
 		}
 		d, err := cntxt.Reborn()
 		if err != nil {

@@ -87,7 +87,7 @@ func fanny() {
 	}()
 	code := <-exit_chan
 	for key, _ := range jobs {
-		go stop_command(key)
+		stop_command(key)
 	}
 	os.Exit(code)
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os/exec"
 	"time"
 )
@@ -54,6 +55,7 @@ func start_command(a string) (ok bool) {
 
 func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
+	fmt.Println(existe, ok)
 	if existe && !ok {
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
 		}
