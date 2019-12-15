@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -26,7 +27,7 @@ func send_me() (err error) {
 	for _, val := range a {
 		if _, ok := yy[val]; !ok {
 			nn, nnn := is_started(val)
-			if nn && nnn {
+			if nn && !nnn {
 				go queued[val].cmdl.Process.Kill()
 			}
 			delete(jobs, val)
@@ -35,11 +36,13 @@ func send_me() (err error) {
 	}
 	for key, val := range yy {
 		if ta, ok := jobs[key]; ok {
-			if !verify_change(ta, val) {
+			fmt.Println(verify_change(ta, val))
+			if verify_change(ta, val) {
 				if _, oi := queued[key]; oi {
 					nn, nnn := is_started(key)
-					if nn && nnn {
-						go queued[key].cmdl.Process.Kill()
+					if nn && !nnn {
+						fmt.Println(queued[key])
+						queued[key].cmdl.Process.Kill()
 					}
 					delete(queued, key)
 				}
