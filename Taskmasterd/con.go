@@ -31,28 +31,24 @@ func begin() (err error) {
 
 func status(conn net.Conn, a ...string) (c ret, err error) {
 	var t string
-	for u, _ := range jobs {
-		y := str.StrConcat(u, ":  ")
-		if i, ok := queued[u]; ok {
-			if i.abort {
-				y = str.StrConcat(y, "abort")
-				goto lab
-			}
-			if i.stop {
-				y = str.StrConcat(y, " stop")
-				goto lab
-			}
-			if i.finish {
-				y = str.StrConcat(y, "finish")
-				goto lab
-			}
-			if i.lancer {
-				y = str.StrConcat(y, "start")
-				goto lab
-			}
+	keys := alpha()
+	pad := padding()
+	for _, u := range keys {
+		width := getWidth(len(u), pad)
+		y := str.StrConcat(u, ":", width)
+		if i, ok := queued[u]; !ok {
+			y = str.StrConcat(y, "not started")
+		} else if i.abort {
+			y = str.StrConcat(y, "abort")
+		} else if i.stop {
+			y = str.StrConcat(y, "stop")
+		} else if i.finish {
+			y = str.StrConcat(y, "finish")
+		} else if i.lancer {
+			y = str.StrConcat(y, "start")
+		} else {
+			y = str.StrConcat(y, "not started")
 		}
-		y = str.StrConcat(y, "not started")
-	lab:
 		t = str.StrConcat(t, y, "\n")
 	}
 	if t == "" {

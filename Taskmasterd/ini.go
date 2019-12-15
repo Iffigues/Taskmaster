@@ -2,17 +2,21 @@ package main
 
 import (
 	"errors"
+	"fmt"
 	"github.com/go-ini/ini"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"strings"
 	"taskmasterd/helper/str"
 )
 
 func NotFound(err error) (vrai bool) {
 	i := err.Error()
-	v := "error when getting key of section"
-	if i[:len(v)] == v {
+	fmt.Println(err)
+	v := strings.Contains(i, "error when getting key of section")
+	vv := strings.Contains(i, "can't be empty")
+	if v || vv {
 		vrai = true
 	}
 	return

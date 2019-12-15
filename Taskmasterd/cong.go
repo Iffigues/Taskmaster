@@ -82,7 +82,7 @@ func send_signal(conn net.Conn, a ...string) (ce ret, err error) {
 }
 
 func kill(conn net.Conn, a ...string) (ce ret, err error) {
-	strs := ""
+	strs := " "
 	if len(a) > 0 && a[0] == "all" {
 		for key, val := range queued {
 			if val.lancer {
