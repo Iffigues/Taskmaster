@@ -22,11 +22,11 @@ func padding() (i int) {
 	return i + 1
 }
 
-func getPadding(a ...string) (i int) {
+func getPadding(a []string) (i int) {
 	for _, val := range a {
 		b := len(val)
 		if b > i {
-			b = i
+			i = b
 		}
 	}
 	return i + 1

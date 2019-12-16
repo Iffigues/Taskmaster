@@ -70,11 +70,15 @@ func add_bool(c chan bool, ok bool) {
 
 func lance(c chan bool, a ...string) {
 	cons := rerun(a[0])
+	first := true
 	for {
 		cons.abort = cons.abort - 1
 		ok := start_command(a[0])
 		if ok {
-			go add_bool(c, true)
+			if first {
+				go add_bool(c, true)
+				first = false
+			}
 			ii, cc := false, queued[a[0]]
 			if ok := aborting(cc, cons.abort, a[0]); ok {
 				return
@@ -98,7 +102,9 @@ func lance(c chan bool, a ...string) {
 				}
 			}
 		} else {
-			go add_bool(c, false)
+			if first {
+				go add_bool(c, false)
+			}
 			return
 		}
 	}

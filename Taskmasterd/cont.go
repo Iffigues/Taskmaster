@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"net"
 	"taskmasterd/helper/str"
-	"time"
 )
 
 func mami(c bool, a, b string) (strs string) {
@@ -16,26 +16,33 @@ func mami(c bool, a, b string) (strs string) {
 
 func veve(a string) {
 	if jobs[a].autostart {
-		c := make(chan bool)
+		c := make(chan bool, 1)
 		go lance(c, a)
+		go getbol(c)
 	}
+}
+
+func getbol(c chan bool) {
+	<-c
 }
 
 func start(conn net.Conn, a ...string) (ce ret, err error) {
 	strs := ""
 	if len(a) > 0 {
-		c := make(chan bool)
+		c := make(chan bool, 1)
 		if a[0] == "all" {
+			pad := padding()
 			for key, _ := range jobs {
 				go lance(c, key)
 				e := meme(c, "jobs started\n", "jobs not found\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
+			pad := getPadding(a)
 			for _, key := range a {
 				go lance(c, key)
 				e := meme(c, "jobs started\n", "jobs not found\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
 	} else {
@@ -52,18 +59,20 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 	strs := ""
 	if len(a) > 0 {
 		if a[0] == "all" {
+			pad := padding()
 			for key, _ := range jobs {
 				ok, g := stop_command(key)
 				oui, d := is_stopped(ok, g)
 				e := mami(oui, d, "jobs don't stop\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
+			pad := getPadding(a)
 			for _, key := range a {
 				ok, g := stop_command(key)
 				oui, d := is_stopped(ok, g)
 				e := mami(oui, d, "jobs don't stop\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
 	}
@@ -77,22 +86,22 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 func restart(conn net.Conn, a ...string) (c ret, err error) {
 	strs := ""
 	if len(a) > 0 {
-		c := make(chan bool)
+		c := make(chan bool, 1)
 		if a[0] == "all" {
+			pad := padding()
 			for key, _ := range jobs {
-				stop_command(key)
-				time.Sleep(1 * time.Second)
+				fmt.Println(stop_command(key))
 				go lance(c, key)
 				e := meme(c, "started command\n", "jobs not found\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
+			pad := getPadding(a)
 			for _, key := range a {
-				stop_command(key)
-				time.Sleep(1 * time.Second)
+				fmt.Println(stop_command(key))
 				go lance(c, key)
 				e := meme(c, "started command\n", "jobs not found\n")
-				strs = str.StrConcat(strs, e)
+				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
 	}

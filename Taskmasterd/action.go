@@ -29,6 +29,7 @@ func start_command(a string) (ok bool) {
 	var keys task
 	if keys, ok = jobs[a]; ok {
 		gg, jj := is_started(a)
+		fmt.Println(gg, jj)
 		if _, err := exec.LookPath(keys.cmds.Path); err != nil {
 			return false
 		}
@@ -55,31 +56,22 @@ func start_command(a string) (ok bool) {
 
 func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
-	fmt.Println(existe, ok)
+	fmt.Println(a, existe, ok)
 	if existe && !ok {
+		println("enter")
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
+			fmt.Println(a, err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
 			queued[a].cmdl.Process.Kill()
+			g = true
 		case <-queued[a].verif:
 			g = true
-			break
 		}
 		queued[a].stop = true
+		queued[a].finish = true
 		return !ok, g
 	}
 	return !ok, g
-}
-
-func start_all_command() {
-	for key, _ := range jobs {
-		start_command(key)
-	}
-}
-
-func stop_all_command() {
-	for key, _ := range jobs {
-		is_started(key)
-	}
 }

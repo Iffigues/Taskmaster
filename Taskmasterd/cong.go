@@ -114,6 +114,7 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 
 func meme(c chan bool, a, b string) (strs string) {
 	e := <-c
+	fmt.Println(e)
 	if e {
 		return a
 	} else {
