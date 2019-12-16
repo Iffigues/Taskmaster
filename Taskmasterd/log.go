@@ -48,7 +48,7 @@ func mm(a string) {
 	}{
 		Path: a,
 	}
-	r := NewRequest([]string{"golangmasters@gmail.com"}, "Reset Password", "mail", data)
+	r := NewRequest([]string{"golangmasters@gmail.com"}, "taskmaster log", "mail", data)
 	t, err := template.ParseFiles(r.Path)
 	if err != nil {
 	}

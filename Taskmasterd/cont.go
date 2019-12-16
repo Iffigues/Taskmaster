@@ -34,14 +34,14 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 			pad := padding()
 			for key, _ := range jobs {
 				go lance(c, key)
-				e := meme(c, "jobs started\n", "jobs not found\n")
+				e := meme(c, key, "jobs started\n", "jobs not found\n", "already start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
 			pad := getPadding(a)
 			for _, key := range a {
 				go lance(c, key)
-				e := meme(c, "jobs started\n", "jobs not found\n")
+				e := meme(c, key, "jobs started\n", "jobs not found\n", "already start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
@@ -92,7 +92,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 			for key, _ := range jobs {
 				fmt.Println(stop_command(key))
 				go lance(c, key)
-				e := meme(c, "started command\n", "jobs not found\n")
+				e := meme(c, key, "started command\n", "jobs not found\n", "alredie start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
@@ -100,7 +100,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 			for _, key := range a {
 				fmt.Println(stop_command(key))
 				go lance(c, key)
-				e := meme(c, "started command\n", "jobs not found\n")
+				e := meme(c, key, "started command\n", "jobs not found\n", "alraidi start\n&")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}

@@ -5,7 +5,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -30,8 +30,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -39,7 +39,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -64,8 +64,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -73,7 +73,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -98,8 +98,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -107,7 +107,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -132,8 +132,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -141,7 +141,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -166,8 +166,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -175,7 +175,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -200,8 +200,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -209,7 +209,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -234,8 +234,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -243,7 +243,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -268,8 +268,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -277,7 +277,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -302,8 +302,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -311,7 +311,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -336,8 +336,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -345,7 +345,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -370,8 +370,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -379,7 +379,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -404,8 +404,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -413,7 +413,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -438,8 +438,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -447,7 +447,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -472,8 +472,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -481,7 +481,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -506,8 +506,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -515,7 +515,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -540,8 +540,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -549,7 +549,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -574,8 +574,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -583,7 +583,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -608,8 +608,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -617,7 +617,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -642,8 +642,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -651,7 +651,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -676,8 +676,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -685,7 +685,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -710,8 +710,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -719,7 +719,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -744,8 +744,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -753,7 +753,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -778,8 +778,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -787,7 +787,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -812,8 +812,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -821,7 +821,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -846,8 +846,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -855,7 +855,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -880,8 +880,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -889,7 +889,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -914,8 +914,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -923,7 +923,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -948,8 +948,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -957,7 +957,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -982,8 +982,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -991,7 +991,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1016,8 +1016,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1025,7 +1025,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1050,8 +1050,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1059,7 +1059,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1084,8 +1084,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1093,7 +1093,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1118,8 +1118,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1127,7 +1127,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1152,8 +1152,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1161,7 +1161,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1186,8 +1186,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1195,7 +1195,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1220,8 +1220,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1229,7 +1229,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1254,8 +1254,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1263,7 +1263,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1288,8 +1288,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1297,7 +1297,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1322,8 +1322,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1331,7 +1331,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1356,8 +1356,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1365,7 +1365,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1390,8 +1390,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1399,7 +1399,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1424,8 +1424,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1433,7 +1433,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1458,8 +1458,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1467,7 +1467,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1492,8 +1492,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1501,7 +1501,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1526,8 +1526,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1535,7 +1535,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1560,8 +1560,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1569,7 +1569,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1594,8 +1594,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1603,7 +1603,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1628,8 +1628,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1637,7 +1637,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1662,8 +1662,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1671,7 +1671,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1696,8 +1696,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1705,7 +1705,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1730,8 +1730,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1739,7 +1739,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1764,8 +1764,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1773,7 +1773,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1798,8 +1798,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1807,7 +1807,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1832,8 +1832,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1841,7 +1841,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1866,8 +1866,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1875,7 +1875,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1900,8 +1900,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1909,7 +1909,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1934,8 +1934,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1943,7 +1943,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -1968,8 +1968,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -1977,7 +1977,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2002,8 +2002,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2011,7 +2011,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2036,8 +2036,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2045,7 +2045,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2070,8 +2070,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2079,7 +2079,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2104,8 +2104,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2113,7 +2113,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2138,8 +2138,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2147,7 +2147,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2172,8 +2172,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2181,7 +2181,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2206,8 +2206,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2215,7 +2215,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2240,8 +2240,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2249,7 +2249,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2274,8 +2274,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2283,7 +2283,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2308,8 +2308,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2317,7 +2317,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2342,8 +2342,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2351,7 +2351,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2376,8 +2376,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2385,7 +2385,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2410,8 +2410,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2419,7 +2419,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2444,8 +2444,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2453,7 +2453,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2478,8 +2478,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2487,7 +2487,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2512,8 +2512,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2521,7 +2521,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2546,8 +2546,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2555,7 +2555,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2580,8 +2580,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2589,7 +2589,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2614,8 +2614,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2623,7 +2623,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2648,8 +2648,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2657,7 +2657,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2682,8 +2682,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2691,7 +2691,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2716,8 +2716,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2725,7 +2725,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2750,8 +2750,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2759,7 +2759,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2784,8 +2784,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2793,7 +2793,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2818,8 +2818,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2827,7 +2827,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2852,8 +2852,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2861,7 +2861,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2886,8 +2886,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2895,7 +2895,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2920,8 +2920,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2929,7 +2929,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2954,8 +2954,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2963,7 +2963,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -2988,8 +2988,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -2997,7 +2997,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3022,8 +3022,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3031,7 +3031,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3056,8 +3056,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3065,7 +3065,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3090,8 +3090,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3099,7 +3099,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3124,8 +3124,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3133,7 +3133,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3158,8 +3158,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3167,7 +3167,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3192,8 +3192,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3201,7 +3201,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3226,8 +3226,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3235,7 +3235,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3260,8 +3260,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3269,7 +3269,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3294,8 +3294,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3303,7 +3303,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3328,8 +3328,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3337,7 +3337,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3362,8 +3362,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3371,7 +3371,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3396,8 +3396,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3405,7 +3405,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3430,8 +3430,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3439,7 +3439,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3464,8 +3464,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3473,7 +3473,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3498,8 +3498,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3507,7 +3507,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3532,8 +3532,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3541,7 +3541,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3566,8 +3566,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3575,7 +3575,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3600,8 +3600,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3609,7 +3609,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3634,8 +3634,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3643,7 +3643,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3668,8 +3668,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3677,7 +3677,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3702,8 +3702,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3711,7 +3711,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3736,8 +3736,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3745,7 +3745,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3770,8 +3770,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3779,7 +3779,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3804,8 +3804,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3813,7 +3813,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3838,8 +3838,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3847,7 +3847,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3872,8 +3872,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3881,7 +3881,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3906,8 +3906,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3915,7 +3915,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3940,8 +3940,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3949,7 +3949,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -3974,8 +3974,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -3983,7 +3983,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4008,8 +4008,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4017,7 +4017,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4042,8 +4042,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4051,7 +4051,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4076,8 +4076,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4085,7 +4085,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4110,8 +4110,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4119,7 +4119,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4144,8 +4144,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4153,7 +4153,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4178,8 +4178,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4187,7 +4187,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4212,8 +4212,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4221,7 +4221,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4246,8 +4246,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4255,7 +4255,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4280,8 +4280,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4289,7 +4289,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4314,8 +4314,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4323,7 +4323,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4348,8 +4348,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4357,7 +4357,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4382,8 +4382,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4391,7 +4391,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4416,8 +4416,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4425,7 +4425,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4450,8 +4450,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4459,7 +4459,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4484,8 +4484,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4493,7 +4493,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4518,8 +4518,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4527,7 +4527,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4552,8 +4552,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4561,7 +4561,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4586,8 +4586,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4595,7 +4595,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4620,8 +4620,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4629,7 +4629,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4654,8 +4654,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4663,7 +4663,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4688,8 +4688,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4697,7 +4697,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4722,8 +4722,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4731,7 +4731,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4756,8 +4756,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4765,7 +4765,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4790,8 +4790,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4799,7 +4799,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4824,8 +4824,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4833,7 +4833,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4858,8 +4858,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4867,7 +4867,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4892,8 +4892,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4901,7 +4901,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4926,8 +4926,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4935,7 +4935,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4960,8 +4960,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -4969,7 +4969,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -4994,8 +4994,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5003,7 +5003,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5028,8 +5028,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5037,7 +5037,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5062,8 +5062,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5071,7 +5071,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5096,8 +5096,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5105,7 +5105,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5130,8 +5130,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5139,7 +5139,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5164,8 +5164,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5173,7 +5173,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5198,8 +5198,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5207,7 +5207,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5232,8 +5232,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5241,7 +5241,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5266,8 +5266,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5275,7 +5275,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5300,8 +5300,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5309,7 +5309,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5334,8 +5334,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5343,7 +5343,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5368,8 +5368,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5377,7 +5377,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5402,8 +5402,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5411,7 +5411,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5436,8 +5436,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5445,7 +5445,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5470,8 +5470,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5479,7 +5479,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5504,8 +5504,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5513,7 +5513,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5538,8 +5538,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5547,7 +5547,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5572,8 +5572,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5581,7 +5581,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5606,8 +5606,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5615,7 +5615,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5640,8 +5640,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5649,7 +5649,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5674,8 +5674,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5683,7 +5683,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5708,8 +5708,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5717,7 +5717,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5742,8 +5742,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5751,7 +5751,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5776,8 +5776,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5785,7 +5785,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5810,8 +5810,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5819,7 +5819,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5844,8 +5844,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5853,7 +5853,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5878,8 +5878,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5887,7 +5887,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5912,8 +5912,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5921,7 +5921,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5946,8 +5946,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5955,7 +5955,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -5980,8 +5980,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -5989,7 +5989,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6014,8 +6014,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6023,7 +6023,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6048,8 +6048,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6057,7 +6057,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6082,8 +6082,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6091,7 +6091,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6116,8 +6116,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6125,7 +6125,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6150,8 +6150,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6159,7 +6159,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6184,8 +6184,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6193,7 +6193,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6218,8 +6218,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6227,7 +6227,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6252,8 +6252,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6261,7 +6261,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6286,8 +6286,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6295,7 +6295,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6320,8 +6320,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6329,7 +6329,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6354,8 +6354,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6363,7 +6363,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6388,8 +6388,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6397,7 +6397,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6422,8 +6422,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6431,7 +6431,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6456,8 +6456,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6465,7 +6465,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6490,8 +6490,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6499,7 +6499,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6524,8 +6524,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6533,7 +6533,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6558,8 +6558,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6567,7 +6567,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6592,8 +6592,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6601,7 +6601,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6626,8 +6626,8 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>
 TERM_SESSION_ID=w0t0p0:C2E8669F-1F56-4F5B-BC7F-18E3F7BD30E0
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WFX4QWzLbv/Listeners
 LC_TERMINAL_VERSION=3.3.7
@@ -6635,7 +6635,7 @@ COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
 LANG=fr_FR.UTF-8
-PWD=/Users/iffigues/Taskmaster/Taskmasterd
+PWD=/Users/iffigues/Taskmaster/taskmasterd
 SHELL=/bin/zsh
 SECURITYSESSIONID=186a6
 TERM_PROGRAM_VERSION=3.3.7
@@ -6660,5 +6660,5 @@ PAGER=less
 LESS=-R
 LC_CTYPE=fr_FR.UTF-8
 LSCOLORS=Gxfxcxdxbxegedabagacad
-_=/Users/iffigues/Taskmaster/Taskmasterd/./taskmasterd
-/Users/iffigues/Taskmaster/Taskmasterd <nil>
+_=/Users/iffigues/Taskmaster/taskmasterd/./taskmasterd
+/Users/iffigues/Taskmaster/taskmasterd <nil>

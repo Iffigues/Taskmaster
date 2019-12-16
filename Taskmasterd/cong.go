@@ -112,12 +112,15 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 	return
 }
 
-func meme(c chan bool, a, b string) (strs string) {
+func meme(c chan bool, prog, a, b, y string) (strs string) {
 	e := <-c
 	fmt.Println(e)
 	if e {
 		return a
 	} else {
+		if _, ok := jobs[prog]; ok {
+			return y
+		}
 		return b
 	}
 }
