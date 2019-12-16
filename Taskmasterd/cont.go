@@ -100,7 +100,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 			for _, key := range a {
 				fmt.Println(stop_command(key))
 				go lance(c, key)
-				e := meme(c, key, "started command\n", "jobs not found\n", "alraidi start\n&")
+				e := meme(c, key, "started command\n", "jobs not found\n", "alraidi start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
