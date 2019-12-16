@@ -119,6 +119,9 @@ func meme(c chan bool, prog, a, b, y string) (strs string) {
 		return a
 	} else {
 		if _, ok := jobs[prog]; ok {
+			if hh, _ := is_started(prog); !hh {
+				return "can't start\n"
+			}
 			return y
 		}
 		return b
