@@ -45,7 +45,7 @@ func status(conn net.Conn, a ...string) (c ret, err error) {
 		} else if i.finish {
 			y = str.StrConcat(y, "finish")
 		} else if i.lancer {
-			y = str.StrConcat(y, "start")
+			y = str.StrConcat(y, percent(int32(i.cmdl.Process.Pid)))
 		} else {
 			y = str.StrConcat(y, "not started")
 		}
