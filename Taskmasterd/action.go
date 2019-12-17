@@ -58,19 +58,28 @@ func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
 	fmt.Println(a, existe, ok)
 	if existe && !ok {
-		println("enter")
+		queued[a].stop = true
+		queued[a].finish = true
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
 			fmt.Println(a, err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
-			queued[a].cmdl.Process.Kill()
-			g = true
+			done := make(chan error, 1)
+			go func() {
+				done <- queued[a].cmdl.Process.Kill()
+			}()
+			select {
+			case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
+				queued[a].stop = false
+                		queued[a].finish = false
+				return !ok, false
+			case <-done:
+				g = true
+			}
 		case <-queued[a].verif:
 			g = true
 		}
-		queued[a].stop = true
-		queued[a].finish = true
 		return !ok, g
 	}
 	return !ok, g

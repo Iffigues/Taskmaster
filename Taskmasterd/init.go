@@ -96,6 +96,9 @@ func getsignal(fd *ini.File, ok, path string) (ff syscall.Signal, err error) {
 	}
 	ll, err := getK(fd, ok, path)
 	if err != nil {
+		if NotFound(err) {
+			return oo["TERM"], nil
+		}
 		return syscall.SIGKILL, err
 	}
 	if val, ik := oo[ll]; ik {
