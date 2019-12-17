@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"taskmasterd/helper/str"
 )
@@ -90,7 +89,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 		if a[0] == "all" {
 			pad := padding()
 			for key, _ := range jobs {
-				fmt.Println(stop_command(key))
+				stop_command(key)
 				go lance(c, key)
 				e := meme(c, key, "started command\n", "jobs not found\n", "alredie start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
@@ -98,7 +97,7 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 		} else {
 			pad := getPadding(a)
 			for _, key := range a {
-				fmt.Println(stop_command(key))
+				stop_command(key)
 				go lance(c, key)
 				e := meme(c, key, "started command\n", "jobs not found\n", "alraidi start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)

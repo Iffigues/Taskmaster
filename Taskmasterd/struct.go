@@ -41,6 +41,7 @@ type task struct {
 	start        time.Time
 	end          time.Time
 	succed       bool
+	failed       bool
 	abort        bool
 }
 

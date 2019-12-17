@@ -42,6 +42,8 @@ func status(conn net.Conn, a ...string) (c ret, err error) {
 			y = str.StrConcat(y, "abort")
 		} else if i.stop {
 			y = str.StrConcat(y, "stop")
+		} else if i.failed {
+			y = str.StrConcat(y, "failed")
 		} else if i.finish {
 			y = str.StrConcat(y, "finish")
 		} else if i.lancer {

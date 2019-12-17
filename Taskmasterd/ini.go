@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"github.com/go-ini/ini"
 	"os"
 	"os/exec"
@@ -13,7 +12,6 @@ import (
 
 func NotFound(err error) (vrai bool) {
 	i := err.Error()
-	fmt.Println(err)
 	v := strings.Contains(i, "error when getting key of section")
 	vv := strings.Contains(i, "can't be empty")
 	if v || vv {

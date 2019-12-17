@@ -19,9 +19,7 @@ func wait_finish(cc *task, errs error, ii bool, retrie int, a string) (vrai bool
 }
 
 func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
-	fmt.Println(cc.stop)
 	if cc.stop {
-		println("finish")
 		registre(a, "programme stop at:"+cc.end.String())
 		return false, retrie
 	}
@@ -34,6 +32,7 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 		} else if cc.autorestart == 1 {
 			return true, retrie
 		} else {
+			cc.failed = true
 			registre(a, "programme fail at: "+cc.end.String())
 			return false, retrie
 		}
@@ -116,7 +115,6 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 
 func meme(c chan bool, prog, a, b, y string) (strs string) {
 	e := <-c
-	fmt.Println(e)
 	if e {
 		return a
 	} else {

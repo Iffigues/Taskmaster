@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"time"
 )
@@ -29,7 +28,6 @@ func start_command(a string) (ok bool) {
 	var keys task
 	if keys, ok = jobs[a]; ok {
 		gg, jj := is_started(a)
-		fmt.Println(gg, jj)
 		if _, err := exec.LookPath(keys.cmds.Path); err != nil {
 			return false
 		}
@@ -56,12 +54,10 @@ func start_command(a string) (ok bool) {
 
 func stop_command(a string) (ok, g bool) {
 	existe, ok := is_started(a)
-	fmt.Println(a, existe, ok)
 	if existe && !ok {
 		queued[a].stop = true
 		queued[a].finish = true
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
-			fmt.Println(a, err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
@@ -72,7 +68,7 @@ func stop_command(a string) (ok, g bool) {
 			select {
 			case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
 				queued[a].stop = false
-                		queued[a].finish = false
+				queued[a].finish = false
 				return !ok, false
 			case <-done:
 				g = true
