@@ -8,9 +8,11 @@ import (
 )
 
 func wait_finish(cc *task, errs error, ii bool, retrie int, a string) (vrai bool, i int) {
-	go func() {
-		cc.verif <- true
-	}()
+	if cc.stop {
+		go func() {
+			cc.verif <- true
+		}()
+	}
 	err, fifi := errs, time.Since(cc.start)
 	cc.lancer, cc.finish, cc.end, cc.exectime, ii, cc.nbexec = finish(fifi.Seconds(), cc.starttime, cc.nbexec)
 	cc.succed, cc.status = isgood(err, cc.exitcodes, ii)
