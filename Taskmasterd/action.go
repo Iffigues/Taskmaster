@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"time"
 )
@@ -44,8 +43,9 @@ func start_command(a string) (ok bool) {
 			}
 			sout, zz := stdout(keys.cmds.Stdout, a, keys.umask)
 			serr, zzz := stderr(keys.cmds.Stdout, a, keys.umask)
-			fmt.Println(zz)
-			fmt.Println(zzz)
+			if zz != nil || zzz != nil {
+				return false
+			}
 			keys.Stderr = serr
 			keys.Stdout = sout
 			cmd.Stdout = sout
@@ -72,14 +72,11 @@ func stop_command(a string) (ok, g bool) {
 		queued[a].stop, queued[a].finish = true, true
 		mut.Unlock()
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
-			fmt.Println(err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
-			fmt.Println("err")
 			queued[a].cmdl.Process.Kill()
 		case <-queued[a].verif:
-			fmt.Println("bon")
 			g = true
 		}
 		return !ok, g
