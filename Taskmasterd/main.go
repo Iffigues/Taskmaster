@@ -4,10 +4,12 @@ import (
 	"fmt"
 	"github.com/sevlyar/go-daemon"
 	"os"
+	"sync"
 	"syscall"
 )
 
 var (
+	mut             = sync.RWMutex{}
 	mode            = false
 	mypid           = syscall.Getpid()
 	jobs, errorJobs = get("./ini/ini.ini")

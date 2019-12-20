@@ -2,13 +2,16 @@ package main
 
 import (
 	"net"
-	"syscall"
 	"taskmasterd/helper/str"
 	"time"
 )
 
 func reload(conn net.Conn, a ...string) (c ret, err error) {
-	syscall.Kill(mypid, syscall.SIGHUP)
+	//go syscall.Kill(mypid, syscall.SIGHUP)
+	if err = send_me(); err != nil {
+		conn.Write([]byte(err.Error()))
+		return
+	}
 	registre("reload", "taskmaster reload at:"+time.Now().String())
 	conn.Write([]byte("reload"))
 	return

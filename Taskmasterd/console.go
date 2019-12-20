@@ -90,11 +90,16 @@ func lance(c chan bool, a ...string) {
 				return
 			}
 			registre(a[0], "progam start at: "+cc.start.String())
-			go func() {
+			func() {
 				done <- cc.cmdl.Wait()
 			}()
 			select {
 			case errs := <-done:
+				if cc.stop {
+					cc.verif <- true
+				}
+				cc.Stdout.Close()
+				cc.Stderr.Close()
 				cc.lancer = false
 				cons.f, cons.retrie = wait_finish(cc, errs, ii, cons.retrie, a[0])
 				if !cons.f {

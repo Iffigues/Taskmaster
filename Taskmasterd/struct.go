@@ -12,11 +12,13 @@ type Cmd struct {
 	Args   []string
 	Env    []string
 	Dir    string
-	Stdout *os.File
-	Stderr *os.File
+	Stdout string
+	Stderr string
 }
 
 type task struct {
+	Stderr       *os.File
+	Stdout       *os.File
 	status       bool
 	lp           string
 	cmds         Cmd

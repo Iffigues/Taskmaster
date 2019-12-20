@@ -68,20 +68,12 @@ func make_cmd(fd *ini.File, ok string, umask int64) (ar Cmd, PATH string, err er
 	if err != nil && !NotFound(err) {
 		return
 	}
-	sout, err := stdout(dd, ok, umask)
-	if err != nil {
-		return
-	}
-	ar.Stdout = sout
+	ar.Stdout = dd
 	ddd, err := getK(fd, ok, "stderr")
 	if err != nil && !NotFound(err) {
 		return
 	}
-	serr, err := stderr(ddd, ok, umask)
-	if err != nil {
-		return
-	}
-	ar.Stderr = serr
+	ar.Stderr = ddd
 	return
 }
 

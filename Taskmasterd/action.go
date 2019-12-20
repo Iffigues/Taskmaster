@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os/exec"
 	"time"
 )
@@ -15,10 +16,9 @@ func get_pid(a int, c string) (ok bool) {
 }
 
 func is_started(a string) (existe, ok bool) {
-	var key *task
-	ok = false
-	if key, ok = queued[a]; ok {
-		return true, key.finish
+	key, ok := queued[a]
+	if ok {
+		return true, (key.finish)
 	}
 	return false, false
 }
@@ -27,11 +27,14 @@ func start_command(a string) (ok bool) {
 	ok = false
 	var keys task
 	if keys, ok = jobs[a]; ok {
+		mut.Lock()
 		gg, jj := is_started(a)
+		mut.Unlock()
 		if _, err := exec.LookPath(keys.cmds.Path); err != nil {
 			return false
 		}
 		if (gg && jj) || (!gg) {
+			mut.Lock()
 			cmd := exec.Command(keys.cmds.Path, keys.cmds.Args...)
 			if len(keys.cmds.Dir) > 0 {
 				cmd.Dir = keys.cmds.Dir
@@ -39,12 +42,20 @@ func start_command(a string) (ok bool) {
 			if len(keys.cmds.Env) > 0 {
 				cmd.Env = keys.cmds.Env
 			}
-			cmd.Stdout = keys.cmds.Stdout
-			cmd.Stderr = keys.cmds.Stderr
+			sout, zz := stdout(keys.cmds.Stdout, a, keys.umask)
+			serr, zzz := stderr(keys.cmds.Stdout, a, keys.umask)
+			fmt.Println(zz)
+			fmt.Println(zzz)
+			keys.Stderr = serr
+			keys.Stdout = sout
+			cmd.Stdout = sout
+			cmd.Stderr = serr
 			keys.cmdl = cmd
 			keys.stop = false
+			keys.finish = true
 			keys.verif = make(chan bool)
 			queued[a] = &keys
+			mut.Unlock()
 			return true
 		}
 		return false
@@ -53,27 +64,22 @@ func start_command(a string) (ok bool) {
 }
 
 func stop_command(a string) (ok, g bool) {
+	mut.Lock()
 	existe, ok := is_started(a)
+	mut.Unlock()
 	if existe && !ok {
-		queued[a].stop = true
-		queued[a].finish = true
+		mut.Lock()
+		queued[a].stop, queued[a].finish = true, true
+		mut.Unlock()
 		if err := queued[a].cmdl.Process.Signal(queued[a].stopsignal); err != nil {
+			fmt.Println(err)
 		}
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
-			done := make(chan error, 1)
-			go func() {
-				done <- queued[a].cmdl.Process.Kill()
-			}()
-			select {
-			case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
-				queued[a].stop = false
-				queued[a].finish = false
-				return !ok, false
-			case <-done:
-				g = true
-			}
+			fmt.Println("err")
+			queued[a].cmdl.Process.Kill()
 		case <-queued[a].verif:
+			fmt.Println("bon")
 			g = true
 		}
 		return !ok, g

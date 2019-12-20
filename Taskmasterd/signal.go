@@ -29,12 +29,6 @@ func send_me() (err error) {
 			if nn && !nnn {
 				go queued[val].cmdl.Process.Kill()
 			}
-			if jobs[val].cmds.Stderr != nil {
-				jobs[val].cmds.Stderr.Close()
-			}
-			if jobs[val].cmds.Stdout != nil {
-				jobs[val].cmds.Stdout.Close()
-			}
 			delete(jobs, val)
 			delete(queued, val)
 		}
@@ -43,15 +37,11 @@ func send_me() (err error) {
 		if ta, ok := jobs[key]; ok {
 			if verify_change(ta, val) {
 				if _, oi := queued[key]; oi {
+					mut.Lock()
 					nn, nnn := is_started(key)
+					mut.Unlock()
 					if nn && !nnn {
 						queued[key].cmdl.Process.Kill()
-					}
-					if jobs[key].cmds.Stderr != nil {
-						jobs[key].cmds.Stderr.Close()
-					}
-					if jobs[key].cmds.Stdout != nil {
-						jobs[key].cmds.Stdout.Close()
 					}
 					delete(queued, key)
 				}
@@ -96,12 +86,6 @@ func fanny() {
 	}()
 	code := <-exit_chan
 	for key, _ := range jobs {
-		if jobs[key].cmds.Stderr != nil {
-			jobs[key].cmds.Stderr.Close()
-		}
-		if jobs[key].cmds.Stdout != nil {
-			jobs[key].cmds.Stdout.Close()
-		}
 		bb, ll := is_started(key)
 		if bb && !ll && jobs[key].lancer {
 			stop_command(key)
