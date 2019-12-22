@@ -46,9 +46,11 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 		}
 	} else {
 		conn.Write([]byte("bad init file"))
+		return
 	}
 	if strs == "" {
 		conn.Write([]byte(" "))
+		return
 	}
 	conn.Write([]byte(strs))
 	return
@@ -56,6 +58,7 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 
 func stop(conn net.Conn, a ...string) (c ret, err error) {
 	strs := ""
+	print("rere")
 	if len(a) > 0 {
 		if a[0] == "all" {
 			pad := padding()
@@ -77,6 +80,7 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 	}
 	if strs == "" {
 		conn.Write([]byte(" "))
+		return
 	}
 	conn.Write([]byte(strs))
 	return
