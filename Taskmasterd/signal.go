@@ -49,6 +49,9 @@ func send_me() (err error) {
 				jobs[key] = val
 				veve(key)
 			}
+		} else {
+			jobs[key] = val
+			veve(key)
 		}
 	}
 	return
