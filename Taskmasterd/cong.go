@@ -17,7 +17,6 @@ func wait_finish(cc *task, errs error, ii bool, retrie int, a string) (vrai bool
 
 func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 	if cc.stop {
-		println("stopped")
 		registre(a, "programme stop at:"+cc.end.String())
 		return false, retrie
 	}

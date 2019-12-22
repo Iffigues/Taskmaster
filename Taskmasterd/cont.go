@@ -67,9 +67,7 @@ func stop(conn net.Conn, a ...string) (c ret, err error) {
 			}
 		} else {
 			pad := getPadding(a)
-			println("non")
 			for _, key := range a {
-				println("ouiii")
 				ok, g := stop_command(key)
 				oui, d := is_stopped(ok, g)
 				e := mami(oui, d, "jobs don't stop\n")
