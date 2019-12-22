@@ -35,7 +35,8 @@ func send_me() (err error) {
 	}
 	for key, val := range yy {
 		if ta, ok := jobs[key]; ok {
-			if verify_change(ta, val) {
+			if !verify_change(ta, val) {
+				println(verify_change(ta, val))
 				if _, oi := queued[key]; oi {
 					mut.Lock()
 					nn, nnn := is_started(key)
@@ -48,9 +49,6 @@ func send_me() (err error) {
 				jobs[key] = val
 				veve(key)
 			}
-		} else {
-			jobs[key] = val
-			veve(key)
 		}
 	}
 	return
