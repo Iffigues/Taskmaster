@@ -5,7 +5,7 @@ Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.Vfd19jejEB/Render
 COLORFGBG=7;0
 ITERM_PROFILE=Default
 XPC_FLAGS=0x0
-PWD=/Users/bordenoy/newest/Taskmasterd
+PWD=/Users/bordenoy/newest/taskmasterd
 SHELL=/bin/zsh
 LC_CTYPE=UTF-8
 TERM_PROGRAM_VERSION=3.3.7
@@ -29,5 +29,5 @@ LESS=-R
 LSCOLORS=Gxfxcxdxbxegedabagacad
 HOMEBREW_CACHE=/tmp/bordenoy/Homebrew/Caches
 HOMEBREW_TEMP=/tmp/bordenoy/Homebrew/Temp
-_=/Users/bordenoy/newest/Taskmasterd/./taskmasterd
-/Users/bordenoy/newest/Taskmasterd <nil>
+_=/Users/bordenoy/newest/taskmasterd/./taskmasterd
+/Users/bordenoy/newest/taskmasterd <nil>
