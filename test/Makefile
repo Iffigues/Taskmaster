@@ -5,7 +5,7 @@ GOCLEAN=$(GOCMD) clean
 GOGET=$(GOCMD) get
 FMT=$(GOCMD) fmt
 GOINIT=$(GOCMD) mod init test
-GOU= ./taskmasterctl
+GOU= ./test
 
 all:  build
 

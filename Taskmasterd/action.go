@@ -42,8 +42,9 @@ func start_command(a string) (ok bool) {
 				cmd.Env = keys.cmds.Env
 			}
 			sout, zz := stdout(keys.cmds.Stdout, a, keys.umask)
-			serr, zzz := stderr(keys.cmds.Stdout, a, keys.umask)
+			serr, zzz := stderr(keys.cmds.Stderr, a, keys.umask)
 			if zz != nil || zzz != nil {
+				mut.Unlock()
 				return false
 			}
 			keys.Stderr = serr

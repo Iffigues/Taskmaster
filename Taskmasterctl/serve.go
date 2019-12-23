@@ -1,6 +1,7 @@
 package main
 
 import (
+	//	"bufio"
 	"fmt"
 	"github.com/chzyer/readline"
 	"net"
@@ -29,13 +30,16 @@ func readerr(err error) {
 
 func receive(conn net.Conn, c chan Message) {
 	for {
-		messages := make([]byte, 1024)
+		messages := make([]byte, 1000000)
+		//	println("rere")
 		lens, err := conn.Read(messages)
+		//lens, err := bufio.NewReader(conn).Read(messages)
 		if err != nil {
 			c <- Message{1, err.Error()}
 			return
 		}
 		if lens > 0 {
+
 			c <- Message{0, string(messages)}
 		}
 	}
