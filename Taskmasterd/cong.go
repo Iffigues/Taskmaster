@@ -113,7 +113,6 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 }
 
 func meme(e bool, prog, a, b, y string) (strs string) {
-	print("haha")
 	if e {
 		return a
 	} else {

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"time"
 )
@@ -42,11 +41,9 @@ func start_command(a string) (ok bool) {
 			if len(keys.cmds.Env) > 0 {
 				cmd.Env = keys.cmds.Env
 			}
-			print("c ici")
 			sout, zz := stdout(keys.cmds.Stdout, a, keys.umask)
 			serr, zzz := stderr(keys.cmds.Stderr, a, keys.umask)
 			if zz != nil || zzz != nil {
-				fmt.Println(zz, zzz)
 				mut.Unlock()
 				return false
 			}
