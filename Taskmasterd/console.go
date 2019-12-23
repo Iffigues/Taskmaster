@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net"
 	"strconv"
 	"strings"
@@ -71,10 +72,14 @@ func add_bool(c chan bool, ok bool) {
 func lance(c chan bool, a ...string) {
 	cons := rerun(a[0])
 	first := true
+	fmt.Println("trouver")
 	for {
+		print("boucle inf")
 		cons.abort = cons.abort - 1
 		ok := start_command(a[0])
+		print("it work\n")
 		if ok {
+			fmt.Println("ok", first)
 			if first {
 				go add_bool(c, true)
 				first = false
@@ -107,7 +112,9 @@ func lance(c chan bool, a ...string) {
 				}
 			}
 		} else {
+			fmt.Println("bad", first)
 			if first {
+				fmt.Println("ouis")
 				go add_bool(c, false)
 			}
 			return

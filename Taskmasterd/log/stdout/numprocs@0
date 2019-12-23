@@ -24,7 +24,7 @@ LOGNAME=bordenoy
 ITERM_SESSION_ID=w0t0p0:5C7F5ABF-53BB-44E6-8834-EC1CA7F95F18
 __CF_USER_TEXT_ENCODING=0x7DB0:0:0
 SHLVL=1
-OLDPWD=/Users/bordenoy/newest
+OLDPWD=/Users/bordenoy/newest/Taskmasterctl
 ZSH=/Users/bordenoy/.oh-my-zsh
 PAGER=less
 LESS=-R
@@ -32,5 +32,4 @@ LSCOLORS=Gxfxcxdxbxegedabagacad
 HOMEBREW_CACHE=/tmp/bordenoy/Homebrew/Caches
 HOMEBREW_TEMP=/tmp/bordenoy/Homebrew/Temp
 _=/Users/bordenoy/newest/Taskmasterd/./Taskmasterd
-_GO_DAEMON=1
 /Users/bordenoy/newest/Taskmasterd <nil>

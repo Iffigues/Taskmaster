@@ -112,8 +112,8 @@ func kill(conn net.Conn, a ...string) (ce ret, err error) {
 	return
 }
 
-func meme(c chan bool, prog, a, b, y string) (strs string) {
-	e := <-c
+func meme(e bool, prog, a, b, y string) (strs string) {
+	print("haha")
 	if e {
 		return a
 	} else {

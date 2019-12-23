@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net"
 	"taskmasterd/helper/str"
 )
@@ -33,24 +34,26 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 			pad := padding()
 			for key, _ := range jobs {
 				go lance(c, key)
-				e := meme(c, key, "jobs started\n", "jobs not found\n", "already start\n")
+				i := <-c
+				e := meme(i, key, "jobs started\n", "jobs not found\n", "already start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
+			fmt.Println("gfgffgfg", queued["umask"])
 			pad := getPadding(a)
 			for _, key := range a {
 				go lance(c, key)
-				e := meme(c, key, "jobs started\n", "jobs not found\n", "already start\n")
+				i := <-c
+				e := meme(i, key, "jobs started\n", "jobs not found\n", "already start\n")
+				fmt.Println("affdsjdfgshfgdshjdfgshjsdfghhjfgsdhjsdfghjsdfghhgfsdhjdfgshdfsghjdsfghjkhjkgdflkdfgs,c,")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
 	} else {
 		conn.Write([]byte("bad init file"))
-		return
 	}
 	if strs == "" {
 		conn.Write([]byte(" "))
-		return
 	}
 	conn.Write([]byte(strs))
 	return
@@ -95,7 +98,8 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 			for key, _ := range jobs {
 				stop_command(key)
 				go lance(c, key)
-				e := meme(c, key, "started command\n", "jobs not found\n", "alredie start\n")
+				i := <-c
+				e := meme(i, key, "started command\n", "jobs not found\n", "alredie start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		} else {
@@ -103,7 +107,8 @@ func restart(conn net.Conn, a ...string) (c ret, err error) {
 			for _, key := range a {
 				stop_command(key)
 				go lance(c, key)
-				e := meme(c, key, "started command\n", "jobs not found\n", "alraidi start\n")
+				i := <-c
+				e := meme(i, key, "started command\n", "jobs not found\n", "alraidi start\n")
 				strs = str.StrConcat(strs, key, ":", getWidth(len(key), pad), e)
 			}
 		}
