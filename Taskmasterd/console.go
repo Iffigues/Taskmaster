@@ -103,6 +103,7 @@ func lance(c chan bool, a ...string) {
 				cc.lancer = false
 				cons.f, cons.retrie = wait_finish(cc, errs, ii, cons.retrie, a[0])
 				if !cons.f {
+					print("ghghghg")
 					return
 				}
 			}
