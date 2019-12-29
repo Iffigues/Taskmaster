@@ -22,7 +22,17 @@ func is_started(a string) (existe, ok bool) {
 	return false, false
 }
 
-func start_command(a string) (ok bool) {
+func myname(a string, aa ...string) (bb string) {
+	if aa == nil {
+		return a
+	}
+	if aa[0] == "" {
+		return a
+	}
+	return aa[0]
+}
+
+func start_command(a string, aa ...string) (ok bool) {
 	ok = false
 	var keys task
 	if keys, ok = jobs[a]; ok {
@@ -55,7 +65,8 @@ func start_command(a string) (ok bool) {
 			keys.stop = false
 			keys.finish = true
 			keys.verif = make(chan bool)
-			queued[a] = &keys
+			nn := myname(a, aa...)
+			queued[nn] = &keys
 			mut.Unlock()
 			return true
 		}

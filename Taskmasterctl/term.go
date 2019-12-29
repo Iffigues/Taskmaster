@@ -27,6 +27,11 @@ var completer = readline.NewPrefixCompleter(
 	readline.PcItem("kill"),
 	readline.PcItem("signal"),
 	readline.PcItem("pid"),
+	readline.PcItem("background"),
+	readline.PcItem("startasgroup"),
+	readline.PcItem("stopasgroup"),
+	readline.PcItem("restartasgroup"),
+	readline.PcItem("killasgroup"),
 )
 
 func filterInput(r rune) (rune, bool) {

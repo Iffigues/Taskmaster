@@ -93,9 +93,18 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
+			rf, err := getrun(fd, ok)
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
+			gr, err := getgroup(fd, ok, "group")
+			if err != nil && !NotFound(err) {
+				return nil, err
+			}
 			for y := 0; y < numprocs; y++ {
 				name := namer(ok, vvv, y)
 				a[name] = task{
+					name:         ok,
 					lp:           PATH,
 					lancer:       false,
 					finish:       false,
@@ -110,6 +119,8 @@ func get(st string) (a map[string]task, err error) {
 					starttime:    btime,
 					startretries: st,
 					memretries:   st,
+					group:        gr,
+					grap:         rf,
 				}
 			}
 		}

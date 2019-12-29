@@ -63,6 +63,10 @@ func my_string_array(a task) (t []string, gg []int, hh []bool) {
 	return
 }
 
+func verif_grap(a, b runner) (ok bool) {
+	return (verif_array(a.runatfailed, b.runatfailed) && verif_array(a.runatsucced, b.runatsucced) && verif_array(a.runwhatever, b.runwhatever))
+}
+
 func verify_change(a, b task) (ok bool) {
 	ok = true
 	if !verify_cmd(a.cmds, b.cmds) {
@@ -74,6 +78,12 @@ func verify_change(a, b task) (ok bool) {
 		return false
 	}
 	if !verif_array_int(ag, bg) || !verif_array_int(a.exitcodes, b.exitcodes) {
+		return false
+	}
+	if !verif_grap(a.grap, b.grap) {
+		return false
+	}
+	if !verif_array(a.group, b.group) {
 		return false
 	}
 	if !verif_array_bool(ab, bb) {

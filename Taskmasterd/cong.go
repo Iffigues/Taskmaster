@@ -33,15 +33,18 @@ func is_false(cc *task, retrie int, a string, rrr bool) (vrai bool, i int) {
 			cc.failed = true
 			mut.Unlock()
 			registre(a, "programme fail at: "+cc.end.String())
+			endrun(*cc, false)
 			return false, retrie
 		}
 	} else {
 		retrie = cc.startretries
 		if cc.autorestart == 1 {
 			registre(a, "programme restart at:"+time.Now().String())
+			endrun(*cc, true)
 			return true, retrie
 		}
 		registre(a, "programme finish at:"+cc.end.String()+" during: "+fmt.Sprintf("%f", cc.exectime)+"begin at :"+cc.start.String(), 1, 2)
+		endrun(*cc, true)
 		return false, retrie
 	}
 }

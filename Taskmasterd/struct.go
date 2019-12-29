@@ -16,7 +16,14 @@ type Cmd struct {
 	Stderr string
 }
 
+type runner struct {
+	runatfailed []string
+	runatsucced []string
+	runwhatever []string
+}
+
 type task struct {
+	name         string
 	Stderr       *os.File
 	Stdout       *os.File
 	status       bool
@@ -45,6 +52,8 @@ type task struct {
 	succed       bool
 	failed       bool
 	abort        bool
+	group        []string
+	grap         runner
 }
 
 type ret struct {
