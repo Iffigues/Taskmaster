@@ -74,9 +74,9 @@ func get(st string) (a map[string]task, err error) {
 			if err != nil && !NotFound(err) {
 				return nil, err
 			}
-			//if stime == 0 {
-			//	stime = 1
-			//}
+			if stime == 0 {
+				stime = 1
+			}
 			btime, err := getint(fd, ok, "starttime")
 			if err != nil && !NotFound(err) {
 				return nil, err
