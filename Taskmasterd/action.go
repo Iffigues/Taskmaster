@@ -88,6 +88,9 @@ func stop_command(a string) (ok, g bool) {
 		select {
 		case <-time.After(time.Duration(queued[a].stoptime) * time.Second):
 			queued[a].cmdl.Process.Kill()
+			go func() {
+				<-queued[a].verif
+			}()
 		case <-queued[a].verif:
 			g = true
 		}

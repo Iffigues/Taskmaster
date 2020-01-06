@@ -39,11 +39,7 @@ func verif_array_bool(a, b []bool) (ok bool) {
 }
 
 func verify_cmd(a, b Cmd) (ok bool) {
-	ok = true
-	if a.Path != b.Path || !verif_array(a.Args, b.Args) || !verif_array(a.Env, b.Env) || a.Dir != b.Dir || a.Stdout != b.Stdout || a.Stderr != a.Stderr {
-		ok = false
-	}
-	return
+	return a.Path == b.Path && verif_array(a.Args, b.Args) && verif_array(a.Env, b.Env) && a.Dir == b.Dir && a.Stdout == b.Stdout && a.Stderr == a.Stderr
 }
 
 func my_string_array(a task) (t []string, gg []int, hh []bool) {

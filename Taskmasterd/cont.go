@@ -56,11 +56,18 @@ func start(conn net.Conn, a ...string) (ce ret, err error) {
 	return
 }
 
+func get_queued() (v []string) {
+	for a, _ := range queued {
+		v = append(v, a)
+	}
+	return
+}
+
 func stop(conn net.Conn, a ...string) (c ret, err error) {
 	strs := ""
 	if len(a) > 0 {
 		if a[0] == "all" {
-			pad := padding()
+			pad := getPadding(get_queued())
 			for key, _ := range queued {
 				ok, g := stop_command(key)
 				oui, d := is_stopped(ok, g)
